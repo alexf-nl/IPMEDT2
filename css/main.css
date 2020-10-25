@@ -44,7 +44,7 @@ body {
 
   .ahmedAfbeelding {
     display: grid;
-    grid-column: 1 / 6;
+    grid-column: 1 / 7;
   }
 
   .section--introductieAhmad {
@@ -61,11 +61,14 @@ body {
 }
 
 @media (min-width: 800px) {
-
+  .image {
+    width: 75%;
+  }
 
 }
 
 @media (min-width: 1280px) {
-
-
+  .image {
+    width: 50%;
+  }
 }
