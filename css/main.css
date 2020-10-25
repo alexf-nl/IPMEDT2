@@ -38,6 +38,36 @@ body {
     grid-column: 7 / 12;
   }
 
+  .button {
+    width: 15rem;
+    height: 8rem;
+    padding: 2.5rem;
+    border: none;
+    position: relative;
+  }
+
+  .button--yellow {
+    background-color: yellow;
+  }
+
+  .button--yellow:after {
+    content: "Start het verhaal";
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    background-color: red; 
+    top: 0;
+    left: 0;
+}
+
+
+  .button:active:after {
+    transform: translateY(5%);
+  }
+  
+  .button:active {
+    background-color: transparent;
+  }
 
 }
 
