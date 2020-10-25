@@ -24,3 +24,29 @@ body {
   font-family: 'Signika', sans-serif;
   font-weight: 800;
 }
+
+
+
+@media (min-width: 320px) {
+ .section--infoAhmed {
+   display: grid;
+   grid-column: 7 / 12;
+ }
+
+  .deel1-click {
+    display: grid;
+    grid-column: 7 / 12;
+  }
+
+
+}
+
+@media (min-width: 800px) {
+
+
+}
+
+@media (min-width: 1280px) {
+
+
+}
