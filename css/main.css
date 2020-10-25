@@ -33,9 +33,28 @@ body {
    grid-column: 7 / 12;
  }
 
+ .image {
+   width: 100%;
+ }
+
   .deel1-click {
     display: grid;
     grid-column: 7 / 12;
+  }
+
+  .ahmedAfbeelding {
+    display: grid;
+    grid-column: 1 / 6;
+  }
+
+  .section--introductieAhmad {
+    display: grid;
+    grid-column: 1 / 12;
+  }
+
+  hr {
+    display: grid;
+    grid-column: 1 / 12;
   }
 
 
