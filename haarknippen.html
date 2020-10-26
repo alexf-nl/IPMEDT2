@@ -8,11 +8,40 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
   <main>
+      <article class="container">
+          <div class="container__items">
+            <ul class="container__items__list">
+              <li class="container__items__list__item" id="js--scissors" ondragStart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">
+                <div class="scissors-container">
+                <div class="scissors">
+                    <div class="half">
+                        <div class="blade"></div>
+                        <div class="handle"></div>
+                    </div>
+                    <div class="half">
+                        <div class="blade"></div>
+                        <div class="handle"></div>
+                    </div>
+                    <div class="joint"></div>
+                </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+          <div class="container__hair">
+           <div class="container__character__hair">
+             <figure class="figure container__items__list__item__scissors" id="js--hair" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+               <img class="image container__items__list__item__scissors--image" src="afbeeldingen/Hair_Banner.png" alt="Haar knippen">
+               <figcaption>Ahmad's haar</figcaption>
+             </figure>
+           </div>
+          </div>
+      </article>
     <script src="js/main.js"></script>
   </main>
 </body>
