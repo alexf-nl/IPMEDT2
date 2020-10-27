@@ -29,6 +29,8 @@ function onDragStart(event) {
 
 function onDragEnd(event) {
   event.target.style.backgroundColor = "#e11d74";
+  audio.pause();
+  audio.currentTime = 0;
 
 }
 
@@ -39,7 +41,7 @@ function onDragOver(event) {
 
 function onDragLeave(event) {
   document.getElementsByClassName("container__charachter")[0].style.backgroundColor = "#252a34";
-  audio.stop();
+
 
 
 }
