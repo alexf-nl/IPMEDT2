@@ -1,4 +1,12 @@
-let audio = new Audio('sound/haarknippen.mp3');
+const audio = new Audio('sound/haarknippen.mp3');
+const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
+const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
+eersteMetinghaar.onclick = (event) =>  {
+  eersteMetinghaarResultaat.style.display = "block";
+}
+console.log(eersteMetinghaar);
+console.log(eersteMetinghaarResultaat);
+
 
 
 document.getElementById("js--terminal--text").innerHTML = "";
@@ -29,7 +37,6 @@ function onDragStart(event) {
 }
 
 function onDragEnd(event) {
-  event.target.style.backgroundColor = "#e11d74";
   audio.pause();
   audio.currentTime = 0;
 
@@ -49,7 +56,6 @@ function onDragLeave(event) {
 
 function onDrop(event) {
   document.getElementById(event.dataTransfer.getData("text/plain")).style.display="#252a34";
-  event.target.style.backgroundColor = "#252a34";
   let id = event.dataTransfer.getData("text/plain");
   console.log(id);
   if(id === "js--scissors") {
