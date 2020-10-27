@@ -8,7 +8,7 @@ console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
 
 
-
+let text = document.getElementById("js--terminal--text").innerHTML;
 document.getElementById("js--terminal--text").innerHTML = "";
 typeText = (textToBeTyped)=>{
   if(textToBeTyped != "") {
@@ -21,7 +21,6 @@ typeText = (textToBeTyped)=>{
 
 }
 
-let text = document.getElementById("js--terminal--text").innerHTML;
 typeText(Array.from(text));
 
 
