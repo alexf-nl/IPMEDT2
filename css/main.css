@@ -52,12 +52,12 @@ body {
 
 .scissors-container .scissors:active .half {
   animation: rot-up 1s ease-out 1;
-  animation-iteration-count: infinite;
+  animation-duration: infinite
 }
 
 .scissors-container .scissors:active .half:nth-child(even) {
   animation: rot-down 1s ease-out 1;
-  animation-iteration-count: infinite;
+  animation-duration: infinite;
 }
 
 .scissors-container .half:nth-child(even) {
@@ -156,7 +156,11 @@ body {
 
 .container__items__list__item__scissors--image {
   height: 65rem;
-  transition: 3s all;
+}
+
+.section--container--tekstKapper-header--content {
+  background-color: red;
+  display: none;
 }
 
 
@@ -164,6 +168,22 @@ body {
 
 
 @media (min-width: 320px) {
+
+
+
+  .section {
+    display: grid;
+  }
+
+  .section--container--imageKapper {
+    display: grid;
+    grid-column: 8 / 12;
+  }
+
+  .section--container--tekstKapper {
+    display: grid;
+    grid-column: 1 / 7;
+  }
  .section--infoAhmed {
    display: grid;
    grid-column: 7 / 12;
