@@ -52,12 +52,12 @@ body {
 
 .scissors-container .scissors:active .half {
   animation: rot-up 1s ease-out 1;
-  animation-duration: infinite
+  animation-iteration-count: infinite;
 }
 
 .scissors-container .scissors:active .half:nth-child(even) {
   animation: rot-down 1s ease-out 1;
-  animation-duration: infinite;
+  animation-iteration-count: infinite;
 }
 
 .scissors-container .half:nth-child(even) {
@@ -156,6 +156,7 @@ body {
 
 .container__items__list__item__scissors--image {
   height: 65rem;
+  transition: 3s all;
 }
 
 

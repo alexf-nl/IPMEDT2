@@ -17,7 +17,7 @@ document.getElementsByClassName("image container__items__list__item__scissors--i
 
 
 function onDragStart(event) {
-  event.target.style.backgroundColor = "#1d2d50";
+  event.target.style.backgroundColor = "transparent";
   event.dataTransfer.setData("text/plain", event.target.id);
 
 }
