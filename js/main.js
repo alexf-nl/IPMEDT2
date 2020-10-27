@@ -1,3 +1,6 @@
+let audio = new Audio('sound/haarknippen.mp3');
+
+
 document.getElementById("js--terminal--text").innerHTML = "";
 typeText = (textToBeTyped)=>{
   if(textToBeTyped != "") {
@@ -19,6 +22,8 @@ document.getElementsByClassName("image container__items__list__item__scissors--i
 function onDragStart(event) {
   event.target.style.backgroundColor = "transparent";
   event.dataTransfer.setData("text/plain", event.target.id);
+  audio.play();
+
 
 }
 
@@ -34,6 +39,8 @@ function onDragOver(event) {
 
 function onDragLeave(event) {
   document.getElementsByClassName("container__charachter")[0].style.backgroundColor = "#252a34";
+  audio.stop();
+
 
 }
 
