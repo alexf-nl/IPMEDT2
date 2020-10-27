@@ -13,7 +13,8 @@ typeText = (textToBeTyped)=>{
 
 }
 
-typeText(Array.from("Dit ben jij Ahmed, 12 jaar oud. Je bent  als een vluchteling naar Nederland gekomen en wilt iets doen voor de Nederlanders als dankbaarheid."));
+let text = document.getElementById("js--terminal--text").innerHTML;
+typeText(Array.from(text));
 
 
 document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "65rem";

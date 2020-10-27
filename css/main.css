@@ -11,6 +11,7 @@ html {
     main {
       display: grid;
       grid-template-columns: repeat(12, minmax(0,1fr));
+      grid-template-rows: repeat(12, minmax(0,1fr));
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
     }
@@ -159,6 +160,17 @@ body {
   transition: 3s all;
 }
 
+.main--text {
+  display: grid;
+  grid-column: 2 / 12;
+  grid-row: 5 / 12;
+}
+
+.main--button {
+  display: grid;
+  grid-column: 11 / 12;
+  grid-row: 10 / 12;
+}
 
 
 
@@ -198,7 +210,11 @@ body {
     background-color: red;
     top: 0;
     left: 0;
-}
+  }
+
+  .button--naar--kapper:after {
+    content: "Ga naar binnen";
+  }
 
 
   .button:active:after {
