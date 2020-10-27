@@ -1,9 +1,7 @@
 const audio = new Audio('sound/haarknippen.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
-eersteMetinghaar.onclick = (event) =>  {
-  eersteMetinghaarResultaat.style.display = "block";
-}
+
 console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
 
@@ -60,4 +58,8 @@ function onDrop(event) {
   if(id === "js--scissors") {
     document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "30rem";
   }
+}
+
+eersteMetinghaar.onclick = (event) =>  {
+  eersteMetinghaarResultaat.style.display = "block";
 }
