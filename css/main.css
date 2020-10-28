@@ -229,7 +229,7 @@ body {
   }
 
   .button--yellow:after {
-    content: "Start het verhaal";
+    content: attr(data-value);
     height: 95%;
     width: 100%;
     position: absolute;
