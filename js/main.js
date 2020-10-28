@@ -23,8 +23,8 @@ typeText = (textToBeTyped)=>{
 typeText(Array.from(text));
 
 naarKapperKnop.onclick = (event) => {
-  document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'block';
-  document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'block';
+  document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
+  document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('main--text')[0].style.display = 'none';
   document.getElementsByClassName('main--button')[0].style.display = 'none';
 
