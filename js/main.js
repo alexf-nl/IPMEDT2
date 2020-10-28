@@ -1,6 +1,7 @@
 const audio = new Audio('sound/haarknippen.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
+const naarKapperKnop = document.getElementById('js--button--naarKapper');
 
 console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
@@ -21,8 +22,22 @@ typeText = (textToBeTyped)=>{
 
 typeText(Array.from(text));
 
+naarKapperKnop.onclick = (event) => {
+  document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'block';
+  document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'block';
+  document.getElementsByClassName('main--text')[0].style.display = 'none';
+  document.getElementsByClassName('main--button')[0].style.display = 'none';
 
-document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "65rem";
+
+
+
+}
+
+eersteMetinghaar.onclick = (event) =>  {
+  eersteMetinghaarResultaat.style.display = "block";
+}
+
+/*document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "65rem";*/
 
 
 function onDragStart(event) {

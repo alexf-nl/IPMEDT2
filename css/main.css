@@ -190,11 +190,15 @@ body {
   .section--container--imageKapper {
     display: grid;
     grid-column: 8 / 12;
+    display: none;
+
   }
 
   .section--container--tekstKapper {
     display: grid;
     grid-column: 1 / 7;
+    display: none;
+
   }
  .section--infoAhmed {
    display: grid;
