@@ -21,6 +21,8 @@ html {
   --button-color: #F53D84;
   --button-color-after: #F55692;
   --text-background-color: #F5CD6E;
+  --button-secondary-color: #F5CD6E;
+
 }
 
 body {
@@ -30,6 +32,10 @@ body {
   font-size: 2rem;
   font-family: 'Signika', sans-serif;
   font-weight: 800;
+}
+
+p {
+  font-weight: 400;
 }
 
 .scissors-container {
@@ -180,6 +186,14 @@ body {
   display: grid;
   grid-column: 10 / 12;
   grid-row: 8 / 12;
+}
+
+.section--container--tekstKapper-haarDoneren {
+  border: 2px solid var(--text-background-color);
+  border-radius: 50px 0px 50px 50px;
+
+
+
 }
 
 
