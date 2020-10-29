@@ -7,14 +7,11 @@ const schaarEmoji = document.getElementById('js--scissors');
 const progressBar = document.getElementById('js--progressbar');
 let progressBarValue = 0;
 const progressBarIncrease = 5;
-progressBar.setAttribute('value', progressBarValue);
-schaarEmoji.style.setProperty('--move', progressBarValue + '%');
+const progressBarPercentage = document.getElementById('js--progressPercentage');
 
-function progressBarFunctie() {
-  progressBarValue += progressBarIncrease;
-  progressBar.setAttribute('value', progressBarValue);
-  schaarEmoji.style.setProperty('--move', progressBarValue + '%');
-}
+
+
+
 
 console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
@@ -41,12 +38,24 @@ typeText = (textToBeTyped)=>{
 
 typeText(Array.from(text));
 
+//voor progressBar
+function progressBarFunctie() {
+  progressBarValue += progressBarIncrease;
+  progressBar.setAttribute('value', progressBarValue);
+  schaarEmoji.style.setProperty('--move', progressBarValue + '%');
+  progressBarPercentage.innerHTML = progressBarValue + "%";
+
+
+}
+
 naarKapperKnop.onclick = (event) => {
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('main--text')[0].style.display = 'none';
   document.getElementsByClassName('main--button')[0].style.display = 'none';
+  if(progressBarValue < 95) {
   progressBarFunctie();
+}
 
 
 
@@ -98,5 +107,7 @@ function onDrop(event) {
 
 eersteMetinghaar.onclick = (event) =>  {
   eersteMetinghaarResultaat.style.display = "block";
+  if(progressBarValue <= 99) {
   progressBarFunctie();
+}
 }
