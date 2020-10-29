@@ -177,7 +177,7 @@ body {
 
 .main--button {
   display: grid;
-  grid-column: 11 / 12;
+  grid-column: 10 / 12;
   grid-row: 8 / 12;
 }
 
