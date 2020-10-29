@@ -3,6 +3,18 @@ const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
 const tekstKnop = document.getElementById("js--button--naarKapper").innerHTML;
+const schaarEmoji = document.getElementById('js--scissors');
+const progressBar = document.getElementById('js--progressbar');
+let progressBarValue = 0;
+const progressBarIncrease = 5;
+progressBar.setAttribute('value', progressBarValue);
+schaarEmoji.style.setProperty('--move', progressBarValue + '%');
+
+function progressBarFunctie() {
+  progressBarValue += progressBarIncrease;
+  progressBar.setAttribute('value', progressBarValue);
+  schaarEmoji.style.setProperty('--move', progressBarValue + '%');
+}
 
 console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
@@ -34,6 +46,8 @@ naarKapperKnop.onclick = (event) => {
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('main--text')[0].style.display = 'none';
   document.getElementsByClassName('main--button')[0].style.display = 'none';
+  progressBarFunctie();
+
 
 
 
@@ -84,4 +98,5 @@ function onDrop(event) {
 
 eersteMetinghaar.onclick = (event) =>  {
   eersteMetinghaarResultaat.style.display = "block";
+  progressBarFunctie();
 }

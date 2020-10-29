@@ -181,8 +181,6 @@ body {
 
 @media (min-width: 320px) {
 
-
-
   .section {
     display: grid;
   }
@@ -260,10 +258,6 @@ body {
     grid-column: 1 / 12;
   }
 
-  hr {
-    display: grid;
-    grid-column: 1 / 12;
-  }
 
   .container {
     display: grid;
@@ -280,8 +274,42 @@ body {
     grid-column: 7 / 12;
   }
 
+/*progressbar*/
+
+  .container--progress {
+    display: grid;
+    grid-column: 1 / 12;
+    position: relative;
+    background: none;
+    border: 0;
+
+    pointer-events: none;
+
+    ::-moz-progress-bar {
+      background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+  }
 
 
+
+    .container--progress-scissors {
+      position: absolute;
+      display: block;
+      top: -1.8rem;
+      left: calc(var(--move) - 2.3rem);
+      transform: scaleX(-1);
+      font-size: 4rem;
+      z-index: 1;
+    }
+
+.container--progress--progressbar {
+
+  width: 100%;
+  height: 2rem;
+
+}
 
 }
 
