@@ -2,6 +2,7 @@ const audio = new Audio('sound/haarknippen.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
+const tekstKnop = document.getElementsByClassName("button--yellow")[0].innerHTML;
 const tekstKnop = document.getElementById("js--button--naarKapper").innerHTML;
 const schaarEmoji = document.getElementById('js--scissors');
 const progressBar = document.getElementById('js--progressbar');
@@ -15,13 +16,15 @@ const progressBarPercentage = document.getElementById('js--progressPercentage');
 
 console.log(eersteMetinghaar);
 console.log(eersteMetinghaarResultaat);
-console.log(tekstKnop);
 
 textButton = (text) => {
-  document.getElementsByClassName("button--yellow")[0].setAttribute('data-value' , text);
+    document.getElementsByClassName("button--yellow")[0].setAttribute('data-value' , text);
 }
 
-textButton(tekstKnop);
+for(var i = 0; i < 99; i++){
+  textButton(tekstKnop);
+}
+
 
 let text = document.getElementById("js--terminal--text").innerHTML;
 document.getElementById("js--terminal--text").innerHTML = "";
