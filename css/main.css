@@ -17,6 +17,11 @@ html {
     }
 }
 
+:root {
+  --button-color: #F53D84;
+  --button-color-after: #F55692;
+}
+
 body {
   background-color: white;
   min-height: 100vh;
@@ -223,7 +228,7 @@ body {
   }
 
   .button--yellow {
-    background-color: yellow;
+    background-color: var(--button-color);
   }
 
   .button--yellow:after {
@@ -231,7 +236,7 @@ body {
     height: 95%;
     width: 100%;
     position: absolute;
-    background-color: red;
+    background-color: var(--button-color-after);
     top: 0;
     left: 0;
   }

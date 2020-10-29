@@ -3,7 +3,6 @@ const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
 const tekstKnop = document.getElementsByClassName("button--yellow")[0].innerHTML;
-const tekstKnop = document.getElementById("js--button--naarKapper").innerHTML;
 const schaarEmoji = document.getElementById('js--scissors');
 const progressBar = document.getElementById('js--progressbar');
 let progressBarValue = 0;
@@ -24,9 +23,8 @@ textButton = (text) => {
     document.getElementsByClassName("button--yellow")[0].setAttribute('data-value' , text);
 }
 
-for(var i = 0; i < 99; i++){
-  textButton(tekstKnop);
-}
+textButton(tekstKnop);
+
 
 
 let text = document.getElementById("js--terminal--text").innerHTML;
