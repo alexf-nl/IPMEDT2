@@ -8,6 +8,7 @@ const progressBar = document.getElementById('js--progressbar');
 let progressBarValue = 0;
 const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
+const haarDonerenText = document.getElementById('js--haarDonerenText');
 
 
 
@@ -107,8 +108,10 @@ function onDrop(event) {
 }
 
 eersteMetinghaar.onclick = (event) =>  {
-  eersteMetinghaarResultaat.style.display = "block";
+  eersteMetinghaarResultaat.style.display = "grid";
   if(progressBarValue <= 99) {
   progressBarFunctie();
+  eersteMetinghaar.style.display = "none";
+  haarDonerenText.style.display = "none";
 }
 }
