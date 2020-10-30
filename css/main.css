@@ -171,67 +171,76 @@ p {
   height: 65rem;
 }
 
-.section--container--tekstKapper-header--content {
-  background-color: var(--text-background-color);
-  display: none;
-  grid-column: 1 / 12;
-  grid-row: 9 / 12;
-}
-
-
-.section--container--tekstKapper--header {
-  grid-row: 1 / 12;
-  grid-column: 1 / 12;
-}
-
-
-
-
-
-
 @media (min-width: 320px) {
-
-  .section--container--tekstKapper-haarDoneren {
-    border: 2px solid var(--text-background-color);
-    border-radius: 50px 0px 50px 50px;
-    margin: 0;
-    grid-row: 2 / 4;
-    grid-column: 1 / 12;
-    grid-row-end: 4;
-
+  body {
+    padding: 3rem;
   }
 
   .main--text {
     display: grid;
-    grid-column: 1 / 12;
-    grid-row: 1 / 12;
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 4;
   }
 
   .main--button {
     display: grid;
-    grid-column: 1 / 12;
-    grid-row: 5 / 12;
+    grid-column: 4 / span 3;
+    grid-row: 4 / span 1;
   }
 
-  .section {
+  .button--medium {
     display: grid;
-  }
-
-  .section--container--imageKapper {
-    display: grid;
-    grid-column: 8 / 12;
-    grid-row: 1 / 12;
-    display: none;
-
+    grid-column: 5 / span 3;
+    grid-row: 11 / span 1;
   }
 
   .section--container--tekstKapper {
-    display: grid;
-    grid-column: 5 / 12;
-    grid-row: 1 / 2;
     display: none;
+    grid-row: 1 / span 10;
+    grid-column: 1 / span 12;
+  }  
 
+  .section--container--tekstKapper--header {
+    display: grid;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 6;
   }
+
+  .section--container--imageKapper {
+    grid-row: 2 / span 4;
+    grid-column: 6 / span 6;
+    /* grid-row: 1 / span 2;
+    grid-column: 9 / span 1; */
+    display: none;
+  }  
+
+  .section--container--tekstKapper-haarDoneren {
+    display: grid;
+    grid-row: 10 / span 1;
+    grid-column: 1 / span 12;
+    border: 2px solid var(--text-background-color);
+    border-radius: 50px 0px 50px 50px;
+    margin: 0;
+    margin-bottom: 2rem;
+  }  
+
+  .section--container--tekstKapper-haarDoneren p {
+    padding: 2rem;
+  }
+
+  .section--container--tekstKapper-header--content {
+    display: grid;
+    background-color: var(--text-background-color);
+    display: none;
+  }
+
+  .section--container--tekstKapper-header--content {
+    background-color: var(--text-background-color);
+    display: none;
+    grid-column: 1 / span 12;
+    grid-row: 12 / span 2;
+  }
+  
  .section--infoAhmed {
    display: grid;
    grid-column: 7 / 12;
@@ -252,8 +261,6 @@ p {
     padding: 2.5rem;
     border: none;
     position: relative;
-    grid-row: 4 / 12;
-    grid-column: 1 / 12;
   }
 
   .button--yellow {
@@ -292,14 +299,6 @@ p {
     grid-column: 1 / 12;
   }
 
-
-  .container {
-    display: grid;
-    grid-column:  1 / 12
-  }
-
-
-
   .container__items__list__item {
     grid-column: 1 / 6;
   }
@@ -312,8 +311,8 @@ p {
 
   .container--progress {
     display: grid;
-    grid-column: 1 / 12;
-    grid-row: 12 / 12;
+    grid-column: 1 / span 12;
+    grid-row: 11 / span 1;
     position: relative;
     background: none;
     border: 0;
