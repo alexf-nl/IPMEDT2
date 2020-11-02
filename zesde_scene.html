@@ -13,7 +13,25 @@
 
 <body>
   <main>
-      <article class="container">
+    <article class="section--container--tekstKapper">
+      <h2 class="section--container--tekstKapper--header">
+        Welkom weer bij de Kapper!
+      </h2>
+      <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
+        <p>Welkom weer bij de kapper Ahmad! Je haar is nu lang genoeg, dus je kunt hem doneren. Laten we van start gaan!</p>
+      </article>
+      <button class="button button--medium button--yellow" id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
+    </article>
+
+    <article class="section--container--imageKapper">
+      <figure class="figure section--container--imageKapper--figure">
+        <img class="image section--container--imageKapper--image" src="afbeeldingen/kapper.png" alt="Kapster">
+        <figcaption>Kapster</figcaption>
+      </figure>
+    </article>
+
+      <article class="container container--haarKnippen" id="js--HaarKnippen">
+        <h2 class="container--haarKnippen--header">Je bent nu zelf de kapper, Sleep nu de schaar naar het haar van Ahmad.</h2>
           <div class="container__items">
             <ul class="container__items__list">
               <li class="container__items__list__item" id="js--scissors" ondragStart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">

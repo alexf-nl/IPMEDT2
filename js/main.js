@@ -9,9 +9,21 @@ let progressBarValue = 0;
 const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
 const haarDonerenText = document.getElementById('js--haarDonerenText');
+const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
 
 
 
+
+if(location.pathname == "/zesde_scene.html") {
+  document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
+  document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
+    document.getElementById('js--HaarKnippen').style.display = "none";
+    haarKnippenScene.onclick = (event) => {
+      document.getElementById('js--HaarKnippen').style.display = "grid";
+      document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
+      document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
+    }
+}
 
 
 console.log(eersteMetinghaar);
@@ -50,6 +62,8 @@ function progressBarFunctie() {
 
 }
 
+
+
 naarKapperKnop.onclick = (event) => {
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
@@ -59,11 +73,8 @@ naarKapperKnop.onclick = (event) => {
   progressBarFunctie();
 }
 
-
-
-
-
 }
+
 
 eersteMetinghaar.onclick = (event) =>  {
   eersteMetinghaarResultaat.style.display = "block";
