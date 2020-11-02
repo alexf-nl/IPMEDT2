@@ -128,7 +128,7 @@ function onDrop(event) {
       document.getElementById('js--HaarKnippen').style.display = "none";
       document.getElementsByClassName('container__hair')[0].style.display = "none";
       document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
-
+      document.getElementsByClassName('section--container--tekstKapper--header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
       haarDonerenText.style.display = "grid";
       haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
       document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
