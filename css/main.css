@@ -356,6 +356,11 @@ p {
 
 }
 
+.container__items__list__item__scissors--image {
+  width: 100%;
+  height: 100%:
+}
+
 }
 
 @media (min-width: 800px) {

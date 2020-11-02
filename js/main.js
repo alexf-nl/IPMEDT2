@@ -10,6 +10,7 @@ const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
 const haarDonerenText = document.getElementById('js--haarDonerenText');
 const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
+let imgSize = 100
 
 
 
@@ -17,11 +18,16 @@ const haarKnippenScene = document.getElementById('js--button--haarKnippenScene')
 if(location.pathname == "/zesde_scene.html") {
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
-    document.getElementById('js--HaarKnippen').style.display = "none";
+  document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
+document.getElementsByClassName(' container__hair')[0].style.display = 'none';
+document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
     haarKnippenScene.onclick = (event) => {
       document.getElementById('js--HaarKnippen').style.display = "grid";
       document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
       document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
+      document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
+
+
     }
 }
 
@@ -114,7 +120,19 @@ function onDrop(event) {
   let id = event.dataTransfer.getData("text/plain");
   console.log(id);
   if(id === "js--scissors") {
-    document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "30rem";
+    imgSize -= 20;
+    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "%";
+    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.width = imgSize + "%";
+    console.log(imgSize);
+    if(imgSize == 0) {
+      document.getElementById('js--HaarKnippen').style.display = "none";
+      document.getElementsByClassName('container__hair')[0].style.display = "none";
+      document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
+
+      haarDonerenText.style.display = "grid";
+      haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
+      document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
+    }
   }
 }
 
