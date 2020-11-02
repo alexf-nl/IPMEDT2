@@ -318,6 +318,11 @@ p {
     grid-column: 7 / 12;
   }
 
+  .liniaal {
+    height: 0%;
+    transition: 0.5s all;
+  }
+
 /*progressbar*/
 
   .container--progress {

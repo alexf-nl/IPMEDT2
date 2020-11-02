@@ -10,9 +10,14 @@ const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
 const haarDonerenText = document.getElementById('js--haarDonerenText');
 const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
+const liniaal = document.getElementById('js--liniaal');
+const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 100
 
 
+buttonLiniaal.onclick = (event) => {
+    document.getElementsByClassName('liniaal')[0].style.height = "100%";
+}
 
 
 if(location.pathname == "/zesde_scene.html") {
