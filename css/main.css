@@ -400,6 +400,9 @@ p {
     width: 100%;
     height: 100%;
   }
+  .container__items__list__item__scissors--image:hover {
+  background-color: red;
+  }
 
   .section--container--imageKapper--image {
     width: 50% !important;
