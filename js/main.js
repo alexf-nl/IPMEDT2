@@ -12,12 +12,11 @@ const haarDonerenText = document.getElementById('js--haarDonerenText');
 const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
 const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
-let imgSize = 100
+let imgSize = 100;
 
-if(location.pathname == "haar_meten.html") {
-  buttonLiniaal.onclick = (event) => {
-      document.getElementsByClassName('liniaal')[0].style.height = "100%";
-  }
+buttonLiniaal.onclick = (event) => {
+  document.getElementsByClassName('liniaal')[0].style.height = "30rem";
+  console.log("klik");
 }
 
 if(location.pathname == "/zesde_scene.html") {
