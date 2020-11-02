@@ -318,17 +318,6 @@ p {
     grid-column: 7 / 12;
   }
 
-  .liniaal:hover{
-    color: #424242; 
-    -webkit-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    -ms-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-    opacity: 1;
-    transform: scale(1.15);
-  }
-
 /*progressbar*/
 
   .container--progress {
