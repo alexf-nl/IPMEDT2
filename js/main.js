@@ -121,8 +121,7 @@ function onDrop(event) {
   console.log(id);
   if(id === "js--scissors") {
     imgSize -= 20;
-    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "%";
-    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.width = imgSize + "%";
+    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     console.log(imgSize);
     if(imgSize == 0) {
       document.getElementById('js--HaarKnippen').style.display = "none";
