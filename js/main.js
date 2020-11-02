@@ -14,11 +14,11 @@ const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 100
 
-
-buttonLiniaal.onclick = (event) => {
-    document.getElementsByClassName('liniaal')[0].style.height = "100%";
+if(location.pathname == "haar_meten.html") {
+  buttonLiniaal.onclick = (event) => {
+      document.getElementsByClassName('liniaal')[0].style.height = "100%";
+  }
 }
-
 
 if(location.pathname == "/zesde_scene.html") {
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
@@ -126,8 +126,7 @@ function onDrop(event) {
   console.log(id);
   if(id === "js--scissors") {
     imgSize -= 20;
-    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "%";
-    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.width = imgSize + "%";
+    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     console.log(imgSize);
     if(imgSize == 0) {
       document.getElementById('js--HaarKnippen').style.display = "none";
