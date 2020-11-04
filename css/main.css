@@ -271,7 +271,7 @@ p {
     position: relative;
     display: grid;
     grid-column: 7 / 12;
-    grid-row: 12 / 12;
+    grid-row: 11 / 12;
   }
 
   .button--yellow {
@@ -371,7 +371,7 @@ p {
 .ahmad--verhaal{
   display: grid;
   grid-column:  1 / 12;
-  grid-row: 1 / 3;
+  grid-row: 1 / span 3;
 }
 
 .ahmad--verhaal--container {
