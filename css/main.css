@@ -251,6 +251,7 @@ p {
     display: none;
     grid-column: 1 / span 12;
     grid-row: 12 / span 2;
+    padding: 1.5rem;
   }
 
  .section--infoAhmed {
@@ -334,6 +335,11 @@ p {
 
   .tekstbubbel--rond {
     border-radius: 50px 50px 50px 50px;
+  }
+
+  .font-size--small {
+    font-weight: 300;
+    font-size: 2rem;
   }
 
 /*progressbar*/
