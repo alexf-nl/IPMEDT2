@@ -384,10 +384,12 @@ p {
   display: grid;
   grid-column:  1 / 13;
   grid-row: 1 / span 3;
+  grid-template-columns: repeat(12,minmax(0,1fr));
+  grid-column-gap: 2rem;
 }
 
 .ahmad--verhaal--container {
-  grid-column: 1 / 12;
+  grid-column: 1 / span 8;
   grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
 /*border-radius: 0px 0px 50px 50px;*/
@@ -396,7 +398,8 @@ p {
 
 }
 .ahmad--verhaal--container--image {
-  grid-column: 1 / 12;
+  grid-column-start: 7;
+  grid-column: span 3;
   grid-row: 3 / 3;
 }
 
@@ -448,12 +451,12 @@ p {
 @media (min-width: 800px) {
 
   .ahmad--verhaal--container {
-    grid-column: 1 / 6;
+    grid-column: 1 / span 8;
     grid-row: 1 / 2;
     border-radius: 50px 0px 50px 50px;*/
   }
   .ahmad--verhaal--container--image {
-    grid-column: 9 / 12;
+    grid-column: 9 / span 4;
     grid-row: 1 / 4;
   }
 
