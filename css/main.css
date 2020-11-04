@@ -375,22 +375,60 @@ p {
 }
 
 .ahmad--verhaal--container {
-  grid-column: 1 / 8;
+  grid-column: 1 / 12;
+  grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
-  border-radius: 50px 0px 50px 50px;
+/*border-radius: 0px 0px 50px 50px;*/
   margin: 0;
   margin-bottom: 2rem;
+
+}
+.ahmad--verhaal--container--image {
+  grid-column: 1 / 12;
+  grid-row: 3 / 3;
+}
+
+.ahmad--verhaal--container--header {
+  text-align: center;
+}
+
+.ahmad--verhaal--container--text {
+  margin-top: 3rem;
 }
 
 .vader--verhaal{
   display: grid;
   grid-column:  1 / 12;
-  grid-row: 5 / 8;
+  grid-row: 4 / 7;
 }
+
+.vader--verhaal--container--header {
+  text-align: center;
+}
+
+.vader--verhaal--container {
+  border: 2px solid var(--text-background-color);
+  grid-column: 1 / 12;
+  grid-row: 3 / 5;
+  margin: 0;
+  margin-bottom: 2rem;
+
+
+}
+.vader--verhaal--container--image {
+  grid-column: 1 / 12;
+  grid-row: 5 / 7;
+}
+
+
+.vader--verhaal--container--text {
+  margin-top: 3rem;
+}
+
 .ahmad--extra--verhaal{
   display: grid;
   grid-column:  1 / 12;
-  grid-row: 12 / 12;
+  grid-row: 9 / 12;
 }
 
 }
