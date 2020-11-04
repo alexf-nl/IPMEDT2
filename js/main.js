@@ -14,12 +14,14 @@ const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 100;
 
-buttonLiniaal.onclick = (event) => {
-  document.getElementsByClassName('liniaal')[0].style.height = "30rem";
-  console.log("klik");
+if(location.pathname == "/tweede_scene.html") {
+  progressBarFunctie(20);
 }
 
 if(location.pathname == "/zesde_scene.html") {
+
+  progressBarFunctie(65);
+  console.log('hey123');
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
@@ -33,6 +35,11 @@ document.getElementsByClassName('container--haarKnippen')[0].style.display = 'no
 
 
     }
+}
+
+buttonLiniaal.onclick = (event) => {
+  document.getElementsByClassName('liniaal')[0].style.height = "30rem";
+  console.log("klik");
 }
 
 
@@ -63,13 +70,13 @@ typeText = (textToBeTyped)=>{
 typeText(Array.from(text));
 
 //voor progressBar
-function progressBarFunctie() {
-  progressBarValue += progressBarIncrease;
+function progressBarFunctie(progressBarValue) {
   progressBar.setAttribute('value', progressBarValue);
-  schaarEmoji.style.setProperty('--move', progressBarValue + '%');
+  document.getElementById('js--scissors1').style.setProperty('--move', progressBarValue + '%');
+  console.log(schaarEmoji);
+  console.log(progressBarValue);
   progressBarPercentage.innerHTML = progressBarValue + "%";
-
-
+  progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
 }
 
 

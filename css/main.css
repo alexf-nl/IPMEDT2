@@ -181,6 +181,10 @@ p {
     padding: 3rem;
   }
 
+.container--progress--progressbar--text {
+  margin-left: calc(var(--move) - 2.3rem);
+}
+
   .main--text {
     display: grid;
     grid-column: 1 / span 12;
@@ -370,7 +374,7 @@ p {
 
 .ahmad--verhaal{
   display: grid;
-  grid-column:  1 / 12;
+  grid-column:  1 / 13;
   grid-row: 1 / span 3;
 }
 
@@ -398,7 +402,7 @@ p {
 
 .vader--verhaal{
   display: grid;
-  grid-column:  1 / 12;
+  grid-column:  1 / 13;
   grid-row: 4 / 7;
 }
 
@@ -427,13 +431,23 @@ p {
 
 .ahmad--extra--verhaal{
   display: grid;
-  grid-column:  1 / 12;
+  grid-column:  1 / 13;
   grid-row: 9 / 12;
 }
 
 }
 
 @media (min-width: 800px) {
+
+  .ahmad--verhaal--container {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    border-radius: 50px 0px 50px 50px;*/
+  }
+  .ahmad--verhaal--container--image {
+    grid-column: 9 / 12;
+    grid-row: 1 / 4;
+  }
 
   .button {
     grid-column: 8 / 12;
