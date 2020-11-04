@@ -13,13 +13,28 @@
 
 <body>
   <main>
-      <article class= "section--container--tekstkapper">
+      <article class= "section--container--tekstkapper display--grid">
         <h2 class="section--container--tekstKapper--header" id="js--terminal--text">Een paar weken later..</h2>
-          <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
-            <p>Vandaag gaat je vader je haar weer meten. Nu hopen dat je haar nu wel lang genoeg is!</p>
-          </article>
+        <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond" id="js--haarDonerenText">
+          <p>Vandaag gaat je vader je haar weer meten. Nu hopen dat je haar nu wel lang genoeg is!</p>
+        </article>
+
+        <article class="vader--verhaal--container--image">
+          <figure class="vader--verhaal--container--image--figure">
+            <figure class="ahmedAfbeelding--figure">
+              <img srcset="afbeeldingen/Vader_620.png 640w,
+                             afbeeldingen/Vader_620.png 1280w,
+                             afbeeldingen/Vader_1280.png 1920w"
+                     sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                     src="afbeeldingen/Vader_1920.png"
+                     alt="Vader van Ahmad"/>
+              <figcaption>Vader van Ahmad</figcaption>
+            </figure>
+          </figure>
+        </article>
+          
         <button class="button button--medium button--yellow" id="js--button--eersteMeting">Haar meten</button>
-        <h3 class="section--container--tekstKapper-header--content">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
+        <h3 class="section--container--tekstKapper-header--content font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
       </article>
 
     <script src="js/derde_scene.js"></script>

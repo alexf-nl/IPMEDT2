@@ -324,6 +324,14 @@ p {
     transition: 0.5s all;
   }
 
+  .display--grid {
+    display: grid;
+  }
+
+  .tekstbubbel--rond {
+    border-radius: 50px 50px 50px 50px;
+  }
+
 /*progressbar*/
 
   .container--progress {
