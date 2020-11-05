@@ -541,8 +541,8 @@ p {
 
 .ahmad--extra--verhaal{
   display: grid;
-  grid-column:  1 / 13;
-  grid-row: 9 / 12;
+  grid-column:  1 / 12;
+  grid-row: 5 / 6;
 }
 
 }

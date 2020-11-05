@@ -21,6 +21,7 @@ if(location.pathname == "/tweede_scene.html") {
 }
 else if(location.pathname == "/vierde_scene.html") {
   progressBarFunctie(50);
+  console.log('hey');
 }
 else if(location.pathname == "/vijfde_scene.html") {
   progressBarFunctie(70);
@@ -109,7 +110,6 @@ eersteMetinghaar.onclick = (event) =>  {
   eersteMetinghaarResultaat.style.display = "block";
 }
 
-/*document.getElementsByClassName("image container__items__list__item__scissors--image")[0].style.height = "65rem";*/
 
 
 function onDragStart(event) {
@@ -156,13 +156,4 @@ function onDrop(event) {
       document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
     }
   }
-}
-
-eersteMetinghaar.onclick = (event) =>  {
-  eersteMetinghaarResultaat.style.display = "grid";
-  if(progressBarValue <= 99) {
-  progressBarFunctie();
-  eersteMetinghaar.style.display = "none";
-  haarDonerenText.style.display = "none";
-}
 }
