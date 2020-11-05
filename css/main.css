@@ -179,8 +179,6 @@ p {
 
 .haar--items--list{
       display: grid;
-      grid-template-columns: repeat(1,minmax(0,1fr));
-      grid-template-rows: repeat(6,minmax(0,1fr));
       grid-row-gap: 2rem;
       margin: auto;
       padding: 2rem;
@@ -200,7 +198,7 @@ p {
       width:100%;
     }
 
-    .overlay {
+    .haar-items--list--item--overlay {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -217,34 +215,38 @@ p {
       align-items: center;
     }
 
-    li:hover .overlay {
+    li:hover .haar-items--list--item--overlay {
       opacity: 1;
     }
 
-    .hart {
-        position: relative;
-        width: 100px;
-        height: 90px;
-    }
+.haar-items--list--item--overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--text-background-color);
+}
 
-    .hart:before, .hart:after {
-        position: absolute;
-        content: "";
-        left: 50px;
-        top: 0;
-        width: 50px;
-        height: 80px;
-        background: white;
-        border-radius: 50px 50px 0 0;
-        transform: rotate(-45deg);
-        transform-origin: 0 100%;
-    }
+.haar--items--list--item:hover .haar-items--list--item--overlay {
+  opacity: 1;
+}
 
-    .hart:after {
-        left: 0;
-        transform: rotate(45deg);
-        transform-origin :100% 100%;
-    }
+.haar--items--list--item--overlay--text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 
 @media (min-width: 320px) {
@@ -256,6 +258,7 @@ p {
   grid-column: 1 / 12;
   grid-column-gap: 2rem;
   padding: 3rem;
+  grid-row: 7 / 11;
 }
 
 .container--progress--progressbar--text {
@@ -412,7 +415,7 @@ p {
     grid-row: 1 / 12;
     grid-template-columns: repeat(12,minmax(0,1fr));
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;   
+    grid-row-gap: 2rem;
   }
 
   .dialoog--container--image--vader {
@@ -475,10 +478,8 @@ p {
 
 .ahmad--verhaal{
   display: grid;
-  grid-column:  1 / 13;
-  grid-row: 1 / span 3;
-  grid-template-columns: repeat(12,minmax(0,1fr));
-  grid-column-gap: 2rem;
+    grid-column: 2 / 11;
+    grid-row: 1 / 2;
 }
 
 .ahmad--verhaal--container {
@@ -491,8 +492,7 @@ p {
 
 }
 .ahmad--verhaal--container--image {
-  grid-column-start: 7;
-  grid-column: span 3;
+  grid-column: 1 / 11;
   grid-row: 3 / 3;
 }
 
@@ -506,8 +506,8 @@ p {
 
 .vader--verhaal{
   display: grid;
-  grid-column:  1 / 13;
-  grid-row: 4 / 7;
+  grid-column:  1 / 12;
+  grid-row: 2 / 4;
 }
 
 .vader--verhaal--container--header {
