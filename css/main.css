@@ -283,7 +283,7 @@ p {
   .section--container--tekstKapper {
     display: none;
     grid-row: 1 / span 10;
-    grid-column: 1 / span 12;
+    grid-column: 1 / span 11;
   }
 
   .section--container--tekstKapper--header {
@@ -406,8 +406,10 @@ p {
     transition: 0.5s all;
   }
 
-  .display--grid {
+  .dialoog--meten--vader {
     display: grid;
+    grid-column: 1 / 12;
+    grid-row: 1 / 12;
   }
 
   .tekstbubbel--rond {
