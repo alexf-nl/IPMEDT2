@@ -595,7 +595,7 @@ main > .haar--items--list {
   .vader--verhaal--container {
     border-radius: 0px 50px 50px 50px;
     grid-row: 3 / 4;
-    grid-column: 6 / 12;
+    grid-column: 4 / 12;
   }
 
   .vader--verhaal--container--image {
