@@ -13,6 +13,11 @@ const haarKnippenScene = document.getElementById('js--button--haarKnippenScene')
 const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 100;
+zelfstandigKapper = document.getElementById('zelfKapper');
+haarKnippenButton = document.getElementById('js--button-haarKnippen');
+
+
+
 
 if(location.pathname == "/eerste_scene.html") {
   progressBarFunctie(10);
@@ -34,23 +39,48 @@ else if(location.pathname == "/vijfde_scene.html") {
   progressBarFunctie(100);
 }
 
+
+
+
+
 if(location.pathname == "/zesde_scene.html") {
 
+
   progressBarFunctie(65);
-  console.log('hey123');
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
-document.getElementsByClassName(' container__hair')[0].style.display = 'none';
-document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
-    haarKnippenScene.onclick = (event) => {
-      document.getElementById('js--HaarKnippen').style.display = "grid";
-      document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
-      document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
-      document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
+  document.getElementsByClassName(' container__hair')[0].style.display = 'none';
+  document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
+  haarKnippenScene.onclick = (event) => {
+            document.getElementById('js--HaarKnippen').style.display = "grid";
+            document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
+            document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
+            document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
 
+      if(window.screen.width < 800 ) {
+        zelfstandigKapper.innerHTML = "Je bent nu zelf de kapper, Klik op de button onderaan om Ahmad zijn haar te knippen";
+        document.getElementsByClassName('container__items__list__item')[1].style.display = 'grid';
+        console.log('ja');
+        document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
+        haarKnippenButton.onclick = (event) => {
+          document.getElementById('js--HaarKnippen').style.display = "none";
+          document.getElementsByClassName('container__hair')[0].style.display = "none";
+          document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
+          document.getElementsByClassName('section--container--tekstKapper--header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
+          haarDonerenText.style.display = "grid";
+          haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
+          document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
+        }
 
+      }
+      else if(window.screen.width > 800){
+        document.getElementsByClassName('container__items__list__item')[0].style.display = 'grid';
+        document.getElementsByClassName('container__items__list__item')[1].style.display = 'none';
+
+      }
     }
+
 }
 
 /*buttonLiniaal.onclick = (event) => {
@@ -105,6 +135,7 @@ naarKapperKnop.onclick = (event) => {
   progressBarFunctie(12);
 
 }
+
 
 
 
