@@ -408,8 +408,16 @@ p {
 
   .dialoog--meten--vader {
     display: grid;
-    grid-column: 1 / 12;
+    grid-column: 1 / span 12;
     grid-row: 1 / 12;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;   
+  }
+
+  .dialoog--container--image--vader {
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 8;
   }
 
   .tekstbubbel--rond {
