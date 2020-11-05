@@ -14,7 +14,10 @@ const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 100;
 
-if(location.pathname == "/tweede_scene.html") {
+if(location.pathname == "/eerste_scene.html") {
+  progressBarFunctie(10);
+}
+else if(location.pathname == "/tweede_scene.html") {
   progressBarFunctie(20);
 } else if(location.pathname == "/derde_scene.html") {
   progressBarFunctie(35);
@@ -50,10 +53,10 @@ document.getElementsByClassName('container--haarKnippen')[0].style.display = 'no
     }
 }
 
-buttonLiniaal.onclick = (event) => {
+/*buttonLiniaal.onclick = (event) => {
   document.getElementsByClassName('liniaal')[0].style.height = "30rem";
   console.log("klik");
-}
+}*/
 
 
 console.log(eersteMetinghaar);
@@ -99,15 +102,16 @@ naarKapperKnop.onclick = (event) => {
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('main--text')[0].style.display = 'none';
   document.getElementsByClassName('main--button')[0].style.display = 'none';
-  if(progressBarValue < 95) {
-  progressBarFunctie();
-}
+  progressBarFunctie(12);
 
 }
+
 
 
 eersteMetinghaar.onclick = (event) =>  {
-  eersteMetinghaarResultaat.style.display = "block";
+  haarDonerenText.innerHTML = "<p>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!</p>";
+  progressBarFunctie(15);
+
 }
 
 
