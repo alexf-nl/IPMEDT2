@@ -12,7 +12,7 @@ const haarDonerenText = document.getElementById('js--haarDonerenText');
 const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
 const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
-let imgSize = 100;
+let imgSize = 60;
 zelfstandigKapper = document.getElementById('zelfKapper');
 haarKnippenButton = document.getElementById('js--button-haarKnippen');
 
@@ -178,7 +178,7 @@ function onDrop(event) {
   let id = event.dataTransfer.getData("text/plain");
   console.log(id);
   if(id === "js--scissors") {
-    imgSize -= 20;
+    imgSize -= 10;
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     console.log(imgSize);
     if(imgSize == 0) {
