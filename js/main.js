@@ -16,6 +16,18 @@ let imgSize = 100;
 
 if(location.pathname == "/tweede_scene.html") {
   progressBarFunctie(20);
+} else if(location.pathname == "/derde_scene.html") {
+  progressBarFunctie(35);
+}
+else if(location.pathname == "/vierde_scene.html") {
+  progressBarFunctie(50);
+}
+else if(location.pathname == "/vijfde_scene.html") {
+  progressBarFunctie(70);
+}else if(location.pathname == "/zesde_scene.html") {
+  progressBarFunctie(90);
+}else if(location.pathname == "/zevende_scene.html") {
+  progressBarFunctie(100);
 }
 
 if(location.pathname == "/zesde_scene.html") {

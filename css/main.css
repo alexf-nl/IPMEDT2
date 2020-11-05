@@ -261,6 +261,12 @@ p {
   grid-row: 4 / span 3;
 }
 
+.volgende--deel {
+  display: grid;
+    grid-column: 2 / 11;
+    grid-row: 6 / 7;
+}
+
 .container--progress--progressbar--text {
   margin-left: calc(var(--move) - 2.3rem);
 }
@@ -437,7 +443,7 @@ p {
   .container--progress {
     display: grid;
     grid-column: 1 / span 12;
-    grid-row: 12 / 12;
+    grid-row: 7 / 8;
     position: relative;
     background: none;
     border: 0;
@@ -543,6 +549,26 @@ p {
 
 @media (min-width: 800px) {
 
+main > .haar--items--list {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: repeat(4, minmax(0,1fr));
+    grid-column: 2 / 12;
+}
+
+.volgende--deel {
+  grid-column:  9 / 11;
+}
+  .vader--verhaal--container {
+    border-radius: 0px 50px 50px 50px;
+    grid-row: 3 / 4;
+    grid-column: 6 / 12;
+  }
+
+  .vader--verhaal--container--image {
+    grid-column: 3 / 6;
+    grid-row: 3 / 7;
+  }
+
   .ahmad--verhaal--container {
     grid-column: 1 / span 8;
     grid-row: 1 / 2;
@@ -582,6 +608,14 @@ p {
 }
 
 @media (min-width: 1280px) {
+
+
+  main > .haar--items--list {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+      grid-template-rows: repeat(4, minmax(0,1fr));
+      grid-column: 2 / 12;
+  }
+
 
   .container__items__list__item__scissors--image {
     width: 100%;
