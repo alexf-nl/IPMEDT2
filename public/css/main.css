@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, var(--button-color), var(--button-secondary-color));
+  background-image: linear-gradient(to bottom right, var(--button-color), #F5817A, #F5627E, var(--button-secondary-color));
   background-repeat: no-repeat;
   min-height: 100vh;
   font-size: 2rem;
@@ -267,7 +267,7 @@ h1, h2, h3, h4, figcaption {
 
   .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .section--container--tekstKapper-haarDoneren:hover {
     background-color: var(--text-background-color);
-)
+
 
   }
   body {
@@ -518,12 +518,12 @@ h1, h2, h3, h4, figcaption {
     border: 0;
 
     pointer-events: none;
+  }
 
-    ::-moz-progress-bar {
-      background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-    }
+  ::-moz-progress-bar {
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 
   .container--progress--vijf {
@@ -566,7 +566,6 @@ h1, h2, h3, h4, figcaption {
   grid-column: 1 / span 10;
   grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
-/*border-radius: 0px 0px 50px 50px;*/
   margin: 0;
   margin-bottom: 2rem;
   padding: 2rem;
@@ -697,7 +696,7 @@ main > .haar--items--list {
   .ahmad--verhaal--container {
     grid-column: 1 / span 8;
     grid-row: 1 / 2;
-    border-radius: 50px 0px 50px 50px;*/
+    border-radius: 50px 0px 50px 50px;
   }
   .ahmad--verhaal--container--image {
     grid-column: 9 / span 4;
