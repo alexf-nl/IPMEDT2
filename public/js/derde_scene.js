@@ -25,6 +25,10 @@ function progressBarFunctie(progressBarValue) {
 
 if(location.pathname == "/derde-scene.html") {
   progressBarFunctie(35);
+} else if(location.pathname == "/vijfde_scene.html") {
+  progressBarFunctie(70);
+} else if(location.pathname == "/zevende_scene.html") {
+  progressBarFunctie(95);
 }
 
 if(eersteMetinghaar) {
