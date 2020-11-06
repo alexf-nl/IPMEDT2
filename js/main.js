@@ -140,7 +140,7 @@ naarKapperKnop.onclick = (event) => {
 
 
 eersteMetinghaar.onclick = (event) =>  {
-  haarDonerenText.innerHTML = "<p>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!</p>";
+  haarDonerenText.innerHTML = "<p><b>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!<b></p>";
   progressBarFunctie(15);
 
 }
