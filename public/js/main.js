@@ -76,9 +76,8 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
   document.getElementsByClassName(' container__hair')[0].style.display = 'none';
   document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
   haarKnippenScene.onclick = (event) => {
-    haarKnippenScene.onclick = (event) => {
-      window.location.href = "zevende_scene.html";
-    }
+    haarKnippenScene.style.display = 'none';
+
             document.getElementById('js--HaarKnippen').style.display = "grid";
             document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
             document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
@@ -225,7 +224,10 @@ function onDrop(event) {
       } else {
         haarGekniptAudio.pause();
       }
-      document.getElementById('js--HaarKnippen').style.display = "none";
+      haarKnippenScene.style.display = "block";
+      haarKnippenScene.onclick = (event) => {
+        window.location.href = "zevende_scene.html";
+      }
       document.getElementsByClassName('container__hair')[0].style.display = "none";
       document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
       document.getElementsByClassName('section--container--tekstKapper--header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
