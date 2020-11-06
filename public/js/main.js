@@ -82,12 +82,17 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
             document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
             document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
 
-      if(window.screen.width < 800 ) {
+      if(window.screen.width < 799 ) {
         zelfstandigKapper.innerHTML = "Je bent nu zelf de kapper, Klik op de button onderaan om Ahmad zijn haar te knippen";
         document.getElementsByClassName('container__items__list__item')[1].style.display = 'grid';
         console.log('ja');
         document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
         haarKnippenButton.onclick = (event) => {
+          haarKnippenScene.innerHTML = "Doorgaan";
+          haarKnippenScene.style.display = "block";
+          haarKnippenScene.onclick = (event) => {
+            window.location.href = "zevende_scene.html";
+          }
           if(geluidAanzetten == true) {
             haarGekniptAudio.play();
         }
