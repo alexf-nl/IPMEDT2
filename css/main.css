@@ -290,6 +290,11 @@ h1, h2, h3, h4, figcaption {
   margin-left: calc(var(--move) - 2.3rem);
   margin-top: 2.5rem;
 }
+.container--progress-scissors {
+  margin-left: calc(var(--move) - 2.3rem);
+  margin-top: -8rem;
+
+}
 
   .main--text {
     display: grid;

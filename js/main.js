@@ -184,11 +184,9 @@ function onDrop(event) {
 
   document.getElementById(event.dataTransfer.getData("text/plain")).style.display="#252a34";
   let id = event.dataTransfer.getData("text/plain");
-  console.log(id);
   if(id === "js--scissors") {
     imgSize -= 10;
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
-    console.log(imgSize);
     if(imgSize == 0) {
       progressBarFunctie(85);
       haarGekniptAudio.play();
