@@ -45,7 +45,7 @@ if(location.pathname == "/eerste_scene.html") {
 }
 else if(location.pathname == "/tweede_scene.html") {
   progressBarFunctie(20);
-} else if(location.pathname == "/derde_scene.html") {
+} else if(location.pathname == "/derde-scene.html") {
   progressBarFunctie(35);
 }
 else if(location.pathname == "/vierde_scene.html") {

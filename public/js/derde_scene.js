@@ -13,7 +13,7 @@ const imageJongen = document.getElementById('js--image--jongen');
 const buttonAntwoordJongen = document.getElementById('js--button--antwoord--jongen');
 const tekstJongen = document.getElementById('js--tekst--jongen');
 const dialoogJongen = document.getElementById('js--dialoog--jongen');
-
+console.log('ja');
 function progressBarFunctie(progressBarValue) {
   progressBar.setAttribute('value', progressBarValue);
   document.getElementById('js--scissors1').style.setProperty('--move', progressBarValue + '%');
@@ -51,5 +51,5 @@ if(buttonDeurOpen) {
     dialoogJongen.style.display = "none";
     buttonDeurOpen.style.display = "none";
   }
-}
 
+}
