@@ -23,11 +23,11 @@ function progressBarFunctie(progressBarValue) {
 }
 
 
-if(location.pathname == "/derde-scene.html") {
+if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
   progressBarFunctie(35);
-} else if(location.pathname == "/vijfde_scene.html") {
+} else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
-} else if(location.pathname == "/zevende_scene.html") {
+} else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
   progressBarFunctie(95);
 }
 

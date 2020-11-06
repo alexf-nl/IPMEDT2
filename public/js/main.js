@@ -40,23 +40,23 @@ function geluidInstellen() {
 
 
 
-if(location.pathname == "/eerste_scene.html") {
+if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
   progressBarFunctie(10);
 }
-else if(location.pathname == "/tweede_scene.html") {
+else if(location.pathname == "/tweede_scene.html" || location.pathname == "/public/tweede_scene.html") {
   progressBarFunctie(20);
-} else if(location.pathname == "/derde-scene.html") {
+} else if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
   progressBarFunctie(35);
 }
-else if(location.pathname == "/vierde_scene.html") {
+else if(location.pathname == "/vierde_scene.html" || location.pathname == "/public/vierde_scene.html") {
   progressBarFunctie(50);
   console.log('hey');
 }
-else if(location.pathname == "/vijfde_scene.html") {
+else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
-}else if(location.pathname == "/zesde_scene.html") {
+}else if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zesde_scene.html") {
   progressBarFunctie(80);
-}else if(location.pathname == "/zevende_scene.html") {
+}else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
   progressBarFunctie(95);
 }
 
@@ -64,7 +64,7 @@ else if(location.pathname == "/vijfde_scene.html") {
 
 
 
-if(location.pathname == "/zesde_scene.html") {
+if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zesde_scene.html") {
 
   geluidInstellen();
 
