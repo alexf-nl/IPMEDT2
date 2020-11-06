@@ -54,9 +54,7 @@ else if(location.pathname == "/vierde_scene.html" || location.pathname == "/publ
 }
 else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
-}else if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zesde_scene.html") {
-  progressBarFunctie(80);
-}else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
+} else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
   progressBarFunctie(95);
 }
 
@@ -69,7 +67,6 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
   geluidInstellen();
 
 
-  progressBarFunctie(65);
   document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
   document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
   document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
@@ -204,8 +201,9 @@ function onDragOver(event) {
 }
 
 function onDragLeave(event) {
+  if(document.getElementsByClassName("container__charachter")[0]) {
   document.getElementsByClassName("container__charachter")[0].style.backgroundColor = "#252a34";
-
+}
 
 
 }
@@ -218,7 +216,8 @@ function onDrop(event) {
     imgSize -= 10;
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     if(imgSize == 0) {
-      progressBarFunctie(85);
+      zelfstandigKapper.style.display = "none";
+      document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
       if(geluidAanzetten == true) {
         haarGekniptAudio.play();
       } else {
