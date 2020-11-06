@@ -252,13 +252,19 @@ p {
 @media (min-width: 320px) {
   body {
     padding: 3rem;
-  } 
+  }
+
+  .container--haarKnippen {
+    display: grid;
+    grid-column: 1 / 12;
+    grid-row: 1 / 3;
+  }
 
   main > .haar--items--list{
   grid-column: 1 / 12;
   grid-column-gap: 2rem;
   padding: 3rem;
-  grid-row: 4 / span 3;
+  grid-row: 4 / 6;
 }
 
 .volgende--deel {
@@ -292,7 +298,7 @@ p {
   .section--container--tekstKapper {
     display: none;
     grid-row: 1 / span 10;
-    grid-column: 1 / span 11;
+    grid-column: 1 / span 12;
   }
 
   .section--container--tekstKapper--header {
@@ -408,7 +414,7 @@ p {
 
   .container__hair {
     display: grid;
-    grid-column: 7 / 12;
+    grid-column: 2 / 12;
   }
 
   .haar--meten {
@@ -470,7 +476,7 @@ p {
   .container--progress {
     display: grid;
     grid-column: 1 / span 12;
-    grid-row: 7 / 8;
+    grid-row: 11 / 13;
     position: relative;
     background: none;
     border: 0;
@@ -543,7 +549,7 @@ p {
 
 .vader--verhaal{
   display: grid;
-  grid-column:  1 / 12;
+  grid-column:  2 / 11;
   grid-row: 2 / 4;
 }
 
@@ -573,12 +579,25 @@ p {
 .ahmad--extra--verhaal{
   display: grid;
   grid-column:  1 / 12;
-  grid-row: 5 / 6;
+  grid-row: 4 / 6;
 }
 
 }
 
 @media (min-width: 800px) {
+
+
+.container--haarKnippen {
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+}
+.container__hair {
+  grid-column:  6 / 12;
+}
+
+.container__items__list__item__scissors--image {
+  height: 60rem;
+}
 
 main > .haar--items--list {
   grid-template-columns: repeat(2,minmax(0,1fr));
@@ -592,7 +611,7 @@ main > .haar--items--list {
   .vader--verhaal--container {
     border-radius: 0px 50px 50px 50px;
     grid-row: 3 / 4;
-    grid-column: 6 / 12;
+    grid-column: 4 / 12;
   }
 
   .vader--verhaal--container--image {
@@ -620,7 +639,7 @@ main > .haar--items--list {
     width: 86%;
   }
   .image {
-    width: 75%;
+    width: 100%;
   }
 
   .section--container--tekstKapper--header {
