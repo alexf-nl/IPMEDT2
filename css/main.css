@@ -14,6 +14,10 @@ html {
       grid-template-columns: repeat(12, minmax(0,1fr));
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
+      width: 100%;
+      background-color: white;
+      padding: 3rem;
+      margin: 0;
     }
 }
 
@@ -26,9 +30,9 @@ html {
 }
 
 body {
-  background-color: white;
+  background-image: linear-gradient(to bottom right, var(--button-color), var(--button-secondary-color));
+  background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 8rem;
   font-size: 2rem;
   font-family: 'Andika', sans-serif;
   font-weight: 800;
@@ -264,7 +268,8 @@ h1, h2, h3, h4, figcaption {
 
   }
   body {
-    padding: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .container--haarKnippen {
@@ -478,7 +483,7 @@ h1, h2, h3, h4, figcaption {
 
   .dialoog--container--image--vader {
     grid-column: 1 / span 12;
-    grid-row: 2 / span 8;
+    grid-row: 3 / span 8;
   }
 
   .tekstbubbel--rond {
@@ -632,6 +637,10 @@ h1, h2, h3, h4, figcaption {
 
 @media (min-width: 800px) {
 
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 
 .container--haarKnippen {
   grid-column: 1 / 6;
@@ -685,6 +694,17 @@ main > .haar--items--list {
     grid-column: 1 / span 10;
     width: 86%;
   }
+
+  .tekst--bubbel--rechts {
+    grid-column: 7 / span 8;
+    grid-row: 4 / span 1;
+  } 
+
+  .button--rechts {
+    grid-row: 10 / 11;
+    grid-column: 10 / 12;
+  }
+
   .image {
     width: 100%;
   }
@@ -706,6 +726,11 @@ main > .haar--items--list {
 
 @media (min-width: 1280px) {
 
+  main {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   main > .haar--items--list {
     grid-template-columns: repeat(3,minmax(0,1fr));
