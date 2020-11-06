@@ -1,4 +1,5 @@
 const audio = new Audio('sound/haarknippen.mp3');
+const haarGekniptAudio = new Audio('sound/haargeknipt.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
@@ -64,6 +65,7 @@ if(location.pathname == "/zesde_scene.html") {
         console.log('ja');
         document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
         haarKnippenButton.onclick = (event) => {
+          haarGekniptAudio.play();
           document.getElementById('js--HaarKnippen').style.display = "none";
           document.getElementsByClassName('container__hair')[0].style.display = "none";
           document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
@@ -72,7 +74,6 @@ if(location.pathname == "/zesde_scene.html") {
           haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
           document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
         }
-
       }
       else if(window.screen.width > 800){
         document.getElementsByClassName('container__items__list__item')[0].style.display = 'grid';
@@ -182,6 +183,7 @@ function onDrop(event) {
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     console.log(imgSize);
     if(imgSize == 0) {
+      haarGekniptAudio.play();
       document.getElementById('js--HaarKnippen').style.display = "none";
       document.getElementsByClassName('container__hair')[0].style.display = "none";
       document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
