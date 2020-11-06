@@ -504,6 +504,7 @@ h1, h2, h3, h4, figcaption {
   .font-size--small {
     font-weight: 300;
     font-size: 2rem;
+    grid-row: 13 / span 2;
   }
 
 /*progressbar*/
@@ -766,6 +767,10 @@ main > .haar--items--list {
 
   .container--haarKnippen--header {
     grid-column:  1 / 4;
+  }
+
+  .font-size--small {
+    grid-row: 12 / span 2;
   }
 
 }
