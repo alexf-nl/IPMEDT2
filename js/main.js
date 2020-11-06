@@ -55,6 +55,9 @@ if(location.pathname == "/zesde_scene.html") {
   document.getElementsByClassName(' container__hair')[0].style.display = 'none';
   document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
   haarKnippenScene.onclick = (event) => {
+    haarKnippenScene.onclick = (event) => {
+      window.location.href = "zevende_scene.html";
+    }
             document.getElementById('js--HaarKnippen').style.display = "grid";
             document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'none';
             document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'none';
@@ -85,14 +88,9 @@ if(location.pathname == "/zesde_scene.html") {
 
 }
 
-/*buttonLiniaal.onclick = (event) => {
-  document.getElementsByClassName('liniaal')[0].style.height = "30rem";
-  console.log("klik");
-}*/
 
 
-console.log(eersteMetinghaar);
-console.log(eersteMetinghaarResultaat);
+
 
 textButton = (text) => {
     document.getElementsByClassName("button--yellow")[0].setAttribute('data-value' , text);
@@ -143,13 +141,18 @@ if(naarKapperKnop) {
 
 
 if(eersteMetinghaar) {
-eersteMetinghaar.onclick = (event) =>  {
-  haarDonerenText.innerHTML = "<p><b>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!<b></p>";
-  progressBarFunctie(15);
+    eersteMetinghaar.onclick = (event) =>  {
+    haarDonerenText.innerHTML = "<p><b>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!<b></p>";
+    progressBarFunctie(15);
+    eersteMetinghaar.onclick = (event) => {
+      window.location.href = "tweede_scene.html";
+    }
+
 
 }
-
 }
+
+
 
 function onDragStart(event) {
   event.target.style.backgroundColor = "transparent";
