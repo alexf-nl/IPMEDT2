@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   padding: 8rem;
   font-size: 2rem;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Andika', sans-serif;
   font-weight: 800;
 }
 
@@ -41,6 +41,7 @@ p {
 
 h1, h2, h3, h4, figcaption {
   font-family: 'Pacifico', cursive;
+  color: var(--button-color);
 
 }
 
@@ -256,6 +257,12 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
+
+  .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .section--container--tekstKapper-haarDoneren:hover {
+    background-color: var(--text-background-color);
+)
+
+  }
   body {
     padding: 3rem;
   }
