@@ -460,7 +460,7 @@ h1, h2, h3, h4, figcaption {
   .haar--meten {
     height: 100%;
     display: grid;
-    grid-row: 2 / span 8;
+    grid-row: 3 / span 8;
     grid-column: 1 / 12;
     grid-template-columns: repeat(12,minmax(0,1fr));
     grid-template-rows: repeat(2,minmax(0,1fr));
@@ -738,6 +738,10 @@ main > .haar--items--list {
     width: 75% !important;
   }
 
+  .haar--meten {
+    grid-column: 1 / span 6;
+  }
+
 }
 
 @media (min-width: 1280px) {
@@ -799,7 +803,7 @@ main > .haar--items--list {
   }
 
   .tekst--bubbel--rechts {
-    grid-column: 7 / 12;
+    grid-column: 7 / 14;
     grid-row: 4 / span 4;
   }
 
