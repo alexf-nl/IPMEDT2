@@ -647,6 +647,10 @@ h1, h2, h3, h4, figcaption {
   display: none;
 }
 
+.button--rechts {
+  grid-row: 12;
+}
+
 }
 
 @media (min-width: 800px) {
