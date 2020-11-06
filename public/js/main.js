@@ -1,6 +1,9 @@
 const audio = new Audio('sound/haarknippen.mp3');
 const haarGekniptAudio = new Audio('sound/haargeknipt.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
+const tweedeMetinghaar = document.getElementById("js--button--eersteMeting1");
+const derdeMetinghaar = document.getElementById("js--button--eersteMeting2");
+
 const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
 const tekstKnop = document.getElementsByClassName("button--yellow")[0].innerHTML;
@@ -47,12 +50,17 @@ if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/ee
 }
 else if(location.pathname == "/tweede_scene.html" || location.pathname == "/public/tweede_scene.html") {
   progressBarFunctie(20);
+  tweedeMetinghaar.onclick = (event) => {
+    window.location.href = "derde-scene.html";
+  }
 } else if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
   progressBarFunctie(35);
 }
 else if(location.pathname == "/vierde_scene.html" || location.pathname == "/public/vierde_scene.html") {
   progressBarFunctie(50);
-  console.log('hey');
+  derdeMetinghaar.onclick = (event) => {
+    window.location.href = "vijfde_scene.html";
+  }
 }
 else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
@@ -176,8 +184,6 @@ if(eersteMetinghaar) {
     eersteMetinghaar.onclick = (event) => {
       window.location.href = "tweede_scene.html";
     }
-
-
 }
 }
 
