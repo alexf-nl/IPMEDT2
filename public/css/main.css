@@ -278,7 +278,7 @@ h1, h2, h3, h4, figcaption {
   .section--container--tekstKapper--geluid {
     display: grid;
       grid-column: 1 / span 12;
-      grid-row: 2 / span 2
+      grid-row: 3 / span 2
     }
   .container--haarKnippen {
     display: grid;

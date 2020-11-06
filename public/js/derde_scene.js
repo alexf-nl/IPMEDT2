@@ -21,6 +21,15 @@ function progressBarFunctie(progressBarValue) {
   progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
 }
 
+
+if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
+  progressBarFunctie(35);
+} else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
+  progressBarFunctie(70);
+} else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
+  progressBarFunctie(95);
+}
+
 if(eersteMetinghaar) {
   eersteMetinghaar.onclick = (event) =>  {
     eersteMetinghaar.onclick = (event) => {
@@ -29,6 +38,7 @@ if(eersteMetinghaar) {
     eersteMetinghaarResultaat.style.display = "block";
   }
 }
+
 
 if(buttonMeten) {
   buttonMeten.onclick = (event) => {
