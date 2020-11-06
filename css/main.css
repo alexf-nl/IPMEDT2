@@ -781,7 +781,9 @@ main > .haar--items--list {
     width: 50%;
   }
 
-
-
+  .dialoog--container--image--vader {
+    grid-column: 1 / 7;
+    grid-row: 3 / span 5;
+  }
 
 }

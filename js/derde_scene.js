@@ -22,24 +22,22 @@ function progressBarFunctie(progressBarValue) {
   progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
 }
 
-
-if(location.pathname == "/derde_scene.html") {
-  progressBarFunctie(35);
+if(eersteMetinghaar) {
   eersteMetinghaar.onclick = (event) =>  {
     eersteMetinghaarResultaat.style.display = "block";
   }
+}
 
-} else if(location.pathname == "/vijfde_scene.html") {
-  progressBarFunctie(70);
-
+if(buttonMeten) {
   buttonMeten.onclick = (event) => {
   liniaal.style.height = "100%";
   lengte.style.display = "block";
    laatsteHaarMeten.innerHTML = "<p>Je haar is nu lang genoeg! Wil je nu naar de kapper gaan en je haar laten knippen om het te doneren?</p>";
    laatsteHaarMeten.style.backgroundColor = "var(--text-background-color)";
   }
+}
 
-} else if(location.pathname == "/zevende_scene.html") {
+if(buttonDeurOpen) {
   buttonDeurOpen.onclick = (event) => {
     imageJongen.style.display = "block";
     buttonAntwoordJongen.style.display = "block";
@@ -48,3 +46,4 @@ if(location.pathname == "/derde_scene.html") {
     buttonDeurOpen.style.display = "none";
   }
 }
+
