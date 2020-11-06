@@ -261,6 +261,9 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
+  .section--container--tekstKapper-haarDoneren--geluidUit {
+    display: none;
+  }
 
   .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .section--container--tekstKapper-haarDoneren:hover {
     background-color: var(--text-background-color);
@@ -272,6 +275,11 @@ h1, h2, h3, h4, figcaption {
     padding-bottom: 8rem;
   }
 
+  .section--container--tekstKapper--geluid {
+    display: grid;
+      grid-column: 1 / span 12;
+      grid-row: 2 / span 2
+    }
   .container--haarKnippen {
     display: grid;
     grid-column: 1 / 12;
@@ -706,7 +714,7 @@ main > .haar--items--list {
   .tekst--bubbel--rechts {
     grid-column: 7 / span 8;
     grid-row: 4 / span 1;
-  } 
+  }
 
   .button--rechts {
     grid-row: 10 / 11;

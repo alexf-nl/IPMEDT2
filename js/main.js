@@ -17,6 +17,25 @@ let imgSize = 60;
 zelfstandigKapper = document.getElementById('zelfKapper');
 haarKnippenButton = document.getElementById('js--button-haarKnippen');
 const textTerminal = document.getElementById("js--terminal--text");
+const geluidUit = document.getElementById('js--geluid--uit');
+const geluidAan = document.getElementById('js--geluid--aan');
+let geluidAanzetten = true;
+
+function geluidInstellen() {
+  geluidAan.onclick = (event) => {
+      geluidAanzetten = false;
+      geluidUit.style.display = 'block';
+      geluidAan.style.display = 'none';
+  }
+
+  geluidUit.onclick = (event) => {
+    geluidAanzetten = true;
+    geluidUit.style.display = 'none';
+    geluidAan.style.display = 'block';
+
+
+  }
+}
 
 
 
@@ -46,6 +65,8 @@ else if(location.pathname == "/vijfde_scene.html") {
 
 
 if(location.pathname == "/zesde_scene.html") {
+
+  geluidInstellen();
 
 
   progressBarFunctie(65);
@@ -157,14 +178,20 @@ if(eersteMetinghaar) {
 function onDragStart(event) {
   event.target.style.backgroundColor = "transparent";
   event.dataTransfer.setData("text/plain", event.target.id);
-  audio.play();
+  if(geluidAanzetten == true) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
 
 
 }
 
 function onDragEnd(event) {
-  audio.pause();
-  audio.currentTime = 0;
+  if(geluidAanzetten == true) {
+    audio.pause();
+    audio.currentTime = 0;
+}
 
 }
 
@@ -189,7 +216,11 @@ function onDrop(event) {
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
     if(imgSize == 0) {
       progressBarFunctie(85);
-      haarGekniptAudio.play();
+      if(geluidAanzetten == true) {
+        haarGekniptAudio.play();
+      } else {
+        haarGekniptAudio.pause();
+      }
       document.getElementById('js--HaarKnippen').style.display = "none";
       document.getElementsByClassName('container__hair')[0].style.display = "none";
       document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
