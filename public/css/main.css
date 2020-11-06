@@ -405,6 +405,10 @@ h1, h2, h3, h4, figcaption {
     grid-row: 11 / 12;
   }
 
+  .button:hover {
+    text-decoration: underline;
+  }
+
   .button--haar--knippen {
     grid-column: 8;
     grid-row: 5;
@@ -412,16 +416,6 @@ h1, h2, h3, h4, figcaption {
 
   .button--yellow {
     background-color: var(--button-color);
-  }
-
-  .button--yellow:after {
-    content: attr(data-value);
-    height: 95%;
-    width: 100%;
-    position: absolute;
-    background-color: var(--button-color-after);
-    top: 0;
-    left: 0;
   }
 
   .button--naar--kapper:after {
@@ -434,7 +428,7 @@ h1, h2, h3, h4, figcaption {
   }
 
   .button:active {
-    background-color: transparent;
+    background-color: var(--button-color-after);
   }
   .ahmedAfbeelding {
     display: grid;

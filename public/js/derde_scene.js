@@ -12,6 +12,8 @@ const buttonDeurOpen = document.getElementById('js--button--deur--open');
 const imageJongen = document.getElementById('js--image--jongen');
 const tekstJongen = document.getElementById('js--tekst--jongen');
 const dialoogJongen = document.getElementById('js--dialoog--jongen');
+const buttonTerug = document.getElementById('js--button--terug');
+
 console.log('ja');
 function progressBarFunctie(progressBarValue) {
   progressBar.setAttribute('value', progressBarValue);
@@ -58,6 +60,10 @@ if(buttonDeurOpen) {
     tekstJongen.style.display = "block";
     dialoogJongen.style.display = "none";
     buttonDeurOpen.style.display = "none";
+    buttonTerug.style.display = "block";
+    buttonTerug.onclick = (event) => {
+      window.location.href = "eerste_scene.html";
+    }
   }
 
 }
