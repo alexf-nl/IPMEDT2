@@ -13,35 +13,37 @@
 
 <body>
   <main>
-    <section class="main--text">
-        <h1 id="js--terminal--text">Je wilt je haar laten doneren. Je gaat daarvoor naar de kapper en je staat nu voor de deur bij de kapper.</h1>
-      </section>
-  
-      <section class="main--button">
-        <button class="deel1-click button button--medium button--yellow" id ="js--button--naarKapper">
-          Start het verhaal
-        </button>
-      </section>
-  
-      <article class="section--container--tekstKapper">
-        <h2 class="section--container--tekstKapper--header">
-          Welkom bij de Kapper!
-        </h2>
-        <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
-          <p>Dus je wilt je haar laten doneren! Laten we van start gaan! Druk op het knopje om je haar te laten meten en om erachter te komen of deze lang genoeg is om deze te kunnen doneren!</p>
-        </article>
-        <button class="button button--medium button--yellow" id="js--button--eersteMeting">Klip hierop</button>
-        <h3 class="section--container--tekstKapper-header--content">Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!</h1>
+    <article class= "dialoog--meten--vader">
+      <h2 class="section--container--tekstKapper--header" id="js--terminal--text">Na de kapper</h2>
+      <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond dialoog--tekst--jongen" id="js--dialoog--jongen">
+        <p>Nadat je bij de kapper bent geweest belt er iemand aan de deur.</p>
       </article>
-  
-      <article class="section--container--imageKapper">
-        <figure class="figure section--container--imageKapper--figure">
-          <img class="image section--container--imageKapper--image" src="afbeeldingen/kapper.png" alt="Kapster">
-          <figcaption>Kapster</figcaption>
+      <button class="button button--medium button--yellow button--deur--open" id="js--button--deur--open">Open deur</button>
+
+      <article class="dialoog--container--image--vader image--jongen">
+        <figure class="vader--verhaal--container--image--figure">
+          <figure class="ahmedAfbeelding--figure">
+            <img srcset="afbeeldingen/jongen.png 640w,
+                           afbeeldingen/jongen.png 1280w,
+                           afbeeldingen/jongen.png 1920w"
+                   sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                   src="afbeeldingen/jongen.png"
+                   alt="Vriend van Ahmad"/>
+            <figcaption>Vriend van Ahmad</figcaption>
+          </figure>
         </figure>
       </article>
 
-    <script src="js/main.js"></script>
+
+        <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond tekst--jongen" id="js--tekst--jongen">
+          <p>Wow je hebt je haar geknipt! Het ziet er goed uit. Wil je samen buiten voetballen met andere kinderen?</p>
+        </article>
+
+      <button class="button button--medium button--yellow button--none" id="js--button--antwoord--jongen">Haar meten</button>
+      <h3 class="section--container--tekstKapper-header--content font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
+    </article>
+
+    <script src="js/derde_scene.js"></script>
   </body>
 </main>
 

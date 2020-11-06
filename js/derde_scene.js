@@ -8,6 +8,11 @@ const progressBar = document.getElementById('js--progressbar');
 let progressBarValue = 0;
 const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
+const buttonDeurOpen = document.getElementById('js--button--deur--open');
+const imageJongen = document.getElementsByClassName('image--jongen');
+const buttonAntwoordJongen = document.getElementById('js--button--antwoord--jongen');
+const tekstJongen = document.getElementById('js--tekst--jongen');
+const dialoogJongen = document.getElementById('js--dialoog--jongen');
 
 function progressBarFunctie(progressBarValue) {
   progressBar.setAttribute('value', progressBarValue);
@@ -34,4 +39,12 @@ if(location.pathname == "/derde_scene.html") {
    laatsteHaarMeten.style.backgroundColor = "var(--text-background-color)";
   }
 
+} else if(location.pathname == "/zevende_scene.html") {
+  buttonDeurOpen.onclick = (event) => {
+    imageJongen.style.display = "block";
+    buttonAntwoordJongen.style.display = "block";
+    tekstJongen.style.display = "block";
+    dialoogJongen.style.display = "none";
+    buttonDeurOpen.style.display = "none";
+  }
 }
