@@ -16,6 +16,7 @@ const buttonLiniaal = document.getElementById('js--button--liniaal');
 let imgSize = 60;
 zelfstandigKapper = document.getElementById('zelfKapper');
 haarKnippenButton = document.getElementById('js--button-haarKnippen');
+const textTerminal = document.getElementById("js--terminal--text");
 
 
 
@@ -100,21 +101,22 @@ textButton = (text) => {
 textButton(tekstKnop);
 
 
+if(textTerminal) {
+  let text = textTerminal.innerHTML;
+  document.getElementById("js--terminal--text").innerHTML = "";
+  typeText = (textToBeTyped)=>{
+    if(textToBeTyped != "") {
+      document.getElementById("js--terminal--text").innerHTML += textToBeTyped[0];
+      textToBeTyped.splice(0,1);
+      setTimeout(() => {
+        typeText(textToBeTyped);
+      }, 55);
+    }
 
-let text = document.getElementById("js--terminal--text").innerHTML;
-document.getElementById("js--terminal--text").innerHTML = "";
-typeText = (textToBeTyped)=>{
-  if(textToBeTyped != "") {
-    document.getElementById("js--terminal--text").innerHTML += textToBeTyped[0];
-    textToBeTyped.splice(0,1);
-    setTimeout(() => {
-      typeText(textToBeTyped);
-    }, 55);
   }
 
-}
-
 typeText(Array.from(text));
+}
 
 //voor progressBar
 function progressBarFunctie(progressBarValue) {
@@ -127,26 +129,27 @@ function progressBarFunctie(progressBarValue) {
 }
 
 
+if(naarKapperKnop) {
+  naarKapperKnop.onclick = (event) => {
+    document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
+    document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
+    document.getElementsByClassName('main--text')[0].style.display = 'none';
+    document.getElementsByClassName('main--button')[0].style.display = 'none';
+    progressBarFunctie(12);
 
-naarKapperKnop.onclick = (event) => {
-  document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
-  document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
-  document.getElementsByClassName('main--text')[0].style.display = 'none';
-  document.getElementsByClassName('main--button')[0].style.display = 'none';
-  progressBarFunctie(12);
-
+  }
 }
 
 
 
-
+if(eersteMetinghaar) {
 eersteMetinghaar.onclick = (event) =>  {
   haarDonerenText.innerHTML = "<p><b>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!<b></p>";
   progressBarFunctie(15);
 
 }
 
-
+}
 
 function onDragStart(event) {
   event.target.style.backgroundColor = "transparent";
