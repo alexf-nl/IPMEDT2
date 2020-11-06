@@ -46,4 +46,3 @@ if(buttonDeurOpen) {
     buttonDeurOpen.style.display = "none";
   }
 }
-
