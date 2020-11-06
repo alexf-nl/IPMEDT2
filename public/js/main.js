@@ -200,6 +200,7 @@ function onDragEnd(event) {
 
 function onDragOver(event) {
   event.preventDefault();
+  event.stopPropagation();
 
 }
 
