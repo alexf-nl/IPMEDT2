@@ -15,7 +15,7 @@ if(location.pathname == "/derde_scene.html") {
     laatsteHaarMeten.innerHTML = "<p>Je haar is nu lang genoeg! Wil je nu naar de kapper gaan en je haar laten knippen om het te doneren?</p>";
     laatsteHaarMeten.style.backgroundColor = "var(--text-background-color)";
   }
-} 
+}
 
 
 
@@ -23,6 +23,3 @@ if(location.pathname == "/derde_scene.html") {
   eersteMetinghaar.onclick = (event) =>  {
     eersteMetinghaarResultaat.style.display = "block";
   }
-
-
-
