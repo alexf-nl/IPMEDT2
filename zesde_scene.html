@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Haar knippen</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <!--voor icoontje sound-->
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!--einde icoontjes import-->
+
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <article class="section--container--tekstKapper">
+      <h2 class="section--container--tekstKapper--header">
+        Welkom weer bij de Kapper!
+      </h2>
+      <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
+        <p>Welkom weer bij de kapper Ahmad! Je haar is nu lang genoeg, dus je kunt hem doneren. Laten we van start gaan!</p>
+      </article>
+      <article class="section--container--tekstKapper--geluid">
+        <i class="icon-volume-off section--container--tekstKapper-haarDoneren--geluidUit" id="js--geluid--uit">Geluid uit</i>
+        <i class="icon-volume-up section--container--tekstKapper-haarDoneren--geluidAan" id="js--geluid--aan">Geluid aan</i>
+      </article>
+    </article>
+
+
+    <article class="section--container--imageKapper">
+      <figure class="figure section--container--imageKapper--figure">
+        <img class="image section--container--imageKapper--image" src="afbeeldingen/kapper.png" alt="Kapster">
+        <figcaption>Kapster</figcaption>
+      </figure>
+    </article>
+
+    <button class="button button--medium button--yellow button--haar--knippen" id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
+
+       <article class="container container--haarKnippen" id="js--HaarKnippen">
+        <h2 class="container--haarKnippen--header" id="zelfKapper">Je bent nu zelf de kapper, Sleep nu de schaar naar het haar van Ahmad.</h2>
+          <div class="container__items">
+            <ul class="container__items__list">
+              <li class="container__items__list__item" id="js--scissors" ondragStart="onDragStart(event)" ondragend="onDragEnd(event)" draggable="true">
+                <div class="container__items__list__item__schaar__container">
+                <div class="container__items__list__item__schaar">
+                    <div class="container__items__list__item__schaar__half">
+                        <div class="container__items__list__item__schaar__half__blade"></div>
+                        <div class="container__items__list__item__schaar__half__handle"></div>
+                    </div>
+                    <div class="container__items__list__item__schaar__half">
+                        <div class="container__items__list__item__schaar__half__blade"></div>
+                        <div class="container__items__list__item__schaar__half__handle"></div>
+                    </div>
+                    <div class="container__items__list__item__schaar__joint"></div>
+                </div>
+                </div>
+              </li>
+              <li class="container__items__list__item">
+                <button class="button button--large button--yellow" id="js--button-haarKnippen" data-value="Knip het haar!">Haar knippen</button>
+              </li>
+            </ul>
+        </div>
+      </article>
+      <article class="container__hair">
+          <div class="container__hair">
+           <div class="container__character__hair">
+             <figure class="figure container__items__list__item__scissors" id="js--hair" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+             <img class=" container__items__list__item__scissors--image" srcset="afbeeldingen/Hair_Banner_620.webp 640w,
+                              afbeeldingen/Hair_Banner_1280.webp 1280w,
+                              afbeeldingen/Hair_Banner_1280.webp 1920w"
+                      sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                      src="Hair_Banner_1280.webp"
+                      alt="Haar knippen"/>
+               <figcaption class="figcaption container__items__list__item__scissors--figcaption">Ahmad's haar</figcaption>
+             </figure>
+           </div>
+          </div>
+        </article>
+
+      <article class="container container--haarGeknipt">
+        <h2 class="container--haarGeknipt--Header">
+          Haar geknipt!
+        </h2>
+        <p class="container--haarGeknipt--text">
+          Je hebt succesvol het haar van Ahmed geknipt!
+        </p>
+        </article>
+        <!--progressbar-->
+        <article class="container container--progress">
+          <progress class="container--progress--progressbar" id="js--progressbar" value="85" max="100"></progress>
+          <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
+          <span id="js--scissors1" class="container--progress-scissors">💇</span>
+        </article>
+
+    <script src="js/main.js"></script>
+  </main>
+</body>
+
+</html>

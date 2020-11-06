@@ -22,6 +22,11 @@ function progressBarFunctie(progressBarValue) {
   progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
 }
 
+
+if(location.pathname == "/derde-scene.html") {
+  progressBarFunctie(35);
+}
+
 if(eersteMetinghaar) {
   eersteMetinghaar.onclick = (event) =>  {
     eersteMetinghaar.onclick = (event) => {
@@ -30,6 +35,7 @@ if(eersteMetinghaar) {
     eersteMetinghaarResultaat.style.display = "block";
   }
 }
+
 
 if(buttonMeten) {
   buttonMeten.onclick = (event) => {
