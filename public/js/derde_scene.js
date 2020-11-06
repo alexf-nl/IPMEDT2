@@ -10,7 +10,6 @@ const progressBarIncrease = 5;
 const progressBarPercentage = document.getElementById('js--progressPercentage');
 const buttonDeurOpen = document.getElementById('js--button--deur--open');
 const imageJongen = document.getElementById('js--image--jongen');
-const buttonAntwoordJongen = document.getElementById('js--button--antwoord--jongen');
 const tekstJongen = document.getElementById('js--tekst--jongen');
 const dialoogJongen = document.getElementById('js--dialoog--jongen');
 console.log('ja');
@@ -56,7 +55,6 @@ if(buttonMeten) {
 if(buttonDeurOpen) {
   buttonDeurOpen.onclick = (event) => {
     imageJongen.style.display = "block";
-    buttonAntwoordJongen.style.display = "block";
     tekstJongen.style.display = "block";
     dialoogJongen.style.display = "none";
     buttonDeurOpen.style.display = "none";
