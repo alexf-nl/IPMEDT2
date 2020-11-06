@@ -317,6 +317,7 @@ p {
     border-radius: 50px 0px 50px 50px;
     margin: 0;
     margin-bottom: 2rem;
+    transition: 0.5s all;
   }
 
   .section--container--tekstKapper-haarDoneren p {
@@ -411,10 +412,12 @@ p {
   }
 
   .haar--meten {
+    height: 100%;
     display: grid;
     grid-row: 2 / span 8;
     grid-column: 1 / 12;
     grid-template-columns: repeat(12,minmax(0,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
     grid-column-gap: 2rem;
   }
 
@@ -422,12 +425,21 @@ p {
     width: 100%;
     height: 100%;
     grid-column: 1 / 6;
+    grid-row: span 2;
   }
 
   .liniaal {
-    height: 100%;
+    height: 0%;
     transition: 0.5s all;
-    grid-column: 6;
+    grid-column: 6 / span 2;
+    grid-row: span 2;
+  }
+
+  .lengte {
+    font-weight: 900;
+    grid-row: 2 / span 1;
+    grid-column: 10;
+    display: none;
   }
 
   .dialoog--meten--vader {
@@ -470,6 +482,10 @@ p {
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
     }
+  }
+
+  .container--progress--vijf {
+    grid-row: 12; 
   }
 
 

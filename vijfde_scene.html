@@ -15,19 +15,22 @@
   <main>
       <article class= "dialoog--meten--vader">
         <h2 class="section--container--tekstKapper--header" id="js--terminal--text">Een paar weken later..</h2>
-          <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
+          <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond" id="js--laatste--haar--meten">
             <p>Vandaag wordt je haar weer gemeten! Je denkt nu dat je haar wel lang genoeg is maar je weet het niet niet zeker.</p>
           </article>
           <section class="haar--meten">
             <img class="image--haar--meten" src="afbeeldingen/Hair_Banner.png" alt="Haar knippen">
             <img class="liniaal" id="js--liniaal" src="afbeeldingen/liniaal.png" alt="afbeelding van een liniaal">
+            <p class="lengte" id="js--lengte">32,5cm</p>
           </section>
-        <button class="button button--medium button--yellow" id="js--button--naarKapper">Haar meten</button>
-        <!-- <section class="section--liniaal">
-          
-          <button class="button button--liniaal" id="js--button--liniaal">klik hierop</button>
-        </section> -->
-        <h3 class="section--container--tekstKapper-header--content">Je haar is nu lang genoeg! Wil je nu naar de kapper gaan en je haar laten knippen om het te doneren?</h3>
+        <button class="button button--medium button--yellow" id="js--button--meten">Haar meten</button>
+      </article>
+
+      <!--progressbar-->
+      <article class="container container--progress container--progress--vijf">
+        <progress class="container--progress--progressbar" id="js--progressbar" value="" max="100"></progress>
+        <p id="js--progressPercentage">-</p>
+        <span id="js--scissors" class="container--progress-scissors">💇</span>
       </article>
 
     <script src="js/derde_scene.js"></script>
