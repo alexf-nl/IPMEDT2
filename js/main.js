@@ -36,9 +36,9 @@ else if(location.pathname == "/vierde_scene.html") {
 else if(location.pathname == "/vijfde_scene.html") {
   progressBarFunctie(70);
 }else if(location.pathname == "/zesde_scene.html") {
-  progressBarFunctie(90);
+  progressBarFunctie(80);
 }else if(location.pathname == "/zevende_scene.html") {
-  progressBarFunctie(100);
+  progressBarFunctie(95);
 }
 
 
@@ -181,14 +181,14 @@ function onDragLeave(event) {
 }
 
 function onDrop(event) {
+
   document.getElementById(event.dataTransfer.getData("text/plain")).style.display="#252a34";
   let id = event.dataTransfer.getData("text/plain");
-  console.log(id);
   if(id === "js--scissors") {
     imgSize -= 10;
     document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
-    console.log(imgSize);
     if(imgSize == 0) {
+      progressBarFunctie(85);
       haarGekniptAudio.play();
       document.getElementById('js--HaarKnippen').style.display = "none";
       document.getElementsByClassName('container__hair')[0].style.display = "none";
