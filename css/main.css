@@ -520,6 +520,7 @@ p {
 
 .ahmad--verhaal{
   display: grid;
+  grid-column-gap: 2rem;
     grid-column: 2 / 11;
     grid-row: 1 / 2;
 }
@@ -531,7 +532,7 @@ p {
 /*border-radius: 0px 0px 50px 50px;*/
   margin: 0;
   margin-bottom: 2rem;
-
+  padding: 2rem;
 }
 .ahmad--verhaal--container--image {
   grid-column: 1 / 11;
@@ -548,8 +549,10 @@ p {
 
 .vader--verhaal{
   display: grid;
-  grid-column:  2 / 11;
+  grid-column:  2 / 12;
   grid-row: 2 / 4;
+  grid-template-columns: repeat(12,minmax(0,1fr));
+  grid-column-gap: 2rem;
 }
 
 .vader--verhaal--container--header {
@@ -610,11 +613,12 @@ main > .haar--items--list {
   .vader--verhaal--container {
     border-radius: 0px 50px 50px 50px;
     grid-row: 3 / 4;
-    grid-column: 4 / 12;
+    grid-column: 7 / span 6;
+    padding: 2rem;
   }
 
   .vader--verhaal--container--image {
-    grid-column: 3 / 6;
+    grid-column: 1 / 6;
     grid-row: 3 / 7;
   }
 
