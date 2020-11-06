@@ -42,6 +42,8 @@ function geluidInstellen() {
 
 if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
   progressBarFunctie(10);
+  eersteMetinghaar.innerHTML = "Je haar nu doneren!";
+
 }
 else if(location.pathname == "/tweede_scene.html" || location.pathname == "/public/tweede_scene.html") {
   progressBarFunctie(20);
@@ -164,6 +166,7 @@ if(naarKapperKnop) {
 if(eersteMetinghaar) {
     eersteMetinghaar.onclick = (event) =>  {
     haarDonerenText.innerHTML = "<p><b>Helaas is je haarlengte nog niet lang genoeg. Op dit moment is je haarlengte 26cm en je hebt minimaal 30cm nodig om het haar te kunnen doneren. Probeer het paar manden opnieuw!<b></p>";
+    eersteMetinghaar.innerHTML = "Doorgaan";
     progressBarFunctie(15);
     eersteMetinghaar.onclick = (event) => {
       window.location.href = "tweede_scene.html";
@@ -223,6 +226,7 @@ function onDrop(event) {
       } else {
         haarGekniptAudio.pause();
       }
+      haarKnippenScene.innerHTML = "Doorgaan";
       haarKnippenScene.style.display = "block";
       haarKnippenScene.onclick = (event) => {
         window.location.href = "zevende_scene.html";

@@ -656,8 +656,8 @@ body {
 }
 
 .container--haarKnippen {
-  grid-column: 1 / 6;
-  grid-row: 1 / 2;
+  grid-column: 1 / 12;
+  grid-row: 2 / 3;
 }
 .container__hair {
   grid-column:  6 / 12;
@@ -759,9 +759,17 @@ main > .haar--items--list {
     grid-column: 1 / span 6;
   }
 
+  .container--haarKnippen--header {
+    grid-column:  1 / 4;
+  }
+
 }
 
 @media (min-width: 1280px) {
+
+  .main--zesde--scene {
+    width: 85% !important;
+  }
 
   main {
     width: 70%;

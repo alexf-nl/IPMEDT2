@@ -26,6 +26,7 @@ function progressBarFunctie(progressBarValue) {
 
 if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
   progressBarFunctie(35);
+
 } else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
 } else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
@@ -38,12 +39,14 @@ if(eersteMetinghaar) {
       window.location.href = "vierde_scene.html";
     }
     eersteMetinghaarResultaat.style.display = "block";
+    eersteMetinghaar.innerHTML = "Doorgaan";
   }
 }
 
 
 if(buttonMeten) {
   buttonMeten.onclick = (event) => {
+     buttonMeten.innerHTML = "Ik wil mijn haar knippen!";
     buttonMeten.onclick = (event) => {
       window.location.href = "zesde_scene.html";
     }
