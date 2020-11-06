@@ -407,6 +407,7 @@ h1, h2, h3, h4, figcaption {
 
   .button:hover {
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .button--haar--knippen {
