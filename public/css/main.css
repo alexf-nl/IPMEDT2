@@ -1,4 +1,4 @@
-container--progress__barcontainer--tekstcontainer--tekst*, *::before, *::after{
+*, *::before, *::after{
   margin:0;
   padding:0;
   box-sizing: border-box;
@@ -261,11 +261,11 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
-  .container--tekst-haarDoneren--geluidUit {
+  .section--container--tekstKapper-haarDoneren--geluidUit {
     display: none;
   }
 
-  .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .container--tekst-haarDoneren:hover {
+  .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .section--container--tekstKapper-haarDoneren:hover {
     background-color: var(--text-background-color);
 
 
@@ -275,7 +275,7 @@ h1, h2, h3, h4, figcaption {
     padding-bottom: 8rem;
   }
 
-  .container--tekst--geluid {
+  .section--container--tekstKapper--geluid {
     display: grid;
       grid-column: 1 / span 12;
       grid-row: 3 / span 2
@@ -299,11 +299,11 @@ h1, h2, h3, h4, figcaption {
     grid-row: 6 / 7;
 }
 
-.container--progress__text {
+.container--progress--progressbar--text {
   margin-left: calc(var(--move) - 2.3rem);
   margin-top: 2.5rem;
 }
-.container--progress__scissors {
+.container--progress-scissors {
   margin-left: calc(var(--move) - 2.3rem);
   margin-top: -8rem;
 
@@ -326,7 +326,7 @@ h1, h2, h3, h4, figcaption {
     grid-column: 5 / span 3;
   }
 
-  .container--tekst {
+  .section--container--tekstKapper {
     display: grid;
     grid-row: 1;
     grid-column: 1 / span 12;
@@ -334,12 +334,12 @@ h1, h2, h3, h4, figcaption {
     grid-column-gap: 2rem;
   }
 
-  .container--tekst__header {
+  .section--container--tekstKapper--header {
     display: grid;
     grid-column: 1 / span 12;
   }
 
-  .container--image {
+  .section--container--imageKapper {
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
     grid-row: 2 / span 4;
@@ -349,7 +349,7 @@ h1, h2, h3, h4, figcaption {
     display: grid;
   }
 
-  .container--tekst-haarDoneren {
+  .section--container--tekstKapper-haarDoneren {
     display: grid;
     grid-column: 1 / span 12;
     border: 2px solid var(--text-background-color);
@@ -359,21 +359,21 @@ h1, h2, h3, h4, figcaption {
     transition: 0.5s all;
   }
 
-  .container--tekst-haarDoneren p {
+  .section--container--tekstKapper-haarDoneren p {
     padding: 2rem;
   }
 
-  .container--image--image {
+  .section--container--imageKapper--image {
     width: 100%;
     grid-column: 2 / span 2;
   }
-  .container--tekst-header--content {
+  .section--container--tekstKapper-header--content {
     display: grid;
     background-color: var(--text-background-color);
     display: none;
   }
 
-  .container--tekst-header--content {
+  .section--container--tekstKapper-header--content {
     background-color: var(--text-background-color);
     display: none;
     grid-column: 1 / span 12;
@@ -416,7 +416,7 @@ h1, h2, h3, h4, figcaption {
     grid-row: 5;
   }
 
-  .button--pink {
+  .button--yellow {
     background-color: var(--button-color);
   }
 
@@ -707,7 +707,7 @@ main > .haar--items--list {
     grid-column: 9 / 13;
   }
 
-  .container--tekst-haarDoneren {
+  .section--container--tekstKapper-haarDoneren {
     grid-column: 1 / span 7;
   }
 
@@ -725,14 +725,14 @@ main > .haar--items--list {
     width: 100%;
   }
 
-  .container--tekst__header {
+  .section--container--tekstKapper--header {
     grid-column:  1 / span 5;
   }
-  .container--image {
+  .section--container--imageKapper {
     grid-column: 8 / span 6;
   }
 
-  .container--image--image {
+  .section--container--imageKapper--image {
     width: 100%;
   }
 
@@ -797,7 +797,7 @@ main > .haar--items--list {
   background-color: red;
   }
 
-  .container--image--image {
+  .section--container--imageKapper--image {
     grid-column: 2 / span 2;
   }
 
@@ -807,11 +807,11 @@ main > .haar--items--list {
 
   }
 
-  .container--tekst__bubbel {
+  .section--container--tekstKapper-haarDoneren {
     grid-column: 1 / 6;
   }
 
-  .container--image {
+  .section--container--imageKapper {
     grid-column: 6 / span 6;
   }
 
