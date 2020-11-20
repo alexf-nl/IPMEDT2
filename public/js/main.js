@@ -1,4 +1,5 @@
 const audio = new Audio('sound/haarknippen.mp3');
+const naarEersteScene = document.getElementById('js--button--eersteScene');
 const haarGekniptAudio = new Audio('sound/haargeknipt.mp3');
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const tweedeMetinghaar = document.getElementById("js--button--eersteMeting1");
@@ -40,8 +41,12 @@ function geluidInstellen() {
   }
 }
 
+if(naarEersteScene) {
+naarEersteScene.onclick = (event) => {
+  window.location.href = "eerste_scene.html";
 
-
+  }
+}
 
 if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
   progressBarFunctie(10);
