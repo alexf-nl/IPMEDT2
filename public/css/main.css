@@ -381,7 +381,7 @@ h1, h2, h3, h4, figcaption {
     padding: 1.5rem;
   }
 
- .section--infoAhmed {
+ .section--info {
    display: grid;
    grid-column: 7 / 12;
  }
@@ -432,12 +432,12 @@ h1, h2, h3, h4, figcaption {
   .button:active {
     background-color: var(--button-color-after);
   }
-  .ahmedAfbeelding {
+  .section--portrait {
     display: grid;
     grid-column: 1 / 7;
   }
 
-  .section--introductieAhmad {
+  .section--introductie {
     display: grid;
     grid-column: 1 / 12;
   }
@@ -721,10 +721,6 @@ main > .haar--items--list {
     grid-column: 10 / 12;
   }
 
-  .image {
-    width: 100%;
-  }
-
   .container--tekst__header {
     grid-column:  1 / span 5;
   }
@@ -813,11 +809,6 @@ main > .haar--items--list {
 
   .container--image {
     grid-column: 6 / span 6;
-  }
-
-
-  .image {
-    width: 100%;
   }
 
   .dialoog--container--image--vader {
