@@ -5,7 +5,7 @@ const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const tweedeMetinghaar = document.getElementById("js--button--eersteMeting1");
 const derdeMetinghaar = document.getElementById("js--button--eersteMeting2");
 
-const eersteMetinghaarResultaat = document.getElementsByClassName("section--container--tekstKapper-header--content")[0];
+const eersteMetinghaarResultaat = document.getElementsByClassName("vervangen--tekst")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
 const tekstKnop = document.getElementsByClassName("button--yellow")[0].innerHTML;
 const schaarEmoji = document.getElementById('js--scissors');
