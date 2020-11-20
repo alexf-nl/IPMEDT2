@@ -31,22 +31,22 @@
 
     <!-- REVIEW: net gebruik van sections. BEM lijkt goed toegepast. Helaas wel fouten in de code :( -->
 
-  <section class="ahmedAfbeelding">
-    <figure class="figure ahmedAfbeelding--figure">
-      <img class="image ahmedAfbeelding--figure ahmedAfbeelding--image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
+  <section class="section--portrait">
+    <figure class="section--portrait--figure">
+      <img class="section--portrait--figure__image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
       <figcaption>Ahmad</figcaption>
     </figure>
 
   </section>
 
-  <section class="section section--infoAhmed">
+  <section class="section--info">
     <!-- REVIEW: waarom hier een article en geen header? een class van section op een article? -->
-    <header class="section section--infoAhmed--header">
+    <header class="section--info__header">
       <h1 id="js--terminal--text">Dit ben jij Ahmad, 12 jaar oud. Je bent  als een vluchteling naar Nederland gekomen.</h1>
     </header>
   </section>
 
-  <section class="section section--introductieAhmad">
+  <section class="section--introductie">
     <!-- REVIEW: waarom hier classnames voor de andere selector? -->
     <article>
       <h3>Je wilt iets terug doen voor de Nederlanders. Daarom heb je zelf gekozen om je haar te willen doneren als dankbaarheid voor de Nederlanders</h3>
@@ -57,7 +57,7 @@
 
 
   <section class="volgende--deel">
-    <button class="button button--medium button--yellow" id="js--button--eersteScene">Start het verhaal</button>
+    <button class="button button--medium button--pink" id="js--button--eersteScene">Start het verhaal</button>
   </section>
 
     <script src="js/main.js"></script>
