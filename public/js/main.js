@@ -7,7 +7,7 @@ const derdeMetinghaar = document.getElementById("js--button--eersteMeting2");
 
 const eersteMetinghaarResultaat = document.getElementsByClassName("vervangen--tekst")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
-const tekstKnop = document.getElementsByClassName("button--yellow")[0].innerHTML;
+const tekstKnop = document.getElementsByClassName("button--pink")[0].innerHTML;
 const schaarEmoji = document.getElementById('js--scissors');
 const progressBar = document.getElementById('js--progressbar');
 let progressBarValue = 0;
@@ -134,7 +134,7 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
 
 
 textButton = (text) => {
-    document.getElementsByClassName("button--yellow")[0].setAttribute('data-value' , text);
+    document.getElementsByClassName("button--pink")[0].setAttribute('data-value' , text);
 }
 
 textButton(tekstKnop);
