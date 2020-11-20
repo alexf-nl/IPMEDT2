@@ -11,10 +11,25 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-
+  <link href="css/navbar.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
-
+<header class="navbar">
+   <h1 class="logo">Ahmad's haar</h1>
+   <input type="checkbox" id="nav-toggle" class="nav-toggle">
+   <nav>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="Spelregels.html">Spelregels</a></li>
+         <li><a href="Thema.html">Thema</a></li>
+         <li><a href="RMO.html">RMO</a></li>
+         <li><a href="code_invoeren.html">Code</a></li>
+      </ul>
+   </nav>
+   <label for="nav-toggle" class="nav-toggle-label">
+   <span></span>
+   </label>
+</header>
 <body>
   <main>
 
@@ -59,11 +74,11 @@
 
       <ul class="haar--items--list">
      <li class="haar--items--list--item">
-       <img srcset="afbeeldingen/haar_1.webp 640w,
-                      afbeeldingen/haar_1.webp 1280w,
-                      afbeeldingen/haar_1.webp 1920w"
+       <img srcset="afbeeldingen/haar_1_child.webp 640w,
+                      afbeeldingen/haar_1_child.webp 1280w,
+                      afbeeldingen/haar_1_child.webp 1920w"
               sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-              src="afbeeldingen/haar_1.webp"
+              src="afbeeldingen/haar_1_child.webp"
              alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay">
                <div class="haar--items--list--item--overlay--text">
                  <p>Ahmad vindt deze foto echt geweldig!</p>
@@ -72,11 +87,11 @@
       </li>
 
       <li class="haar--items--list--item">
-        <img srcset="afbeeldingen/haar_2.webp 640w,
-                       afbeeldingen/haar_2.webp 1280w,
-                       afbeeldingen/haar_2.webp 1920w"
+        <img srcset="afbeeldingen/haar_1_child2.webp 640w,
+                       afbeeldingen/haar_1_child2.webp 1280w,
+                       afbeeldingen/haar_1_child2.webp 1920w"
                sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-               src="afbeeldingen/haar_2.webp"
+               src="afbeeldingen/haar_1_child2.webp"
               alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay">
                 <div class="haar--items--list--item--overlay--text">
                   <p>Ahmad is verrast hoe gedonneerde haar mensen kan helpen!</p>
@@ -134,6 +149,8 @@
            <progress class="container--progress--progressbar" id="js--progressbar" value="10" max="100"></progress>
            <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
            <span id="js--scissors1" class="container--progress-scissors">💇</span>
+           <button style="width: 20%;" class="">Vorige deel</button>
+
          </article>
 
 

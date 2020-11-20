@@ -1,9 +1,8 @@
-header {
-  background: #e67829;
+.navbar {
   text-align: center;
-  position: fixed;
   z-index: 999;
   width: 100%;
+  position: absolute;
   font-family: 'Ropa Sans', sans-serif;
 }
 
@@ -116,14 +115,22 @@ nav a:hover {
 }
   /*tablets en hoger*/
 
+@media screen and(min-width: 800px) {
+  .navbar {
+    width: 100%;
+    position: fixed;
+
+  }
+}
 @media screen and (min-width: 1280px) {
   .nav-toggle-label {
     display: none;
   }
 
-  header {
+  .navbar {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    position: static;
   }
 
   .logo {

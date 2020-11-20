@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <!-- REVIEW: language staat op nl -->
 <head>
   <meta charset="utf-8">
@@ -13,16 +13,16 @@
   <link href="css/navbar.css" rel="stylesheet">
 
 </head>
-<header>
-   <h1 class="logo">Ahmad's haar</h1>
+<header class="navbar">
+   <h1 class="navbar__header">Ahmad's haar</h1>
    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav>
+   <nav class="navbar--nav">
       <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="Spelregels.html">Spelregels</a></li>
-         <li><a href="Thema.html">Thema</a></li>
-         <li><a href="RMO.html">RMO</a></li>
-         <li><a href="code_invoeren.html">Code</a></li>
+         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar--nav__item"><a href="Spelregels.html">Spelregels</a></li>
+         <li class="navbar--nav__item"><a href="Thema.html">Thema</a></li>
+         <li class="navbar--nav__item"><a href="RMO.html">RMO</a></li>
+         <li class="navbar--nav__item"><a href="code_invoeren.html">Code</a></li>
       </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
@@ -33,6 +33,7 @@
 
 <body>
   <main>
+
     <!-- REVIEW: net gebruik van sections. BEM lijkt goed toegepast. Helaas wel fouten in de code :( -->
 
   <section class="ahmedAfbeelding">
