@@ -704,12 +704,11 @@ main > .haar--items--list {
   }
 
   .button {
-    grid-column: 8 / 12;
+    grid-column: 9 / 13;
   }
 
   .section--container--tekstKapper-haarDoneren {
-    grid-row: 6 / span 1;
-    grid-column: 1 / span 10;
+    grid-column: 1 / span 7;
   }
 
   .tekst--bubbel--rechts {
@@ -727,16 +726,14 @@ main > .haar--items--list {
   }
 
   .section--container--tekstKapper--header {
-    grid-row: 1 / span 1;
-    grid-column:  1 / span 3;
+    grid-column:  1 / span 5;
   }
   .section--container--imageKapper {
-    grid-row: 2 / span 4;
-    grid-column: 11 / span 3;
+    grid-column: 8 / span 6;
   }
 
   .section--container--imageKapper--image {
-    width: 75% !important;
+    width: 100%;
   }
 
   .haar--meten {
@@ -806,14 +803,12 @@ main > .haar--items--list {
 
   .button {
     width: 18.5rem;
-    grid-row: 8 / 12;
-    grid-column: 8 / 11;
+    grid-column: 7 / 10;
 
   }
 
   .section--container--tekstKapper-haarDoneren {
-    grid-row: 5 / span 2;
-    grid-column: 4 / 6;
+    grid-column: 1 / 6;
   }
 
   .section--container--imageKapper {
