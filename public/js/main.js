@@ -41,12 +41,12 @@ function geluidInstellen() {
   }
 }
 
-
+if(naarEersteScene) {
 naarEersteScene.onclick = (event) => {
   window.location.href = "eerste_scene.html";
 
+  }
 }
-
 
 if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
   progressBarFunctie(10);
