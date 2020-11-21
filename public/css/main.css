@@ -367,6 +367,11 @@ h1, h2, h3, h4, figcaption {
     width: 100%;
     grid-column: 2 / span 2;
   }
+
+.image--groter {
+  grid-column: 1 / span 3;
+}
+
   .vervangen--tekst {
     display: grid;
     background-color: var(--text-background-color);
@@ -795,6 +800,10 @@ main > .haar--items--list {
 
   .container--image__figure {
     grid-column: 2 / span 2;
+  }
+
+  .image--groter {
+    grid-column: 1 / span 3;
   }
 
   .button {
