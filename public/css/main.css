@@ -462,27 +462,27 @@ h1, h2, h3, h4, figcaption {
     grid-row: 3 / span 8;
     grid-column: 1 / 12;
     grid-template-columns: repeat(12,minmax(0,1fr));
-    grid-template-rows: repeat(2,minmax(0,1fr));
     grid-column-gap: 2rem;
   }
 
-  .image--haar--meten {
+  .haar--meten__figure {
+    grid-column: span 4;
+  }
+
+  .haar--meten__haar {
     width: 100%;
     height: 100%;
     grid-column: 1 / 6;
-    grid-row: span 2;
   }
 
-  .liniaal {
+  .haar--meten__liniaal {
     height: 0%;
     transition: 0.5s all;
     grid-column: 6 / span 2;
-    grid-row: span 2;
   }
 
-  .lengte {
+  .haar--meten__lengte {
     font-weight: 900;
-    grid-row: 2 / span 1;
     grid-column: 10;
     display: none;
   }
