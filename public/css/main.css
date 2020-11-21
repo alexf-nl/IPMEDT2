@@ -265,7 +265,7 @@ h1, h2, h3, h4, figcaption {
     display: none;
   }
 
-  .ahmad--verhaal--container:hover, .vader--verhaal--container:hover, .container--tekst__bubbel:hover {
+  .ahmadVerhaal--container:hover, .vaderVerhaal--container:hover, .container--tekst__bubbel:hover {
     background-color: var(--text-background-color);
 
 
@@ -455,8 +455,6 @@ h1, h2, h3, h4, figcaption {
     display: grid;
     grid-column: 2 / 12;
   }
-  .container__hair:hover {
-  }
 
   .haar--meten {
     height: 100%;
@@ -560,14 +558,14 @@ h1, h2, h3, h4, figcaption {
 }
 
 
-.ahmad--verhaal{
+.ahmadVerhaal{
   display: grid;
   grid-column-gap: 2rem;
     grid-column: 2 / 11;
     grid-row: 1 / 2;
 }
 
-.ahmad--verhaal--container {
+.ahmadVerhaal--container {
   grid-column: 1 / span 10;
   grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
@@ -575,20 +573,20 @@ h1, h2, h3, h4, figcaption {
   margin-bottom: 2rem;
   padding: 2rem;
 }
-.ahmad--verhaal--container--image {
+.ahmadVerhaal--containerImg {
   grid-column: 1 / 11;
   grid-row: 3 / 3;
 }
 
-.ahmad--verhaal--container--header {
+.ahmadVerhaal--contaner__header {
   text-align: center;
 }
 
-.ahmad--verhaal--container--text {
+.ahmadVerhaal--container__text {
   margin-top: 3rem;
 }
 
-.vader--verhaal{
+.vaderVerhaal{
   display: grid;
   grid-column:  2 / 12;
   grid-row: 2 / 4;
@@ -600,7 +598,7 @@ h1, h2, h3, h4, figcaption {
   text-align: center;
 }
 
-.vader--verhaal--container {
+.vaderVerhaal--container {
   border: 2px solid var(--text-background-color);
   grid-column: 1 / 12;
   grid-row: 3 / 5;
@@ -609,17 +607,17 @@ h1, h2, h3, h4, figcaption {
 
 
 }
-.vader--verhaal--container--image {
+.vaderVerhaal--containerImg {
   grid-column: 1 / 12;
   grid-row: 5 / 7;
 }
 
 
-.vader--verhaal--container--text {
+.vaderVerhaal--container__text {
   margin-top: 3rem;
 }
 
-.ahmad--extra--verhaal{
+.ahmadExtra{
   display: grid;
   grid-column:  1 / 12;
   grid-row: 4 / 6;
@@ -686,24 +684,24 @@ main > .haar--items--list {
 .volgende--deel {
   grid-column:  9 / 11;
 }
-  .vader--verhaal--container {
+  .vaderVerhaal--container {
     border-radius: 0px 50px 50px 50px;
     grid-row: 3 / 4;
     grid-column: 7 / span 6;
     padding: 2rem;
   }
 
-  .vader--verhaal--container--image {
+  .vaderVerhaal--containerImg {
     grid-column: 1 / 6;
     grid-row: 3 / 7;
   }
 
-  .ahmad--verhaal--container {
+  .ahmadVerhaal--container {
     grid-column: 1 / span 8;
     grid-row: 1 / 2;
     border-radius: 50px 0px 50px 50px;
   }
-  .ahmad--verhaal--container--image {
+  .ahmadVerhaal--containerImg {
     grid-column: 9 / span 4;
     grid-row: 1 / 4;
   }
