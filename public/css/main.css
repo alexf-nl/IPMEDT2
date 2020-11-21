@@ -261,6 +261,9 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
+  .container--progress--progressbar {
+    width: 100%;
+  }
   .section--container--tekstKapper-haarDoneren--geluidUit {
     display: none;
   }
@@ -305,7 +308,7 @@ h1, h2, h3, h4, figcaption {
 }
 .container--progress-scissors {
   margin-left: calc(var(--move) - 2.3rem);
-  margin-top: -8rem;
+  margin-top: -6rem;
 
 }
 
@@ -782,7 +785,7 @@ main > .haar--items--list {
   }
 
   main > .haar--items--list {
-    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-columns: repeat(3,minmax(0,1fr));
       grid-template-rows: repeat(4, minmax(0,1fr));
       grid-column: 2 / 12;
   }
