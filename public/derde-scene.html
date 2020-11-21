@@ -34,17 +34,16 @@
   <main>
     <!-- REVIEW: hier geen fouten gelukkig! -->
     <!-- REVIEW: is er al een dialoog class voor het article? -->
-      <article class= "dialoog--meten--vader">
-        <h2 class="section--container--tekstKapper--header" id="js--terminal--text">Een paar weken later..</h2>
+      <article class= "container--tekst">
+        <h2 class="container--tekst__header" id="js--terminal--text">Een paar weken later..</h2>
         <!-- REVIEW: hier veel classes! -->
-        <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond tekst--bubbel--rechts" id="js--haarDonerenText">
+        <article class="container--tekst__bubbel tekstbubbel--rond" id="js--haarDonerenText">
           <p>Vandaag gaat je vader je haar weer meten. Nu hopen dat je haar nu wel lang genoeg is!</p>
         </article>
         <!-- REVIEW: figures in figures? Dialoog is netjes een article -->
-        <article class="dialoog--container--image--vader">
-          <figure class="vader--verhaal--container--image--figure">
-            <figure class="ahmedAfbeelding--figure">
-              <img class="image--vader" srcset="afbeeldingen/Vader_620.webp 640w,
+        <article class="container--image">
+          <figure class="container--image__figure image--groter">
+              <img class="image" srcset="afbeeldingen/Vader_620.webp 640w,
                              afbeeldingen/Vader_620.webp 1280w,
                              afbeeldingen/Vader_1280.webp 1920w"
                      sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
@@ -52,19 +51,18 @@
                      alt="Vader van Ahmad"/>
               <figcaption>Vader van Ahmad</figcaption>
             </figure>
-          </figure>
         </article>
 
-        <button class="button button--medium button--yellow button--rechts" id="js--button--eersteMeting" data-value="Haar meten">Haar meten</button>
-        <h3 class="section--container--tekstKapper-header--content font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
+        <button class="button button--medium button--pink" id="js--button--eersteMeting" data-value="Haar meten">Haar meten</button>
+        <h3 class="vervangen--tekst font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
       </article>
 
       <!--progressbar-->
       <!-- REVIEW: net gebruik van article -->
-      <article class="container container--progress">
-        <progress class="container--progress--progressbar" id="js--progressbar" value="85" max="100"></progress>
-        <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
-        <span id="js--scissors1" class="container--progress-scissors">💇</span>
+      <article class="container--progress">
+        <progress class="container--progress__bar" id="js--progressbar" value="85" max="100"></progress>
+        <p class="container--progress__text" id="js--progressPercentage">-</p>
+        <span id="js--scissors1" class="container--progress__scissors">💇</span>
         <button style="width: 20%;" class="">Vorige deel</button>
 
       </article>
