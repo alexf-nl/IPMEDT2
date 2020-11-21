@@ -32,12 +32,44 @@
 
 <body>
   <main>
-    <article class= "dialoog--meten--vader">
-      <h2 class="section--container--tekstKapper--header" id="js--terminal--text">Na de kapper</h2>
-      <article class="section--container--tekstKapper-haarDoneren tekstbubbel--rond dialoog--tekst--jongen" id="js--dialoog--jongen">
+    <article class="container--tekst">
+
+      <h2 class="container--tekst__header">Na de kapper</h2>
+
+      <article class="container--tekst__bubbel" id="js--haarDonerenText">
+
         <p>Nadat je bij de kapper bent geweest belt er iemand aan de deur.</p>
       </article>
       <button class="button button--medium button--yellow button--deur--open" id="js--button--deur--open">Open deur</button>
+  </article>
+
+
+
+
+  <section class="section vaderVerhaal">
+
+    <article class="vaderVerhaal--container" id="js--tekst--jongen">
+      <p class="vaderVerhaal--container__text">Wow je hebt je haar geknipt! Het ziet er goed uit. Wil je samen buiten voetballen met andere kinderen?</p>
+    </article>
+
+    <article class="vaderVerhaal--containerImg">
+      <figure class="vaderVerhaal--containerImg__figure">
+        <img class="image--jongen" srcset="afbeeldingen/jongen.webp 640w,
+                       afbeeldingen/jongen.webp 1280w,
+                       afbeeldingen/jongen.webp 1920w"
+               sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+               src="afbeeldingen/jongen.webp"
+               alt="Vriend van Ahmad"/>
+        <figcaption>Vriend van Ahmad</figcaption>
+      </figure>
+    </article>
+  </section>
+
+  <section class="volgende--deel">
+    <button class="button button--medium button--yellow button--none button--rechts" id="js--button--terug">Ga terug naar het begin</button>
+  </section>
+
+<!--
 
       <article class="dialoog--container--image--vader jongen--image" id="js--image--jongen">
         <figure class="vader--verhaal--container--image--figure">
@@ -59,14 +91,13 @@
         </article>
 
       <button class="button button--medium button--yellow button--none button--rechts" id="js--button--terug">Ga terug naar het begin</button>
-    </article>
+    </article>-->
 
     <!--progressbar-->
     <article class="container container--progress">
       <progress class="container--progress--progressbar" id="js--progressbar" value="85" max="100"></progress>
       <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
       <span id="js--scissors1" class="container--progress-scissors">💇</span>
-      <button style="width: 20%;" class="">Vorige deel</button>
 
     </article>
 
