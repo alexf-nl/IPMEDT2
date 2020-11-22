@@ -658,6 +658,10 @@ h1, h2, h3, h4, figcaption {
   grid-row: 12;
 }
 
+.image--emma {
+  width: 100%;
+}
+
 }
 
 @media (min-width: 800px) {
