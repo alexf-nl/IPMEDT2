@@ -264,7 +264,7 @@ h1, h2, h3, h4, figcaption {
   .container--progress--progressbar {
     width: 100%;
   }
-  .section--container--tekstKapper-haarDoneren--geluidUit {
+  .container--geluid__uit {
     display: none;
   }
 
@@ -278,7 +278,7 @@ h1, h2, h3, h4, figcaption {
     padding-bottom: 8rem;
   }
 
-  .section--container--tekstKapper--geluid {
+  .container--geluid {
     display: grid;
       grid-column: 1 / span 12;
       grid-row: 3 / span 2
@@ -763,7 +763,7 @@ main > .haar--items--list {
     grid-column: 1 / span 6;
   }
 
-  .container--haarKnippen--header {
+  .container--haarKnippen__header {
     grid-column:  1 / 4;
   }
 
