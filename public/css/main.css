@@ -300,6 +300,7 @@ h1, h2, h3, h4, figcaption {
   display: grid;
     grid-column: 2 / 11;
     grid-row: 6 / 7;
+    grid-row-gap: 2rem;
 }
 
 .container--progress__text {
@@ -657,10 +658,6 @@ h1, h2, h3, h4, figcaption {
   grid-row: 12;
 }
 
-.button--links {
-  grid-column: 3;
-}
-
 }
 
 @media (min-width: 800px) {
@@ -775,7 +772,7 @@ main > .haar--items--list {
   }
 
   .button--links {
-    grid-column: 3;
+    grid-column: 3 / 4;
   }
 
 }
