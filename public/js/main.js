@@ -71,6 +71,7 @@ else if(location.pathname == "/tweede_scene.html" || location.pathname == "/publ
   }
 
 } else if(location.pathname == "/tweede_scene_keuze.html" || location.pathname == "/public/tweede_scene_keuze.html") {
+  progressBarFunctie(30);
   tweedeMetinghaar.onclick = (event) => {
     window.location.href = "derde-scene.html";
   }

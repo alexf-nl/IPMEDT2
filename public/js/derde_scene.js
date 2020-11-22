@@ -20,7 +20,7 @@ function progressBarFunctie(progressBarValue) {
   document.getElementById('js--scissors1').style.setProperty('--move', progressBarValue + '%');
   console.log(progressBarValue);
   progressBarPercentage.innerHTML = progressBarValue + "%";
-  progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
+  progressBarPercentage.style.setProperty('margin-left', progressBarValue - 3 + "%");
 }
 
 
