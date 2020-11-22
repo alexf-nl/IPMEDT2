@@ -25,6 +25,7 @@ const geluidUit = document.getElementById('js--geluid--uit');
 const geluidAan = document.getElementById('js--geluid--aan');
 let geluidAanzetten = true;
 const gesprekEmma = document.getElementById('js--button--gesprekEmma');
+const gesprekMetEmma = document.getElementById('js--button--gesprekMetEmma');
 
 
 function geluidInstellen() {
@@ -96,7 +97,7 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
 
   geluidInstellen();
 
-
+  gesprekMetEmma.style.display = "none";
   document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
   document.getElementsByClassName('container--image')[0].style.display = 'grid';
   document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
@@ -118,9 +119,14 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
         haarKnippenButton.onclick = (event) => {
           haarKnippenScene.innerHTML = "Doorgaan";
           haarKnippenScene.style.display = "block";
+          gesprekMetEmma.style.display = "block";
           haarKnippenScene.onclick = (event) => {
             window.location.href = "zevende_scene.html";
           }
+          gesprekMetEmma.onclick = (event) => {
+            window.location.href = "zesde_scene_keuze.html";
+          }
+
           if(geluidAanzetten == true) {
             haarGekniptAudio.play();
         }
@@ -129,7 +135,7 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
           document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
           document.getElementsByClassName('container--tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
           haarDonerenText.style.display = "grid";
-          haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
+          haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor het meisje Emma. Emma vindt het haar heel mooi staan en zou graag in gesprek met Ahmad willen gaan.</p>";
           document.getElementsByClassName('container--image')[0].style.display = 'grid';
           geluidUit.style.display = 'none';
           geluidAan.style.display = 'none';
@@ -262,6 +268,11 @@ function onDrop(event) {
       haarKnippenScene.style.display = "block";
       haarKnippenScene.onclick = (event) => {
         window.location.href = "zevende_scene.html";
+      }
+      gesprekMetEmma.style.display = "block";
+
+      gesprekMetEmma.onclick = (event) => {
+        window.location.href = "zesde_scene_keuze.html";
       }
       document.getElementsByClassName('container__hair')[0].style.display = "none";
       document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
