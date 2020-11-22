@@ -469,19 +469,19 @@ h1, h2, h3, h4, figcaption {
   }
 
   .haar--meten__figure {
-    grid-column: span 4;
+    display: grid;
+    grid-column: span 6;
   }
 
   .haar--meten__haar {
     width: 100%;
     height: 100%;
-    grid-column: 1 / 6;
   }
 
   .haar--meten__liniaal {
     height: 0%;
     transition: 0.5s all;
-    grid-column: 6 / span 2;
+    grid-column: span 2;
   }
 
   .haar--meten__lengte {
@@ -657,6 +657,10 @@ h1, h2, h3, h4, figcaption {
   grid-row: 12;
 }
 
+.button--links {
+  grid-column: 3;
+}
+
 }
 
 @media (min-width: 800px) {
@@ -685,7 +689,7 @@ main > .haar--items--list {
 }
 
 .volgende--deel {
-  grid-column:  9 / 11;
+  grid-column:  1 / 13;
 }
   .vaderVerhaal--container {
     border-radius: 0px 50px 50px 50px;
@@ -770,6 +774,10 @@ main > .haar--items--list {
     grid-row: 12 / span 2;
   }
 
+  .button--links {
+    grid-column: 3;
+  }
+
 }
 
 @media (min-width: 1280px) {
@@ -837,6 +845,10 @@ main > .haar--items--list {
 
   .button--rechts {
     grid-row: 9 / 10;
+  }
+
+  .button--links {
+    grid-column: 3 / 4;
   }
 
   .dialoog--tekst--jongen {
