@@ -26,6 +26,7 @@ const geluidAan = document.getElementById('js--geluid--aan');
 let geluidAanzetten = true;
 const gesprekEmma = document.getElementById('js--button--gesprekEmma');
 const gesprekMetEmma = document.getElementById('js--button--gesprekMetEmma');
+const laatsteDeel = document.getElementById('js--laatsteDeel');
 
 
 function geluidInstellen() {
@@ -85,6 +86,11 @@ else if(location.pathname == "/vierde_scene.html" || location.pathname == "/publ
 }
 else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
   progressBarFunctie(70);
+} else if(location.pathname == "/zesde_scene_keuze.html" || location.pathname == "/public/zesde_scene_keuze.html") {
+  progressBarFunctie(92);
+    laatsteDeel.onclick = (event) => {
+      window.location.href = "zevende_scene.html";
+    }
 } else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
   progressBarFunctie(95);
 }
@@ -185,7 +191,7 @@ function progressBarFunctie(progressBarValue) {
   console.log(schaarEmoji);
   console.log(progressBarValue);
   progressBarPercentage.innerHTML = progressBarValue + "%";
-  progressBarPercentage.style.setProperty('--move', progressBarValue + "%");
+  progressBarPercentage.style.setProperty('margin-left', progressBarValue - 3 + "%");
 }
 
 
