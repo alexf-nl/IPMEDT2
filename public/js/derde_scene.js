@@ -44,6 +44,8 @@ if(eersteMetinghaar) {
 }
 
 
+
+
 if(buttonMeten) {
   buttonMeten.onclick = (event) => {
      buttonMeten.innerHTML = "Ik wil mijn haar knippen!";
