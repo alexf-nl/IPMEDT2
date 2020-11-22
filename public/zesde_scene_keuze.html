@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zesde Scene</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+
+</head>
+
+<header class="navbar">
+   <input type="checkbox" id="nav-toggle" class="nav-toggle">
+   <nav class="navbar--nav">
+      <ul>
+         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar--nav__item"><a href="zesde_scene.html">Vorige deel</a></li>
+         <li class="navbar--nav__item"><a href="derde-scene.html">Volgende deel</a></li>
+      </ul>
+   </nav>
+   <label for="nav-toggle" class="nav-toggle-label">
+   <span></span>
+   </label>
+</header>
+
+<body>
+  <main>
+
+    <section class="section ahmadVerhaal">
+      <article class="ahmadVerhaal--container">
+        <h2 class="ahmadVerhaal--contaner__header">Gesprek met Emma</h2>
+        <p class="ahmadVerhaal--container__text">Emma, het gedoneerde haar staat je leuk. Ik hoop dat je ermee blij bent!</p>
+      </article>
+
+      <article class="ahmadVerhaal--containerImg">
+        <figure class="ahmadVerhaal--containerImg__figure">
+          <img class="image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
+            <figcaption>Ahmad</figcaption>
+          </figure>
+      </article>
+
+
+    </section>
+
+
+    <section class="section vaderVerhaal">
+
+      <article class="vaderVerhaal--container">
+        <h2 class="vaderVerhaal--container__header">Emma is blij</h2>
+        <p class="vaderVerhaal--container__text">Bedankt Ahmad, ik ben er zeer blij mee, hier ben ik je dankbaar voor.</p>
+        <p class="vaderVerhaal--container__text">Zou je wel eens buiten willen spelen? Ik en mijn vriend kunnen goed voetballen. Wil je morgen samen met mijn vrienden voetballen?</p>
+      </article>
+
+      <article class="vaderVerhaal--containerImg">
+        <figure class="vaderVerhaal--containerImg__figure">
+            <img srcset="afbeeldingen/Vader_620.webp 640w,
+                           afbeeldingen/Vader_620.webp 1280w,
+                           afbeeldingen/Vader_620.webp 1920w"
+                   sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                   src="afbeeldingen/Vader_620.webp"
+                   alt="Vader van Ahmad"/>
+            <figcaption>Vader van Ahmad</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="section ahmadExtra">
+      <article class="ahmadExtra--container">
+        <h2 class="ahmadExtra--container__header">Ahmad is blij</h2>
+        <p class="ahmadExtra--container__text">Ahmad is blij dat hij vrienden is geworden met Emma. Hij hoopt nog meer vrienden te maken in de toekomst. Het geknipte haar staat Ahmad ook mooi zei Emma.</p>
+      </article>
+    </section>
+
+
+    <section class="volgende--deel">
+      <button class="button button--medium button--pink" id="js--laatsteDeel">Doorgaan</button>
+    </section>
+
+      <article class="container container--progress">
+        <progress class="container--progress--progressbar" id="js--progressbar" value="90" max="100"></progress>
+        <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
+        <span id="js--scissors1" class="container--progress-scissors">💇</span>
+      </article>
+
+
+    <script src="js/main.js"></script>
+  </main>
+
+  </body>
+
+</html>
