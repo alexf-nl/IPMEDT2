@@ -35,14 +35,22 @@
 
 
 <body>
-  <main class="main--zesde--scene">
-    <article class="section--container--tekstKapper">
-      <h2 class="section--container--tekstKapper--header">
+  <main>
+    <article class="container--tekst">
+      <h2 class="container--tekst__header">
         Welkom weer bij de Kapper!
       </h2>
-      <article class="section--container--tekstKapper-haarDoneren" id="js--haarDonerenText">
+      <article class="container--tekst__bubbel" id="js--haarDonerenText">
         <p>Welkom weer bij de kapper Ahmad! Je haar is nu lang genoeg, dus je kunt hem doneren. Laten we van start gaan!</p>
       </article>
+
+      <article class="container--image">
+        <figure class="container--image__figure">
+          <img class="image" src="afbeeldingen/kapper.webp" alt="Kapster">
+          <figcaption>Kapster</figcaption>
+        </figure>
+      </article>
+
       <article class="section--container--tekstKapper--geluid">
         <i class="icon-volume-off section--container--tekstKapper-haarDoneren--geluidUit" id="js--geluid--uit">Geluid uit</i>
         <i class="icon-volume-up section--container--tekstKapper-haarDoneren--geluidAan" id="js--geluid--aan">Geluid aan</i>
@@ -50,14 +58,9 @@
     </article>
 
 
-    <article class="section--container--imageKapper">
-      <figure class="figure section--container--imageKapper--figure">
-        <img class="image section--container--imageKapper--image" src="afbeeldingen/kapper.webp" alt="Kapster">
-        <figcaption>Kapster</figcaption>
-      </figure>
-    </article>
 
-    <button class="button button--medium button--yellow button--haar--knippen" id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
+
+    <button class="button button--medium button--pink button--haar--knippen" id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
 
        <article class="container container--haarKnippen" id="js--HaarKnippen">
         <h2 class="container--haarKnippen--header" id="zelfKapper">Je bent nu zelf de kapper, Sleep nu de schaar naar het haar.</h2>
@@ -79,7 +82,7 @@
                 </div>
               </li>
               <li class="container__items__list__item">
-                <button class="button button--large button--yellow" id="js--button-haarKnippen" data-value="Knip het haar!">Haar knippen</button>
+                <button class="button button--large button--pink" id="js--button-haarKnippen" data-value="Knip het haar!">Haar knippen</button>
               </li>
             </ul>
         </div>
