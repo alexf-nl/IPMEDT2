@@ -24,6 +24,8 @@ const textTerminal = document.getElementById("js--terminal--text");
 const geluidUit = document.getElementById('js--geluid--uit');
 const geluidAan = document.getElementById('js--geluid--aan');
 let geluidAanzetten = true;
+const gesprekEmma = document.getElementById('js--button--gesprekEmma');
+
 
 function geluidInstellen() {
   geluidAan.onclick = (event) => {
@@ -48,6 +50,8 @@ naarEersteScene.onclick = (event) => {
   }
 }
 
+
+
 if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
   progressBarFunctie(10);
   eersteMetinghaar.innerHTML = "Je haar nu doneren!";
@@ -58,6 +62,17 @@ else if(location.pathname == "/tweede_scene.html" || location.pathname == "/publ
   tweedeMetinghaar.onclick = (event) => {
     window.location.href = "derde-scene.html";
   }
+  if(gesprekEmma) {
+    gesprekEmma.onclick = (event) => {
+      window.location.href = "tweede_scene_keuze.html";
+    }
+  }
+
+} else if(location.pathname == "/tweede_scene_keuze.html" || location.pathname == "/public/tweede_scene_keuze.html") {
+  tweedeMetinghaar.onclick = (event) => {
+    window.location.href = "derde-scene.html";
+  }
+
 } else if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
   progressBarFunctie(35);
 }
@@ -111,11 +126,11 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
         }
           document.getElementById('js--HaarKnippen').style.display = "none";
           document.getElementsByClassName('container__hair')[0].style.display = "none";
-          document.getElementsByClassName('section--container--tekstKapper')[0].style.display = 'grid';
-          document.getElementsByClassName('section--container--tekstKapper--header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
+          document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
+          document.getElementsByClassName('container--tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
           haarDonerenText.style.display = "grid";
           haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan de persoon die het hard nodig heeft!</p>";
-          document.getElementsByClassName('section--container--imageKapper')[0].style.display = 'grid';
+          document.getElementsByClassName('container--image')[0].style.display = 'grid';
           geluidUit.style.display = 'none';
           geluidAan.style.display = 'none';
         }
