@@ -465,7 +465,7 @@ h1, h2, h3, h4, figcaption {
     display: grid;
     grid-row: 3 / span 8;
     grid-column: 1 / 12;
-    grid-template-columns: repeat(12,minmax(0,1fr));
+    grid-template-columns: repeat(13,minmax(0,1fr));
     grid-column-gap: 2rem;
   }
 
@@ -487,7 +487,7 @@ h1, h2, h3, h4, figcaption {
 
   .haar--meten__lengte {
     font-weight: 900;
-    grid-column: 10;
+    grid-column: 13;
     display: none;
   }
 
