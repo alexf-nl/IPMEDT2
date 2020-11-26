@@ -17,12 +17,12 @@
 
 <header class="navbar">
    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav class="navbar--nav">
+   <nav class="navbar__nav">
      <!-- REVIEW: navbar__nav -->
       <ul>
         <!-- REVIEW: navbar__nav__item navbar__nav__item--big -->
-         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
-         <li class="navbar--nav__item"><a href="eerste_scene.html">Vorige deel</a></li>
+         <li class="navbar__nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar__nav__item"><a href="eerste_scene.html">Vorige deel</a></li>
          <li class="navbar--nav__item"><a href="derde-scene.html">Volgende deel</a></li>
       </ul>
    </nav>
@@ -36,15 +36,15 @@
 
     <section class="section ahmadVerhaal">
       <!-- REVIEW: adhmadverhaal__container -->
-      <article class="ahmadVerhaal--container">
+      <article class="ahmadVerhaal__container">
         <!-- REVIEW: ahmadVerhaal__container__header -->
-        <h2 class="ahmadVerhaal--contaner__header">Ahmad is teleurgesteld</h2>
+        <h2 class="ahmadVerhaal__container__header">Ahmad is teleurgesteld</h2>
         <!-- REVIEW: ahmadVerhaal__container__text -->
-        <p class="ahmadVerhaal--container__text">Papa, helaas is mijn haar nog niet lang genoeg. Ik moet nog 4 maanden wachten...</p>
+        <p class="ahmadVerhaal__container__text">Papa, helaas is mijn haar nog niet lang genoeg. Ik moet nog 4 maanden wachten...</p>
       </article>
 
-      <article class="ahmadVerhaal--containerImg">
-        <figure class="ahmadVerhaal--containerImg__figure">
+      <article class="article ahmadVerhaal__containerImg">
+        <figure class="ahmadVerhaal__containerImg__figure">
           <img class="image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
             <figcaption>Ahmad</figcaption>
           </figure>
@@ -56,14 +56,14 @@
 
     <section class="section vaderVerhaal">
 
-      <article class="vaderVerhaal--container">
-        <h2 class="vaderVerhaal--container__header">Vader probeert hem op te vrolijken</h2>
-        <p class="vaderVerhaal--container__text">Ahmad, het maakt niet uit. Ik weet dat je anderhalve maand wacht. Maar als je nog wat langer wacht, wordt het een leuk een goed en leuk stuk.</p>
-        <p class="vaderVerhaal--container__text">En dan ben je er ook zelf tevreden mee. En het zieke kindje zal ook blij zijn.</p>
+      <article class="vaderVerhaal__container">
+        <h2 class="vaderVerhaal__container__header">Vader probeert hem op te vrolijken</h2>
+        <p class="vaderVerhaal__container__text">Ahmad, het maakt niet uit. Ik weet dat je anderhalve maand wacht. Maar als je nog wat langer wacht, wordt het een leuk een goed en leuk stuk.</p>
+        <p class="vaderVerhaal__container__text">En dan ben je er ook zelf tevreden mee. En het zieke kindje zal ook blij zijn.</p>
       </article>
 
-      <article class="vaderVerhaal--containerImg">
-        <figure class="vaderVerhaal--containerImg__figure">
+      <article class="vaderVerhaal__containerImg">
+        <figure class="vaderVerhaal__containerImg__figure">
             <img srcset="afbeeldingen/Vader_620.webp 640w,
                            afbeeldingen/Vader_620.webp 1280w,
                            afbeeldingen/Vader_620.webp 1920w"
@@ -77,23 +77,23 @@
 
     <section class="section ahmadExtra">
       <!-- REVIEW: jullie gebruiken veel "--" voor benamingen waardoor de code ontzettend lang wordt! -->
-      <article class="ahmadExtra--container">
-        <h2 class="ahmadExtra--container__header">De kapster heeft een kindje gevonden waar Ahmad zijn haar aan kan doneren</h2>
-        <p class="ahmadExtra--container__text">Door Kapster werd Emma benaderd om straks het haar aan haar te doneren. De kapster wilt eerst graag dat Ahmad in gesprek gaat met haar. <b>Dit is een keuze die Ahmad zelf moet maken.</b></p>
-        <p class="ahmadExtra--container__text" >De kapster zei ook tegen Ahmad dat hij de eerste jongen is die zijn haar doneert bij hun kapperszaak.</p>
+      <article class="ahmadExtra__container">
+        <h2 class="ahmadExtra__container__header">De kapster heeft een kindje gevonden waar Ahmad zijn haar aan kan doneren</h2>
+        <p class="ahmadExtra__container__text">Door Kapster werd Emma benaderd om straks het haar aan haar te doneren. De kapster wilt eerst graag dat Ahmad in gesprek gaat met haar. <b>Dit is een keuze die Ahmad zelf moet maken.</b></p>
+        <p class="ahmadExtra__container__text" >De kapster zei ook tegen Ahmad dat hij de eerste jongen is die zijn haar doneert bij hun kapperszaak.</p>
       </article>
     </section>
 
 
-    <section class="volgende--deel">
+    <section class="section volgende--deel">
       <button class="button button--medium button--white button--links" id="js--button--eersteMeting1">Niet praten met Emma</button>
       <button class="button button--medium button--pink" id="js--button--gesprekEmma">Wel praten met Emma</button>
     </section>
 
       <article class="container container--progress">
-        <progress class="container--progress--progressbar" id="js--progressbar" value="25" max="100"></progress>
-        <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
-        <span id="js--scissors1" class="container--progress-scissors">💇</span>
+        <progress class="container__progress__progressbar" id="js--progressbar" value="25" max="100"></progress>
+        <p class="container__progress__progressbar--text" id="js--progressPercentage">-</p>
+        <span id="js--scissors1" class="container__progress__scissors">💇</span>
       </article>
 
 
