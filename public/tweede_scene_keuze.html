@@ -16,12 +16,14 @@
 </head>
 
 <header class="navbar">
-   <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav class="navbar--nav">
+   <input type="checkbox" id="nav-toggle" class="navbar__toggle">
+   <nav class="navbar__nav">
+     <!-- REVIEW: navbar__nav -->
       <ul>
-         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
-         <li class="navbar--nav__item"><a href="tweede_scene.html">Vorige deel</a></li>
-         <li class="navbar--nav__item"><a href="derde-scene.html">Volgende deel</a></li>
+        <!-- REVIEW: navbar__nav__item navbar__nav__item--big -->
+         <li class="navbar__nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar__nav__item"><a href="eerste_scene.html">Vorige deel</a></li>
+         <li class="navbar__nav__item"><a href="derde-scene.html">Volgende deel</a></li>
       </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
@@ -33,12 +35,15 @@
   <main>
 
     <section class="section ahmadVerhaal">
-      <article class="ahmadVerhaal--container">
-        <h2 class="ahmadVerhaal--contaner__header">Emma gaat zich voorstellen</h2>
-        <p class="ahmadVerhaal--container__text">Hoi Ahmad, ik ben Emma. Van de kapster heb ik gehoord dat jij je haar graag wilt doneren aan iemand. Ik zou heel erg blij zijn als jij je haar aan mijn doneert.</p>
+      <!-- REVIEW: adhmadverhaal__container -->
+      <article class="ahmadVerhaal__container">
+        <!-- REVIEW: ahmadVerhaal__container__header -->
+        <h2 class="ahmadVerhaal__container__header">Emma gaat zich voorstellen</h2>
+        <!-- REVIEW: ahmadVerhaal__container__text -->
+        <p class="ahmadVerhaal__container__text">Hoi Ahmad, ik ben Emma. Van de kapster heb ik gehoord dat jij je haar graag wilt doneren aan iemand. Ik zou heel erg blij zijn als jij je haar aan mijn doneert.</p>
       </article>
 
-      <article class="ahmadVerhaal--containerImg">
+      <article class=" ahmadVerhaal__containerImg">
         <figure class="ahmadVerhaal--containerImg__figure">
           <img class="image--emma" srcset="afbeeldingen/emma_kaal_640.webp 640w,
                     afbeeldingen/emma_kaal_640.webp 1280w,
@@ -55,27 +60,33 @@
     </section>
 
 
+
     <section class="section vaderVerhaal">
 
-      <article class="vaderVerhaal--container">
-        <h2 class="vaderVerhaal--container__header">Ahmad wordt in eens enthousiast</h2>
-        <p class="vaderVerhaal--container__text">Hoi Emma, natuurlijk. Ik zie dat jij het haar nodig hebt. Voor jou zal ik nog een paar weken wachten met het haar knippen.</p>
+      <article class="vaderVerhaal__container">
+        <h2 class="vaderVerhaal__container__header">Ahmad wordt in eens enthousiast</h2>
+        <p class="vaderVerhaal__container__text">Hoi Emma, natuurlijk. Ik zie dat jij het haar nodig hebt. Voor jou zal ik nog een paar weken wachten met het haar knippen.</p>
       </article>
 
-      <article class="vaderVerhaal--containerImg">
-        <figure class="vaderVerhaal--containerImg__figure">
+      <article class="vaderVerhaal__containerImg">
+        <figure class="vaderVerhaal__containerImg__figure">
           <img class="image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
-          <figcaption>Emma</figcaption>
+          <figcaption>Ahmad</figcaption>
+        </figure>
         </figure>
       </article>
     </section>
 
+
+
     <section class="section ahmadExtra">
-      <article class="ahmadExtra--container">
-        <h2 class="ahmadExtra--container__header">Het gesprek vond Ahmad leuk</h2>
-        <p class="ahmadExtra--container__text">Ahmad kreeg door het gesprek met Emma meer motivatie om te wachten met het knippen van zijn haar. Nu is Ahmad ook blij dat er een meisje is die zijn gedonneerde haar wilt ontvangen.</p>
+      <!-- REVIEW: jullie gebruiken veel "--" voor benamingen waardoor de code ontzettend lang wordt! -->
+      <article class="ahmadExtra__container">
+        <h2 class="ahmadExtra__container__header">Het gesprek vond Ahmad leuk</h2>
+        <p class="ahmadExtra__container__text">Ahmad kreeg door het gesprek met Emma meer motivatie om te wachten met het knippen van zijn haar. Nu is Ahmad ook blij dat er een meisje is die zijn gedonneerde haar wilt ontvangen.</p>
       </article>
     </section>
+
 
 
     <section class="volgende--deel">
