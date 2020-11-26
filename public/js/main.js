@@ -5,7 +5,7 @@ const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const tweedeMetinghaar = document.getElementById("js--button--eersteMeting1");
 const derdeMetinghaar = document.getElementById("js--button--eersteMeting2");
 
-const eersteMetinghaarResultaat = document.getElementsByClassName("vervangen--tekst")[0];
+const eersteMetinghaarResultaat = document.getElementsByClassName("vervangen__tekst")[0];
 const naarKapperKnop = document.getElementById('js--button--naarKapper');
 const tekstKnop = document.getElementsByClassName("button--pink")[0].innerHTML;
 const schaarEmoji = document.getElementById('js--scissors');
@@ -105,17 +105,17 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
   geluidInstellen();
 
   gesprekMetEmma.style.display = "none";
-  document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
-  document.getElementsByClassName('container--image')[0].style.display = 'grid';
-  document.getElementsByClassName('container--haarGeknipt')[0].style.display = "none";
-  document.getElementsByClassName(' container__hair')[0].style.display = 'none';
-  document.getElementsByClassName('container--haarKnippen')[0].style.display = 'none';
+  document.getElementsByClassName('container__tekst')[0].style.display = 'grid';
+  document.getElementsByClassName('container__image')[0].style.display = 'grid';
+  document.getElementsByClassName('container__haarGeknipt')[0].style.display = "none";
+  document.getElementsByClassName('container__hair')[0].style.display = 'none';
+  document.getElementsByClassName('container__haarKnippen')[0].style.display = 'none';
   haarKnippenScene.onclick = (event) => {
     haarKnippenScene.style.display = 'none';
 
             document.getElementById('js--HaarKnippen').style.display = "grid";
-            document.getElementsByClassName('container--tekst')[0].style.display = 'none';
-            document.getElementsByClassName('container--image')[0].style.display = 'none';
+            document.getElementsByClassName('container__tekst')[0].style.display = 'none';
+            document.getElementsByClassName('container__image')[0].style.display = 'none';
             document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
 
       if(window.screen.width < 799 ) {
@@ -139,11 +139,11 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
         }
           document.getElementById('js--HaarKnippen').style.display = "none";
           document.getElementsByClassName('container__hair')[0].style.display = "none";
-          document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
-          document.getElementsByClassName('container--tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
+          document.getElementsByClassName('container__tekst')[0].style.display = 'grid';
+          document.getElementsByClassName('container__tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
           haarDonerenText.style.display = "grid";
           haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor het meisje Emma. Emma vindt het haar heel mooi staan en zou graag in gesprek met Ahmad willen gaan.</p>";
-          document.getElementsByClassName('container--image')[0].style.display = 'grid';
+          document.getElementsByClassName('container__image')[0].style.display = 'grid';
           geluidUit.style.display = 'none';
           geluidAan.style.display = 'none';
         }
@@ -282,11 +282,11 @@ function onDrop(event) {
         window.location.href = "zesde_scene_keuze.html";
       }
       document.getElementsByClassName('container__hair')[0].style.display = "none";
-      document.getElementsByClassName('container--tekst')[0].style.display = 'grid';
-      document.getElementsByClassName('container--tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
+      document.getElementsByClassName('container__tekst')[0].style.display = 'grid';
+      document.getElementsByClassName('container__tekst__header')[0].innerHTML = "Bedankt voor je hulp met het knippen!";
       haarDonerenText.style.display = "grid";
       haarDonerenText.innerHTML = "<p>Je hebt het haar van Ahmad succesvol geknipt. Ahmad is blij met zijn nieuwe kapsel, en ook dat die iets goeds heeft gedaan voor de Nederlanders. Het haar van Ahmad wordt nu gedonneerd aan Emma!</p>";
-      document.getElementsByClassName('container--image')[0].style.display = 'grid';
+      document.getElementsByClassName('container__image')[0].style.display = 'grid';
       geluidUit.style.display = 'none';
       geluidAan.style.display = 'none';
     }
