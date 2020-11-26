@@ -49,20 +49,20 @@ h1, h2, h3, h4, figcaption {
 
 }
 
-.container__items__list__item__schaar__container {
+.schaar {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar {
+.schaar .schaar__item {
   position: relative;
   width: 8em;
   height: 2.1875em;
   margin: 2.75em auto;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half {
+.schaar .schaar__item__half {
   width: 8em;
   height: 1.25em;
   position: absolute;
@@ -74,37 +74,37 @@ h1, h2, h3, h4, figcaption {
   transform: rotate(10deg);
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar:active .container__items__list__item__schaar__half {
+.schaar .schaar__item:active .schaar__item__half {
   animation: rot-up 1s ease-out 1;
   animation-iteration-count: infinite;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar:active .container__items__list__item__schaar__half:nth-child(even) {
+.schaar .schaar__item:active .schaar__item__half:nth-child(even) {
   animation: rot-down 1s ease-out 1;
   animation-iteration-count: infinite;
 
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half:nth-child(even) {
+.schaar .schaar__item__half:nth-child(even) {
   top: 0.9375em;
   transform-origin: 41.79688% 0% 0;
   transform: rotate(-10deg);
 
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half:nth-child(even) .container__items__list__item__schaar__half__blade {
+.schaar .schaar__item__half:nth-child(even) .schaar__item__half__blade {
   top: 0;
   border-radius: 0 0.3125em 0 0;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half:nth-child(even) .container__items__list__item__schaar__half__blade:after {
+.schaar .schaar__item__half:nth-child(even) .schaar__item__half__blade:after {
   top: 0.3125em;
   border-style: solid;
   border-width: 0.3125em 0.625em 0 0.625em;
   border-color: #cacaca transparent transparent transparent;
 }
 
-.container__items__list__item {
+.container__haarKnippen__list__item {
   list-style-type: none;
 }
 
@@ -131,7 +131,7 @@ h1, h2, h3, h4, figcaption {
   }
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__joint{
+.schaar .schaar__item__half__joint{
   width: 0.21875em;
   height: 0.21875em;
   border-radius: 50%;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, figcaption {
   left: 41.66016%;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half__handle{
+.schaar .schaar__item__half__handle{
   width: 2.5em;
   height: 1.25em;
   border-radius: 0.625em;
@@ -153,7 +153,7 @@ h1, h2, h3, h4, figcaption {
   box-sizing: border-box;
 }
 
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half__blade {
+.schaar .schaar__item__half__blade {
   width: 5em;
   height: 0.3125em;
   position: absolute;
@@ -162,7 +162,7 @@ h1, h2, h3, h4, figcaption {
   background: #cacaca;
   border-radius: 0 0 0.3125em 0;
 }
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half__blade:before {
+.schaar .schaar__item__half__blade:before {
   content: '';
   width: 1.25em;
   height: 0.3125em;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, figcaption {
   top: 0;
   left: -1.25em;
 }
-.container__items__list__item__schaar__container .container__items__list__item__schaar__half__blade:after {
+.schaar .schaar__item__half__blade:after {
   content: '';
   width: 0;
   height: 0;
@@ -183,12 +183,7 @@ h1, h2, h3, h4, figcaption {
   left: -0.625em;
 }
 
-.container__items__list__item__container__items__list__item__schaar--image {
-  height: 65rem;
-}
-
-
-.haar--items--list{
+.haar__items__list{
       display: grid;
       grid-row-gap: 2rem;
       margin: auto;
@@ -196,20 +191,20 @@ h1, h2, h3, h4, figcaption {
       width: 85%;
     }
 
-    main > .haar--items--list > li{
+    main > .haar__items__list > li{
       list-style: none;
       width: 100%;
       height:100%;
       position: relative;
     }
 
-    main > .haar--items--list > li > img{
+    main > .haar__items__list > li > img{
       display: block;
       height: 100%;
       width:100%;
     }
 
-    .haar-items--list--item--overlay {
+    .haar__items__list__item__overlay {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -226,11 +221,11 @@ h1, h2, h3, h4, figcaption {
       align-items: center;
     }
 
-    li:hover .haar-items--list--item--overlay {
+    li:hover .haar__items__list__item__overlay {
       opacity: 1;
     }
 
-.haar-items--list--item--overlay {
+.haar__items__list__item__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -243,11 +238,11 @@ h1, h2, h3, h4, figcaption {
   background-color: var(--text-background-color);
 }
 
-.haar--items--list--item:hover .haar-items--list--item--overlay {
+.haar__items__list__item:hover .haar__items__list__item__overlay {
   opacity: 1;
 }
 
-.haar--items--list--item--overlay--text {
+.haar__items__list__item__overlay__text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -261,14 +256,14 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
-  .container--progress--progressbar {
+  .container__progress__progressbar {
     width: 100%;
   }
   .container--geluid__uit {
     display: none;
   }
 
-  .ahmadVerhaal--container:hover, .vaderVerhaal--container:hover, .container--tekst__bubbel:hover {
+  .adhmadverhaal__container:hover, .vaderVerhaal__container:hover, .container__tekst__bubbel:hover {
     background-color: var(--text-background-color);
 
 
@@ -283,13 +278,13 @@ h1, h2, h3, h4, figcaption {
       grid-column: 1 / span 12;
       grid-row: 3 / span 2
     }
-  .container--haarKnippen {
+  .container__haarKnippen {
     display: grid;
     grid-column: 1 / 12;
     grid-row: 1 / 3;
   }
 
-  main > .haar--items--list{
+  main > .haar__items__list{
   grid-column: 1 / 12;
   grid-column-gap: 2rem;
   padding: 3rem;
@@ -307,7 +302,7 @@ h1, h2, h3, h4, figcaption {
   margin-left: calc(var(--move) - 2.3rem);
   margin-top: 2.5rem;
 }
-.container--progress-scissors {
+.container__progress__scissors {
   margin-left: calc(var(--move) - 2.3rem);
   margin-top: -6rem;
 
@@ -338,7 +333,7 @@ h1, h2, h3, h4, figcaption {
     grid-column-gap: 2rem;
   }
 
-  .container--tekst__header {
+  .container__tekst__header {
     display: grid;
     grid-column: 1 / span 12;
   }
@@ -353,7 +348,7 @@ h1, h2, h3, h4, figcaption {
     display: grid;
   }
 
-  .container--tekst__bubbel {
+  .container__tekst__bubbel {
     display: grid;
     grid-column: 1 / span 12;
     border: 2px solid var(--text-background-color);
@@ -363,11 +358,11 @@ h1, h2, h3, h4, figcaption {
     transition: 0.5s all;
   }
 
-  .container--tekst__bubbel p {
+  .container__tekst__bubbel p {
     padding: 2rem;
   }
 
-  .container--image__figure {
+  .container__image__figure {
     width: 100%;
     grid-column: 2 / span 2;
   }
@@ -376,13 +371,13 @@ h1, h2, h3, h4, figcaption {
   grid-column: 1 / span 3;
 }
 
-  .vervangen--tekst {
+  .container__tekst__newTekst {
     display: grid;
     background-color: var(--text-background-color);
     display: none;
   }
 
-  .vervangen--tekst {
+  .container__tekst__newTekst {
     background-color: var(--text-background-color);
     display: none;
     grid-column: 1 / span 12;
@@ -451,7 +446,7 @@ h1, h2, h3, h4, figcaption {
     grid-column: 1 / 12;
   }
 
-  .container__items__list__item {
+  .container__haarKnippen__list__item {
     grid-column: 1 / 6;
   }
 
@@ -469,23 +464,23 @@ h1, h2, h3, h4, figcaption {
     grid-column-gap: 2rem;
   }
 
-  .haar--meten__figure {
+  .haar__meten__figure {
     display: grid;
     grid-column: span 6;
   }
 
-  .haar--meten__haar {
+  .haar__meten__haarImg {
     width: 100%;
     height: 100%;
   }
 
-  .haar--meten__liniaal {
+  .haar__meten__liniaalImg {
     height: 0%;
     transition: 0.5s all;
     grid-column: span 2;
   }
 
-  .haar--meten__lengte {
+  .haar__meten__lengteTekst {
     font-weight: 900;
     grid-column: 13;
     display: none;
@@ -556,12 +551,6 @@ h1, h2, h3, h4, figcaption {
 
 }
 
-.container__items__list__item__container__items__list__item__schaar--image {
-  width: 100%;
-  height: 100%;
-}
-
-
 .ahmadVerhaal{
   display: grid;
   grid-column-gap: 2rem;
@@ -569,7 +558,7 @@ h1, h2, h3, h4, figcaption {
     grid-row: 1 / 2;
 }
 
-.ahmadVerhaal--container {
+.adhmadverhaal__container {
   grid-column: 1 / span 10;
   grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
@@ -582,11 +571,11 @@ h1, h2, h3, h4, figcaption {
   grid-row: 3 / 3;
 }
 
-.ahmadVerhaal--contaner__header {
+.ahmadVerhaal__container__header {
   text-align: center;
 }
 
-.ahmadVerhaal--container__text {
+.ahmadVerhaal__container__text {
   margin-top: 3rem;
 }
 
@@ -602,7 +591,7 @@ h1, h2, h3, h4, figcaption {
   text-align: center;
 }
 
-.vaderVerhaal--container {
+.vaderVerhaal__container {
   border: 2px solid var(--text-background-color);
   grid-column: 1 / 12;
   grid-row: 3 / 5;
@@ -617,7 +606,7 @@ h1, h2, h3, h4, figcaption {
 }
 
 
-.vaderVerhaal--container__text {
+.vaderVerhaal__container__text {
   margin-top: 3rem;
 }
 
@@ -671,7 +660,7 @@ body {
   padding-right: 3rem;
 }
 
-.container--haarKnippen {
+.container__haarKnippen {
   grid-column: 1 / 12;
   grid-row: 2 / 3;
 }
@@ -679,11 +668,7 @@ body {
   grid-column:  6 / 12;
 }
 
-.container__items__list__item__container__items__list__item__schaar--image {
-  height: 60rem;
-}
-
-main > .haar--items--list {
+main > .haar__items__list {
   grid-template-columns: repeat(2,minmax(0,1fr));
     grid-template-rows: repeat(4, minmax(0,1fr));
     grid-column: 2 / 12;
@@ -692,24 +677,24 @@ main > .haar--items--list {
 .volgende--deel {
   grid-column:  1 / 13;
 }
-  .vaderVerhaal--container {
+  .vaderVerhaal__container {
     border-radius: 0px 50px 50px 50px;
     grid-row: 3 / 4;
     grid-column: 7 / span 6;
     padding: 2rem;
   }
 
-  .vaderVerhaal--containerImg {
+  .vaderVerhaal__containerImg {
     grid-column: 1 / 6;
     grid-row: 3 / 7;
   }
 
-  .ahmadVerhaal--container {
+  .adhmadverhaal__container {
     grid-column: 1 / span 8;
     grid-row: 1 / 2;
     border-radius: 50px 0px 50px 50px;
   }
-  .ahmadVerhaal--containerImg {
+  .ahmadVerhaal__containerImg {
     grid-column: 9 / span 4;
     grid-row: 1 / 4;
   }
@@ -718,7 +703,7 @@ main > .haar--items--list {
     grid-column: 9 / 13;
   }
 
-  .container--tekst__bubbel {
+  .container__tekst__bubbel {
     grid-column: 1 / span 7;
   }
 
@@ -732,14 +717,14 @@ main > .haar--items--list {
     grid-column: 10 / 12;
   }
 
-  .container--tekst__header {
+  .container__tekst__header {
     grid-column:  1 / span 5;
   }
   .container--image {
     grid-column: 8 / span 6;
   }
 
-  .container--image__figure {
+  .container__image__figure {
     width: 100%;
   }
 
@@ -767,7 +752,7 @@ main > .haar--items--list {
     grid-column: 1 / span 6;
   }
 
-  .container--haarKnippen__header {
+  .container__haarKnippen__header {
     grid-column:  1 / 4;
   }
 
@@ -793,22 +778,13 @@ main > .haar--items--list {
     margin-right: auto;
   }
 
-  main > .haar--items--list {
+  main > .haar__items__list {
     grid-template-columns: repeat(3,minmax(0,1fr));
       grid-template-rows: repeat(4, minmax(0,1fr));
       grid-column: 2 / 12;
   }
 
-
-  .container__items__list__item__container__items__list__item__schaar--image {
-    width: 100%;
-    height: 100%;
-  }
-  .container__items__list__item__container__items__list__item__schaar--image:hover {
-  background-color: red;
-  }
-
-  .container--image__figure {
+  .container__image__figure {
     grid-column: 2 / span 2;
   }
 
@@ -822,7 +798,7 @@ main > .haar--items--list {
 
   }
 
-  .container--tekst__bubbel {
+  .container__tekst__bubbel {
     grid-column: 1 / 6;
   }
 
