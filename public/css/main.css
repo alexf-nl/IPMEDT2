@@ -558,7 +558,7 @@ h1, h2, h3, h4, figcaption {
     grid-row: 1 / 2;
 }
 
-.adhmadverhaal__container {
+.ahmadverhaal__container {
   grid-column: 1 / span 10;
   grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
