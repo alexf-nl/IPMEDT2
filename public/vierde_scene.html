@@ -17,12 +17,14 @@
 </head>
 
 <header class="navbar">
-   <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav class="navbar--nav">
+   <input type="checkbox" id="nav-toggle" class="navbar__toggle">
+   <nav class="navbar__nav">
+     <!-- REVIEW: navbar__nav -->
       <ul>
-         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
-         <li class="navbar--nav__item"><a href="derde-scene.html">Vorige deel</a></li>
-         <li class="navbar--nav__item"><a href="vijfde_scene.html">Volgende deel</a></li>
+        <!-- REVIEW: navbar__nav__item navbar__nav__item--big -->
+         <li class="navbar__nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar__nav__item"><a href="derde-scene.html">Vorige deel</a></li>
+         <li class="navbar__nav__item"><a href="vijfde_scene.html">Volgende deel</a></li>
       </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
@@ -33,30 +35,34 @@
 
 <body>
   <main>
+    <section class="section ahmadVerhaal">
+      <!-- REVIEW: adhmadverhaal__container -->
+      <article class="ahmadVerhaal__container">
+        <!-- REVIEW: ahmadVerhaal__container__header -->
+        <h2 class="ahmadVerhaal__container__header">Ahmad is weer teleurgesteld</h2>
+        <!-- REVIEW: ahmadVerhaal__container__text -->
+        <p class="ahmadVerhaal__container__text">Papa, helaas is mijn haar nog niet lang genoeg. Ik moet nog 4 maanden wachten...</p>
+      </article>
 
-  <section class="section ahmadVerhaal">
-    <article class="ahmadVerhaal--container">
-      <h2 class="ahmadVerhaal--contaner__header">Ahmad is weer teleurgesteld</h2>
-      <p class="ahmadVerhaal--container__text">Papa, helaas is mijn haar nog niet lang genoeg. Ik moet nog 4 maanden wachten...</p>
-    </article>
+      <article class=" ahmadVerhaal__containerImg">
+        <figure class="ahmadVerhaal__containerImg__figure">
+          <img class="image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
+            <figcaption>Ahmad</figcaption>
+          </figure>
+      </article>
 
-    <article class="ahmadVerhaal--containerImg">
-      <figure class="ahmadVerhaal--containerImg__figure">
-        <img class="image" src="afbeeldingen/Ahmad.webp" alt="Ahmad">
-          <figcaption>Ahmad</figcaption>
-        </figure>
-    </article>
-  </section>
+
+    </section>
 
   <section class="section vaderVerhaal">
 
-    <article class="vaderVerhaal--container">
-      <h2 class="vaderVerhaal--container__header">Geen zorgen mijn zoon, kijk hieronder!</h2>
-      <p class="vaderVerhaal--container__text">Kijk eens hieronder Ahmad wat ze van gedonneerde haar van 30 centimeter kunnen maken en waar ze het voor kunnen gebruiken.</p>
+    <article class="vaderVerhaal__container">
+      <h2 class="vaderVerhaal__container__header">Geen zorgen mijn zoon, kijk hieronder</h2>
+      <p class="vaderVerhaal__container__text">Kijk eens hieronder Ahmad wat ze van gedonneerde haar van 30 centimeter kunnen maken en waar ze het voor kunnen gebruiken.</p>
     </article>
 
-    <article class="vaderVerhaal--containerImg">
-      <figure class="vaderVerhaal--containerImg__figure">
+    <article class="vaderVerhaal__containerImg">
+      <figure class="vaderVerhaal__containerImg__figure">
           <img srcset="afbeeldingen/Vader_620.webp 640w,
                          afbeeldingen/Vader_620.webp 1280w,
                          afbeeldingen/Vader_620.webp 1920w"
@@ -72,6 +78,7 @@
 
 
       <ul class="haar__items__list">
+
      <li class="haar__items__list__item">
        <img srcset="afbeeldingen/haar_1_child.webp 640w,
                       afbeeldingen/haar_1_child.webp 1280w,
@@ -85,57 +92,60 @@
               </div>
       </li>
 
-      <li class="haar--items--list--item haarItems--list__item">
-        <img srcset="afbeeldingen/haar_1_child2.webp 640w,
-                       afbeeldingen/haar_1_child2.webp 1280w,
-                       afbeeldingen/haar_1_child2.webp 1920w"
-               sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-               src="afbeeldingen/haar_1_child2.webp"
-              alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay haarItems--list__item__overlay">
-                <div class="haar--items--list--item--overlay--text haarItems--list__item__overlay__text">
-                  <p>Ahmad is verrast hoe gedonneerde haar mensen kan helpen!</p>
-                </div>
-               </div>
-       </li>
 
-       <li class="haar--items--list--item haarItems--list__item">
-         <img srcset="afbeeldingen/haar_1.webp 640w,
-                        afbeeldingen/haar_3.webp 1280w,
-                        afbeeldingen/haar_3.webp 1920w"
-                sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-                src="afbeeldingen/haar_3.webp"
-               alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay haarItems--list__item__overlay">
-                 <div class="haar--items--list--item--overlay--text haarItems--list__item__overlay__text">
-                   <p>Ahmad is overtuigd, en krijgt hij meer motivatie na het zien van deze foto.</p>
-                 </div>
-                </div>
-        </li>
+           <li class="haar__items__list__item">
+             <img srcset="afbeeldingen/haar_1_child.webp 640w,
+                            afbeeldingen/haar_1_child.webp 1280w,
+                            afbeeldingen/haar_1_child.webp 1920w"
+                    sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                    src="afbeeldingen/haar_1_child.webp"
+                   alt="Gedonneerde haar"/><div class="haar__items__list__item__overlay ">
+                     <div class="haar__items__list__item__overlay">
+                       <p>Ahmad vindt deze foto echt geweldig!</p>
+                     </div>
+                    </div>
+            </li>
 
-        <li class="haar--items--list--item haarItems--list__item">
-          <img srcset="afbeeldingen/haar_5.webp 640w,
-                         afbeeldingen/haar_5.webp 1280w,
-                         afbeeldingen/haar_5.webp 1920w"
-                 sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-                 src="afbeeldingen/haar_5.webp"
-                alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay haarItems--list__item__overlay">
-                  <div class="haar--items--list--item--overlay--text haarItems--list__item__overlay__text">
-                    <p>Geweldig, zo ziet er straks mijn gedonneerde haar ook zo uit!</p>
-                  </div>
-                 </div>
-         </li>
 
-         <li class="haar--items--list--item haarItems--list__item">
-           <img srcset="afbeeldingen/haar_4.webp 640w,
-                          afbeeldingen/haar_4.webp 1280w,
-                          afbeeldingen/haar_4.webp 1920w"
-                  sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
-                  src="afbeeldingen/haar_4.webp"
-                 alt="Gedonneerde haar"/><div class="haar-items--list--item--overlay haarItems--list__item__overlay">
-                   <div class="haar--items--list--item--overlay--text haarItems--list__item__overlay__text">
-                     <p>Waauw. Nu heeft Ahmad er echt zin in om zijn haar te doneren!</p>
-                   </div>
-                  </div>
-          </li>
+                 <li class="haar__items__list__item">
+                   <img srcset="afbeeldingen/haar_1_child.webp 640w,
+                                  afbeeldingen/haar_1_child.webp 1280w,
+                                  afbeeldingen/haar_1_child.webp 1920w"
+                          sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                          src="afbeeldingen/haar_1_child.webp"
+                         alt="Gedonneerde haar"/><div class="haar__items__list__item__overlay ">
+                           <div class="haar__items__list__item__overlay">
+                             <p>Ahmad vindt deze foto echt geweldig!</p>
+                           </div>
+                          </div>
+                  </li>
+
+
+                       <li class="haar__items__list__item">
+                         <img srcset="afbeeldingen/haar_1_child.webp 640w,
+                                        afbeeldingen/haar_1_child.webp 1280w,
+                                        afbeeldingen/haar_1_child.webp 1920w"
+                                sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                                src="afbeeldingen/haar_1_child.webp"
+                               alt="Gedonneerde haar"/><div class="haar__items__list__item__overlay ">
+                                 <div class="haar__items__list__item__overlay">
+                                   <p>Ahmad vindt deze foto echt geweldig!</p>
+                                 </div>
+                                </div>
+                        </li>
+
+                             <li class="haar__items__list__item">
+                               <img srcset="afbeeldingen/haar_1_child.webp 640w,
+                                              afbeeldingen/haar_1_child.webp 1280w,
+                                              afbeeldingen/haar_1_child.webp 1920w"
+                                      sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                                      src="afbeeldingen/haar_1_child.webp"
+                                     alt="Gedonneerde haar"/><div class="haar__items__list__item__overlay ">
+                                       <div class="haar__items__list__item__overlay">
+                                         <p>Ahmad vindt deze foto echt geweldig!</p>
+                                       </div>
+                                      </div>
+                              </li>
    </ul>
 
   <section class="volgende--deel">
@@ -144,11 +154,11 @@
 
 
 
-         <article class="container container--progress">
-           <progress class="container--progress--progressbar" id="js--progressbar" value="10" max="100"></progress>
-           <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
-           <span id="js--scissors1" class="container--progress-scissors">💇</span>
-         </article>
+  <article class="container container--progress">
+    <progress class="container__progress__progressbar" id="js--progressbar" value="25" max="100"></progress>
+    <p class="container__progress__progressbar--text" id="js--progressPercentage">-</p>
+    <span id="js--scissors1" class="container__progress__scissors">💇</span>
+  </article>
 
 
 
