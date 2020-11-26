@@ -325,7 +325,7 @@ h1, h2, h3, h4, figcaption {
     grid-column: 5 / span 3;
   }
 
-  .container--tekst {
+  .container__tekst {
     display: grid;
     grid-row: 1;
     grid-column: 1 / span 12;
@@ -338,7 +338,7 @@ h1, h2, h3, h4, figcaption {
     grid-column: 1 / span 12;
   }
 
-  .container--image {
+  .container__image {
     display: grid;
     grid-template-columns: repeat(4, minmax(0,1fr));
     grid-row: 2 / span 4;
@@ -455,7 +455,7 @@ h1, h2, h3, h4, figcaption {
     grid-column: 2 / 12;
   }
 
-  .haar--meten {
+  .haar__meten {
     height: 100%;
     display: grid;
     grid-row: 3 / span 8;
@@ -512,7 +512,7 @@ h1, h2, h3, h4, figcaption {
 
 /*progressbar*/
 
-  .container--progress {
+  .container__progress {
     display: grid;
     grid-column: 1 / span 12;
     position: relative;
@@ -707,7 +707,7 @@ main > .haar__items__list {
     grid-column: 1 / span 7;
   }
 
-  .tekst--bubbel--rechts {
+  .tekst__bubbel--rechts {
     grid-column: 7 / span 8;
     grid-row: 4 / span 1;
   }
@@ -720,7 +720,7 @@ main > .haar__items__list {
   .container__tekst__header {
     grid-column:  1 / span 5;
   }
-  .container--image {
+  .container__image {
     grid-column: 8 / span 6;
   }
 
@@ -728,7 +728,7 @@ main > .haar__items__list {
     width: 100%;
   }
 
-  .haar--meten {
+  .haar__meten {
     grid-column: 1 / span 6;
   }
 
@@ -802,7 +802,7 @@ main > .haar__items__list {
     grid-column: 1 / 6;
   }
 
-  .container--image {
+  .container__image {
     grid-column: 6 / span 6;
   }
 
@@ -815,7 +815,7 @@ main > .haar__items__list {
     max-width: 100%;
   }
 
-  .tekst--bubbel--rechts {
+  .tekst__bubbel--rechts {
     grid-column: 7 / 14;
     grid-row: 4 / span 4;
   }

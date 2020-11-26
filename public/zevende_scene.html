@@ -17,11 +17,11 @@
 
 <header class="navbar">
    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav class="navbar--nav">
+   <nav class="navbar__nav">
       <ul>
-         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
-         <li class="navbar--nav__item"><a href="zesde_scene.html">Vorige deel</a></li>
-         <li class="navbar--nav__item--disabled"><a href="#">Volgende deel</a></li>
+         <li class="navbar__nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar__nav__item"><a href="zesde_scene.html">Vorige deel</a></li>
+         <li class="navbar__nav__item--disabled"><a href="#">Volgende deel</a></li>
       </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
@@ -32,17 +32,17 @@
 
 <body>
   <main>
-    <article class="container--tekst">
+    <article class="container__tekst">
 
-      <h2 class="container--tekst__header">Na de kapper</h2>
+      <h2 class="container__tekst__header">Na de kapper</h2>
 
-      <article class="container--tekst__bubbel tekstbubbel--rond" id="js--haarDonerenText">
+      <article class="container__tekst__bubbel tekstbubbel--rond" id="js--haarDonerenText">
 
         <p>Nadat je bij de kapper bent geweest belt er iemand aan de deur.</p>
       </article>
       <button class="button button--medium button--pink button--rechts" id="js--button--deur--open">Open deur</button>
 
-      <article class="vaderVerhaal--containerImg jongen--image" id="js--image--jongen">
+      <article class="vaderVerhaal__containerImg jongen--image" id="js--image--jongen">
         <figure>
             <img class="image--jongen" srcset="afbeeldingen/jongen.webp 640w,
                            afbeeldingen/jongen.webp 1280w,
@@ -55,7 +55,7 @@
       </article>
 
 
-        <article class="container--tekst__bubbel tekst--jongen" id="js--tekst--jongen">
+        <article class="container__tekst__bubbel tekst--jongen" id="js--tekst--jongen">
           <p>Wow je hebt je haar geknipt! Het ziet er goed uit. Wil je samen buiten voetballen met andere kinderen?</p>
         </article>
 
@@ -70,10 +70,10 @@
 
     <!--progressbar-->
 
-             <article class="container container--progress">
-               <progress class="container--progress--progressbar" id="js--progressbar" value="10" max="100"></progress>
-               <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
-               <span id="js--scissors1" class="container--progress-scissors">💇</span>
+             <article class="container container__progress">
+               <progress class="container__progress__progressbar" id="js--progressbar" value="10" max="100"></progress>
+               <p class="container__progress__progressbar--text" id="js--progressPercentage">-</p>
+               <span id="js--scissors1" class="container__progress__scissors">💇</span>
              </article>
 
 

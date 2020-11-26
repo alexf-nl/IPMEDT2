@@ -17,11 +17,11 @@
 
 <header class="navbar">
    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-   <nav class="navbar--nav">
+   <nav class="navbar__nav">
       <ul>
-         <li class="navbar--nav__item"><a href="index.html">Home</a></li>
-         <li class="navbar--nav__item"><a href="tweede_scene.html">Vorige deel</a></li>
-         <li class="navbar--nav__item"><a href="vierde_scene.html">Volgende deel</a></li>
+         <li class="navbar__nav__item"><a href="index.html">Home</a></li>
+         <li class="navbar__nav__item"><a href="tweede_scene.html">Vorige deel</a></li>
+         <li class="navbar__nav__item"><a href="vierde_scene.html">Volgende deel</a></li>
       </ul>
    </nav>
    <label for="nav-toggle" class="nav-toggle-label">
@@ -36,15 +36,15 @@
     <!-- REVIEW: hier geen fouten gelukkig! -->
     <!-- REVIEW: is er al een dialoog class voor het article? -->
     <!-- REVIEW: op het moment dat je een modifier gebruikt dan moet de base class ook aanwezig zijn. dus: container--tekst container -->
-      <article class= "container--tekst">
-        <h2 class="container--tekst__header" id="js--terminal--text">Een paar weken later..</h2>
+      <article class= "container__tekst">
+        <h2 class="container__tekst__header" id="js--terminal--text">Een paar weken later..</h2>
         <!-- REVIEW: hier veel classes! container__tekst container__tekst container__tekst--bubbel -->
-        <article class="container--tekst__bubbel" id="js--haarDonerenText">
+        <article class="container__tekst__bubbel" id="js--haarDonerenText">
           <p>Vandaag gaat je vader je haar weer meten. Nu hopen dat je haar nu wel lang genoeg is!</p>
         </article>
         <!-- REVIEW: figures in figures? Dialoog is netjes een article -->
-        <article class="container--image">
-          <figure class="container--image__figure image--groter">
+        <article class="container__image">
+          <figure class="container__image__figure image--groter">
               <img class="image" srcset="afbeeldingen/Vader_620.webp 640w,
                              afbeeldingen/Vader_620.webp 1280w,
                              afbeeldingen/Vader_1280.webp 1920w"
@@ -56,16 +56,16 @@
         </article>
 
         <button class="button button--medium button--pink" id="js--button--eersteMeting" data-value="Haar meten">Haar meten</button>
-        <h3 class="vervangen--tekst font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
+        <h3 class="container__tekst__newTekst font-size--small">Jammer genoeg is je haar pas 27cm nu. Maar je bent blij dat je nu heel dicht bij de 30cm zit! Je moet nu nog maar heel even te wachten todat je haar eindelijk lang genoeg is om te doneren.</h3>
       </article>
 
       <!--progressbar-->
       <!-- REVIEW: net gebruik van article -->
 
-               <article class="container container--progress">
-                 <progress class="container--progress--progressbar" id="js--progressbar" value="10" max="100"></progress>
-                 <p class="container--progress--progressbar--text" id="js--progressPercentage">-</p>
-                 <span id="js--scissors1" class="container--progress-scissors">💇</span>
+               <article class="container container__progress">
+                 <progress class="container__progress__progressbar" id="js--progressbar" value="10" max="100"></progress>
+                 <p class="container__progress__progressbar--text" id="js--progressPercentage">-</p>
+                 <span id="js--scissors1" class="container__progress__scissors">💇</span>
                </article>
 
     <script src="js/derde_scene.js"></script>
