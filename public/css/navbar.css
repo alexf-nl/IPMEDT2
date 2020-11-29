@@ -96,12 +96,12 @@ nav a:hover {
   text-decoration: none;
 }
 
-.navbar--toggle:checked ~ nav {
+.navbar__toggle-label:checked ~ nav {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-.navbar--toggle:checked ~ nav a {
+.navbar__toggle-label:checked ~ nav a {
   font-size: 2.1rem;
   opacity: 1;
   -webkit-transition: opacity 250ms ease-in-out 250ms;
