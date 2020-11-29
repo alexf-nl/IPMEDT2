@@ -6,13 +6,13 @@
   font-family: 'Ropa Sans', sans-serif;
 }
 
-.navbar--toggle {
+.navbar__toggle-label {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
-.navbar--toggle:focus ~ .navbar__label {
+.navbar__toggle-label:focus ~ .navbar__label {
   outline: 3px solid rgba(173, 216, 230, 0.75);
 }
 
