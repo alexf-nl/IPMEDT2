@@ -129,7 +129,7 @@ nav a:hover {
 }
 @media screen and (min-width: 1280px) {
   .navbar__label {
-    display: none;
+    display: none; 
   }
 
   .navbar {
