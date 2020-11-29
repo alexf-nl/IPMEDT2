@@ -120,9 +120,9 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
 
       if(window.screen.width < 799 ) {
         zelfstandigKapper.innerHTML = "Je bent nu zelf de kapper, Klik op de button onderaan om Ahmad zijn haar te knippen";
-        document.getElementsByClassName('container__items__list__item')[1].style.display = 'grid';
+        document.getElementsByClassName('schaar__item')[1].style.display = 'grid';
         console.log('ja');
-        document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
+        document.getElementsByClassName('schaar__item')[0].style.display = 'none';
         haarKnippenButton.onclick = (event) => {
           haarKnippenScene.innerHTML = "Doorgaan";
           haarKnippenScene.style.display = "block";
@@ -149,8 +149,8 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
         }
       }
       else if(window.screen.width > 800){
-        document.getElementsByClassName('container__items__list__item')[0].style.display = 'grid';
-        document.getElementsByClassName('container__items__list__item')[1].style.display = 'none';
+        document.getElementsByClassName('schaar__item')[0].style.display = 'grid';
+        document.getElementsByClassName('schaar__item')[1].style.display = 'none';
 
       }
     }
@@ -262,10 +262,10 @@ function onDrop(event) {
   let id = event.dataTransfer.getData("text/plain");
   if(id === "js--scissors") {
     imgSize -= 10;
-    document.getElementsByClassName("container__items__list__item__scissors--image")[0].style.height = imgSize + "rem";
+    document.getElementsByClassName("container__hair__character__image")[0].style.height = imgSize + "rem";
     if(imgSize == 0) {
       zelfstandigKapper.style.display = "none";
-      document.getElementsByClassName('container__items__list__item')[0].style.display = 'none';
+      document.getElementsByClassName('container__haarKnippen__list__item')[0].style.display = 'none';
       if(geluidAanzetten == true) {
         haarGekniptAudio.play();
       } else {

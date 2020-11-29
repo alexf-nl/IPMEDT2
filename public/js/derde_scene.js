@@ -1,4 +1,4 @@
-const eersteMetinghaarResultaat = document.getElementsByClassName("vervangen--tekst")[0];
+const eersteMetinghaarResultaat = document.getElementsByClassName("container__tekst__newTekst")[0];
 const eersteMetinghaar = document.getElementById("js--button--eersteMeting");
 const liniaal = document.getElementById("js--liniaal");
 const lengte = document.getElementById("js--lengte");
