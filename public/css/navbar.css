@@ -10,7 +10,10 @@
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
+
 }
+
+
 
 .navbar__toggle-label:focus ~ .navbar__label {
   outline: 3px solid rgba(173, 216, 230, 0.75);
@@ -99,6 +102,7 @@ nav a:hover {
 .navbar__toggle-label:checked ~ nav {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+
 }
 
 .navbar__toggle-label:checked ~ nav a {
