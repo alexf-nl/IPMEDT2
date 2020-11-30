@@ -256,10 +256,18 @@ h1, h2, h3, h4, figcaption {
 
 
 @media (min-width: 320px) {
-  .container__progress__bar {
+
+
+    .button--pink::hover {
+      background-color: yellow;
+      color: black;
+    }
+
+
+  .container__progress__bar, .container__progress__progressbar {
     width: 100%;
   }
-  .container--geluid__uit {
+  .container__tekstKapper__geluid--aan {
     display: none;
   }
 
@@ -657,7 +665,7 @@ h1, h2, h3, h4, figcaption {
 }
 
 .ahmedAfbeelding__figure {
-  width: 100%;  
+  width: 100%;
 }
 
 .ahmadVerhaal__containerImg {
@@ -779,9 +787,9 @@ main > .haar__items__list {
   .ahmedAfbeelding {
     grid-column: 1 / span 5;
   }
-  
+
   .ahmedAfbeelding__figure {
-    width: 100%;  
+    width: 100%;
   }
 
   .section--info {

@@ -8,6 +8,14 @@
   padding-bottom: 2rem;
 }
 
+:root {
+  --button-color: #F53D84;
+  --button-color-after: #F55692;
+  --text-background-color: #F5CD6E;
+  --button-secondary-color: #F5CD6E;
+
+}
+
 .navbar__toggle-label {
   position: absolute !important;
   top: -9999px !important;
@@ -84,7 +92,7 @@ nav ul {
 nav li {
   margin-bottom: 1em;
   margin-left: 1em;
-  margin-top: 1em;  
+  margin-top: 1em;
 }
 
 nav a {
@@ -102,7 +110,7 @@ nav a:active {
 }
 
 nav a:hover {
-  color: #000;
+  color: var(--text-background-color);
   text-decoration: none;
 }
 
