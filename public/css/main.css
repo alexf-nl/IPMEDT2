@@ -387,7 +387,7 @@ h1, h2, h3, h4, figcaption {
 
  .section--info {
    display: grid;
-   grid-column: 7 / 12;
+   grid-column: 1 / 12;
  }
 
  .image {
@@ -444,6 +444,7 @@ h1, h2, h3, h4, figcaption {
   .section--introductie {
     display: grid;
     grid-column: 1 / 12;
+    padding-bottom: 3rem;
   }
 
   .container__haarKnippen__list__item {
@@ -560,7 +561,6 @@ h1, h2, h3, h4, figcaption {
 
 .ahmadVerhaal__container {
   grid-column: 1 / span 8;
-  grid-row: 1 / 2;
   border: 2px solid var(--text-background-color);
   border-radius: 50px 0px 50px 50px;
   margin: 0;
@@ -598,8 +598,8 @@ h1, h2, h3, h4, figcaption {
   grid-row: 3 / 5;
   margin: 0;
   margin-bottom: 2rem;
-
-
+  border-radius: 0px 50px 50px 50px;
+  padding: 2rem;
 }
 .vaderVerhaal--containerImg {
   grid-column: 1 / 12;
@@ -652,6 +652,18 @@ h1, h2, h3, h4, figcaption {
   width: 100%;
 }
 
+.ahmedAfbeelding {
+  grid-column: 1 / span 12;
+}
+
+.ahmedAfbeelding__figure {
+  width: 100%;  
+}
+
+.ahmadVerhaal__containerImg {
+  grid-column: 1 / 12;
+}
+
 }
 
 @media (min-width: 800px) {
@@ -692,7 +704,6 @@ main > .haar__items__list {
 
   .adhmadverhaal__container {
     grid-column: 1 / span 8;
-    grid-row: 1 / 2;
     border-radius: 50px 0px 50px 50px;
   }
   .ahmadVerhaal__containerImg {
@@ -763,6 +774,19 @@ main > .haar__items__list {
 
   .button--links {
     grid-column: 3 / 4;
+  }
+
+  .ahmedAfbeelding {
+    grid-column: 1 / span 5;
+  }
+  
+  .ahmedAfbeelding__figure {
+    width: 100%;  
+  }
+
+  .section--info {
+    display: grid;
+    grid-column: 7 / 12;
   }
 
 }
