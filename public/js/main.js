@@ -17,7 +17,7 @@ const haarDonerenText = document.getElementById('js--haarDonerenText');
 const haarKnippenScene = document.getElementById('js--button--haarKnippenScene');
 const liniaal = document.getElementById('js--liniaal');
 const buttonLiniaal = document.getElementById('js--button--liniaal');
-let imgSize = 60;
+let imgSize = 40;
 zelfstandigKapper = document.getElementById('zelfKapper');
 haarKnippenButton = document.getElementById('js--button-haarKnippen');
 const textTerminal = document.getElementById("js--terminal--text");
@@ -124,6 +124,7 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
         console.log('ja');
         document.getElementsByClassName('schaar__item')[0].style.display = 'none';
         haarKnippenButton.onclick = (event) => {
+          haarKnippenScene.classList.remove("button--pink");
           haarKnippenScene.innerHTML = "Doorgaan";
           haarKnippenScene.style.display = "block";
           gesprekMetEmma.style.display = "block";
@@ -271,6 +272,8 @@ function onDrop(event) {
       } else {
         haarGekniptAudio.pause();
       }
+      haarKnippenScene.classList.remove("button--pink");
+
       haarKnippenScene.innerHTML = "Doorgaan";
       haarKnippenScene.style.display = "block";
       haarKnippenScene.onclick = (event) => {
