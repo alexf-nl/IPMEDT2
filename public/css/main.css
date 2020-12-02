@@ -435,7 +435,7 @@ h1, h2, h3, h4, figcaption {
     border: none;
     position: relative;
     display: grid;
-    grid-column: 7 / 12;
+    grid-column: 11 / 12;
   }
 
   .button:hover {
@@ -748,7 +748,7 @@ main > .haar__items__list {
   }
 
   .button {
-    grid-column: 9 / 13;
+    grid-column: 11 / 12;
   }
 
   .container__tekst__bubbel {
@@ -855,7 +855,7 @@ main > .haar__items__list {
 
   .button {
     width: 18.5rem;
-    grid-column: 7 / 10;
+    grid-column: 11 / 12;
 
   }
 
