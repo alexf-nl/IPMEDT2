@@ -706,6 +706,10 @@ h1, h2, h3, h4, figcaption {
   grid-column: 1 / 11;
 }
 
+.section--info p {
+  padding-top: 1.5rem;
+}
+
 }
 
 @media (min-width: 800px) {
