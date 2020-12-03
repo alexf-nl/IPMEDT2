@@ -360,6 +360,7 @@ h1, h2, h3, h4, figcaption {
   }
 
   .container__tekst__header {
+    padding-bottom: 3rem;
     display: grid;
     grid-column: 1 / span 12;
   }
@@ -710,6 +711,10 @@ h1, h2, h3, h4, figcaption {
 .container__tekstKapper__geluid {
   display: grid;
   grid-column: 1 / 11;
+}
+
+.section--info p {
+  padding-top: 1.5rem;
 }
 
 }
