@@ -50,9 +50,6 @@ button {
   width: 25rem;
 }
 
-button:hover {
-
-}
 h1, h2, h3, h4, figcaption {
   font-family: 'Pacifico', cursive;
   color: var(--button-color);
