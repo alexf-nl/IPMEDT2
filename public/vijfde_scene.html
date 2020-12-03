@@ -43,7 +43,11 @@
           <section class="section haar__meten">
             <!-- REVIEW: hier geen figures om img -->
             <figure class="haar__meten__figure">
-              <img class="haar__meten__haarImg" src="afbeeldingen/Hair_Banner.webp" alt="Haar knippen">
+              <img class="haar__meten__haarImg" srcset="afbeeldingen/Hair_Banner_620.webp 640w,
+                               afbeeldingen/Hair_Banner_1280.webp 1280w,
+                               afbeeldingen/Hair_Banner_1280.webp 1920w"
+                       sizes="(min-width: 1500px) 1920px, (min-width: 1000px) 1280px, 640px"
+                       src="Hair_Banner_1280.webp" alt="Haar knippen">
             </figure>
             <figure class="haar__meten__figure">
               <img class="haar__meten__liniaalImg" id="js--liniaal" src="afbeeldingen/liniaal.webp" alt="afbeelding van een liniaal">
