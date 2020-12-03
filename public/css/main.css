@@ -762,7 +762,7 @@ main > .haar__items__list {
   }
 
   .vaderVerhaal__containerImg {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 4;
     grid-row: 3 / 7;
   }
 
