@@ -354,6 +354,7 @@ h1, h2, h3, h4, figcaption {
   }
 
   .container__tekst__header {
+    padding-bottom: 3rem;
     display: grid;
     grid-column: 1 / span 12;
   }
