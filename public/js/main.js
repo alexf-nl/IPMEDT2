@@ -101,6 +101,9 @@ else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/publ
 
 
 if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zesde_scene.html") {
+  progressBarFunctie(76);
+  progressBarValue = 76;
+  geluidUit.style.display = 'none';
 
   geluidInstellen();
 
@@ -262,6 +265,7 @@ function onDrop(event) {
   document.getElementById(event.dataTransfer.getData("text/plain")).style.display="#252a34";
   let id = event.dataTransfer.getData("text/plain");
   if(id === "js--scissors") {
+    progressBarFunctie(progressBarValue+=2);
     imgSize -= 10;
    document.getElementsByClassName("container__hair__character__image")[0].style.opacity = "0." + imgSize;
     if(imgSize == 0) {
@@ -273,7 +277,8 @@ function onDrop(event) {
         haarGekniptAudio.pause();
       }
       haarKnippenScene.classList.remove("button--pink");
-
+      console.log('ja');
+      haarKnippenScene.classList.add("button--links");
       haarKnippenScene.innerHTML = "Doorgaan";
       haarKnippenScene.style.display = "block";
       haarKnippenScene.onclick = (event) => {

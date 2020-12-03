@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <!--voor icoontje sound-->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
   <!--einde icoontjes import-->
 
   <link href="css/main.css" rel="stylesheet">
@@ -53,17 +53,18 @@
         </figure>
       </article>
 
-
       <article class="container container__tekstKapper__geluid">
-        <i class="icon-volume-off container__tekstKapper__geluid--uit" id="js--geluid--uit">Geluid uit</i>
-        <i class="icon-volume-up container__tekstKapper__geluid--aan" id="js--geluid--aan">Geluid aan</i>
+        <!--<i class="icon-volume-off container__tekstKapper__geluid--uit" id="js--geluid--uit">Geluid uit</i>-->
+        <button id="js--geluid--uit" class="container__tekstKapper__geluid--uit button button--medium button--white"><i class="fas fa-volume-off"></i> Geluid aanzetten</button>
+        <button id="js--geluid--aan" class="container__tekstKapper__geluid--aan button button--medium button--white"><i class="fas fa-volume-up" ></i> Geluid uitzetten</button>
+        <!--<i class="icon-volume-up container__tekstKapper__geluid--aan" id="js--geluid--aan">Geluid aan</i>-->
       </article>
     </article>
 
 
 
   <section class="volgende--deel">
-    <button class="button button--medium button--pink button--white button--links" id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
+    <button class="button button--medium button--pink button--white " id="js--button--haarKnippenScene">Tijd om je haar te knippen</button>
     <button class="button button--medium button--pink" id="js--button--gesprekMetEmma">Gesprek met Emma</button>
   </section>
 
@@ -117,6 +118,13 @@
           Je hebt succesvol het haar van Ahmed geknipt!
         </p>
         </article>
+
+
+              <article class="container__progress">
+                <progress class="container__progress__bar" id="js--progressbar" value="10" max="100"></progress>
+                <p class="container__progress__progressbar--text" id="js--progressPercentage">-</p>
+                <span id="js--scissors1" class="container__progress__scissors">💇</span>
+              </article>
 
 
 
