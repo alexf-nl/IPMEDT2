@@ -142,7 +142,8 @@ nav a:hover {
 @media screen and (min-width: 800px) {
   .navbar {
     width: 100%;
-    position: fixed;
+    position: relative;
+    padding-bottom: 3rem;
   }
 }
 
