@@ -267,6 +267,13 @@ h1, h2, h3, h4, figcaption {
     font-size: 2rem;
   }
 
+  .paragraph {
+      font-size: 2rem;
+      font-weight: 400;
+      font-family: 'PT Sans', sans-serif;
+      color: black;
+
+  }
 
 
     .button--white {
@@ -308,7 +315,7 @@ h1, h2, h3, h4, figcaption {
   .container__haarKnippen {
     display: grid;
     grid-column: 1 / 12;
-    grid-row: 1 / 3;
+    grid-row: 2 / 3;
   }
 
   main > .haar__items__list{

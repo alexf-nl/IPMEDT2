@@ -82,11 +82,14 @@ if(zesdeSceneKnippen) {
             document.getElementsByClassName(' container__hair')[0].style.display = 'grid';
 
       if(window.screen.width < 799 ) {
+        zelfstandigKapper.classList.add("paragraph");
+
         zelfstandigKapper.innerHTML = "Je bent nu zelf de kapper, Klik op de button onderaan om Ahmad zijn haar te knippen";
         document.getElementsByClassName('schaar__item')[1].style.display = 'grid';
         console.log('ja');
         document.getElementsByClassName('schaar__item')[0].style.display = 'none';
         haarKnippenButton.onclick = (event) => {
+
           haarKnippenScene.classList.remove("button--pink");
           haarKnippenScene.innerHTML = "Doorgaan";
           haarKnippenScene.style.display = "block";
@@ -113,6 +116,7 @@ if(zesdeSceneKnippen) {
         }
       }
       else if(window.screen.width > 800){
+        zelfstandigKapper.classList.remove("paragraph");
         document.getElementsByClassName('schaar__item')[0].style.display = 'grid';
         document.getElementsByClassName('schaar__item')[1].style.display = 'none';
 
