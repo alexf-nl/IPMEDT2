@@ -729,10 +729,12 @@ h1, h2, h3, h4, figcaption {
   .button {
     width: 25rem;
   }
-body {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
+
+  main {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .container__haarKnippen {
   grid-column: 1 / 6;
