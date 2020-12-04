@@ -484,7 +484,7 @@ h1, h2, h3, h4, figcaption {
 
   .container__hair {
     display: grid;
-    grid-column: 2 / 12;
+    grid-column: 1 / 12;
   }
 
   .haar__meten {
@@ -514,7 +514,7 @@ h1, h2, h3, h4, figcaption {
 
   .haar__meten__lengteTekst {
     font-weight: 900;
-    grid-column: 13;
+    grid-column: 3 / 13;
     display: none;
   }
 
