@@ -139,13 +139,13 @@ nav a:hover {
 }
   /*tablets en hoger*/
 
-@media screen and(min-width: 800px) {
+@media screen and (min-width: 800px) {
   .navbar {
     width: 100%;
     position: fixed;
-
   }
 }
+
 @media screen and (min-width: 1280px) {
   .navbar__label {
     display: none;
