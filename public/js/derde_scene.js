@@ -14,6 +14,11 @@ const tekstJongen = document.getElementById('js--tekst--jongen');
 const dialoogJongen = document.getElementById('js--dialoog--jongen');
 const buttonTerug = document.getElementById('js--button--terug');
 
+const derdeScenePagina = document.getElementById('js--derdeScenePagina');
+const vijfdeScenePagina = document.getElementById('js--vijfdeScenePagina');
+const zevendeScenePagina = document.getElementById('js--zevendeScenePagina');
+
+
 console.log('ja');
 function progressBarFunctie(progressBarValue) {
   progressBar.setAttribute('value', progressBarValue);
@@ -24,12 +29,14 @@ function progressBarFunctie(progressBarValue) {
 }
 
 
-if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
+if(derdeScenePagina) {
   progressBarFunctie(35);
 
-} else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
+}
+if(vijfdeScenePagina) {
   progressBarFunctie(70);
-} else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
+}
+if(zevendeScenePagina) {
   progressBarFunctie(95);
 }
 

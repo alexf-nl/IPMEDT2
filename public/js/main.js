@@ -27,6 +27,13 @@ let geluidAanzetten = true;
 const gesprekEmma = document.getElementById('js--button--gesprekEmma');
 const gesprekMetEmma = document.getElementById('js--button--gesprekMetEmma');
 const laatsteDeel = document.getElementById('js--laatsteDeel');
+const zesdeSceneKnippen = document.getElementById('js--haarKnippenScenes');
+const eersteScenePagina = document.getElementById('js--eersteScenePagina');
+const tweedeScenePagina = document.getElementById('js--tweedeScenePagina');
+const tweedeSceneKeuze = document.getElementById('js--tweedeSceneKeuze');
+const vierdeScenePagina = document.getElementById('js--vierdeScenePagina');
+const zesdeSceneKeuze = document.getElementById('js--zesdeSceneKeuze');
+
 
 
 function geluidInstellen() {
@@ -52,55 +59,8 @@ naarEersteScene.onclick = (event) => {
   }
 }
 
-
-
-if(location.pathname == "/eerste_scene.html" || location.pathname == "/public/eerste_scene.html") {
-  progressBarFunctie(10);
-  eersteMetinghaar.innerHTML = "Je haar nu doneren!";
-
-}
-else if(location.pathname == "/tweede_scene.html" || location.pathname == "/public/tweede_scene.html") {
-  progressBarFunctie(20);
-  tweedeMetinghaar.onclick = (event) => {
-    window.location.href = "derde-scene.html";
-  }
-  if(gesprekEmma) {
-    gesprekEmma.onclick = (event) => {
-      window.location.href = "tweede_scene_keuze.html";
-    }
-  }
-
-} else if(location.pathname == "/tweede_scene_keuze.html" || location.pathname == "/public/tweede_scene_keuze.html") {
-  progressBarFunctie(30);
-  tweedeMetinghaar.onclick = (event) => {
-    window.location.href = "derde-scene.html";
-  }
-
-} else if(location.pathname == "/derde-scene.html" || location.pathname == "/public/derde-scene.html") {
-  progressBarFunctie(35);
-}
-else if(location.pathname == "/vierde_scene.html" || location.pathname == "/public/vierde_scene.html") {
-  progressBarFunctie(50);
-  derdeMetinghaar.onclick = (event) => {
-    window.location.href = "vijfde_scene.html";
-  }
-}
-else if(location.pathname == "/vijfde_scene.html" || location.pathname == "/public/vijfde_scene.html") {
-  progressBarFunctie(70);
-} else if(location.pathname == "/zesde_scene_keuze.html" || location.pathname == "/public/zesde_scene_keuze.html") {
-  progressBarFunctie(92);
-    laatsteDeel.onclick = (event) => {
-      window.location.href = "zevende_scene.html";
-    }
-} else if(location.pathname == "/zevende_scene.html" || location.pathname == "/public/zevende_scene.html") {
-  progressBarFunctie(95);
-}
-
-
-
-
-
-if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zesde_scene.html") {
+if(zesdeSceneKnippen) {
+  console.log('hey');
   progressBarFunctie(76);
   progressBarValue = 76;
   geluidUit.style.display = 'none';
@@ -158,7 +118,47 @@ if(location.pathname == "/zesde_scene.html" || location.pathname == "/public/zes
 
       }
     }
+}
 
+if(eersteScenePagina) {
+  progressBarFunctie(10);
+  eersteMetinghaar.innerHTML = "Je haar nu doneren!";
+}
+
+
+if(tweedeScenePagina) {
+  console.log('yo');
+  progressBarFunctie(20);
+  tweedeMetinghaar.onclick = (event) => {
+    window.location.href = "derde-scene.html";
+  }
+  if(gesprekEmma) {
+    gesprekEmma.onclick = (event) => {
+      window.location.href = "tweede_scene_keuze.html";
+    }
+  }
+
+}
+ if(tweedeSceneKeuze) {
+  progressBarFunctie(30);
+  tweedeMetinghaar.onclick = (event) => {
+    window.location.href = "derde-scene.html";
+  }
+
+}
+
+if(vierdeScenePagina) {
+  progressBarFunctie(50);
+  derdeMetinghaar.onclick = (event) => {
+    window.location.href = "vijfde_scene.html";
+  }
+}
+
+ if(zesdeSceneKeuze) {
+  progressBarFunctie(92);
+    laatsteDeel.onclick = (event) => {
+      window.location.href = "zevende_scene.html";
+    }
 }
 
 
@@ -262,7 +262,6 @@ function onDragLeave(event) {
 
 function onDrop(event) {
 
-  document.getElementById(event.dataTransfer.getData("text/plain")).style.display="#252a34";
   let id = event.dataTransfer.getData("text/plain");
   if(id === "js--scissors") {
     progressBarFunctie(progressBarValue+=2);
